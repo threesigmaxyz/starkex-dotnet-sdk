@@ -27,4 +27,4 @@ jobs:
             - name: Packaging
               run: dotnet pack --configuration Release --version-suffix "beta${{ env.build-version }}"
             - name: Publish
-              run: dotnet nuget push "StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+              run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
