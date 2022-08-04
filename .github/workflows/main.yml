@@ -1,0 +1,30 @@
+﻿name: Pull request workflow
+
+on:
+    push:
+        branches:
+            - 'main'
+
+jobs:
+    build:
+        name: Building and publishing SDK
+        runs-on: ubuntu-latest
+        env:
+            dotnet-version: '6.0'
+        
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup .NET Core SDK ${{ env.dotnet-version }}
+              uses: actions/setup-dotnet@v2
+              with:
+                  dotnet-version: ${{ env.dotnet-version }}
+            - name: Add nuget sources
+              run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
+            - name: Install dependencies
+              run: dotnet restore
+            - name: Build
+              run: dotnet build --configuration Release --no-restore
+            - name: Packaging
+              run: dotnet pack --configuration Release
+            - name: Publish
+              run: dotnet nuget push "StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
