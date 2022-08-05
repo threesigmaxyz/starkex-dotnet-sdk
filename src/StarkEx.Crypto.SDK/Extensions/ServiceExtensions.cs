@@ -8,9 +8,10 @@ public static class ServiceExtensions
 {
     public static IServiceCollection AddStarkExCryptoUtils(this IServiceCollection services)
     {
-        services.AddSingleton<IPeadersonHash, PeadersonHash>();
+        services.AddSingleton<IPedersenHash, PedersenHash>();
         services.AddSingleton<ISpotTradingMessageHasher, SpotTradingMessageHasher>();
         services.AddSingleton<IStarkExSigner, StarkExSigner>();
+        services.AddSingleton<StarkCurve>();
 
         return services;
     }

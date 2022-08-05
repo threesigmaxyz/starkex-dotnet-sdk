@@ -28,36 +28,13 @@ public class StarkCurve
         pointG = curve.CreatePoint(Gx, Gy);
     }
 
-    /**
-     * @param privateKey private key
-     * @param x          x coordinate of selected point on the curve
-     * @param y          y coordinate of selected point on the curve
-     * @return private key with respect to selected point
-     */
-    public ECPrivateKeyParameters CreatePrivateKeyParams(BigInteger privateKey, BigInteger x, BigInteger y)
-    {
-        return new ECPrivateKeyParameters(
-                privateKey,
-                new ECDomainParameters(curve, curve.CreatePoint(x, y), N));
-    }
-
-    /**
-     * @param publicKey public key
-     * @param x         x coordinate of selected point on the curve
-     * @param y         y coordinate of selected point on the curve
-     * @return public key parameters with respect to selected point
-     */
-    public ECPublicKeyParameters CreatePublicKeyParams(BigInteger publicKey, BigInteger x, BigInteger y)
-    {
-        return new ECPublicKeyParameters(
-                curve.DecodePoint(publicKey.ToByteArray()),
-                new ECDomainParameters(curve, curve.CreatePoint(x, y), N));
-    }
-
-    /**
-     * @param publicKey public key
-     * @return public key parameter with respect to G
-     */
+    /// <summary>
+    /// Creates PublicKeys parameters.
+    /// </summary>
+    /// <param name="publicKey">Public key.</param>
+    /// <returns>
+    /// Public key parameters with respect to G.
+    /// </returns>
     public ECPublicKeyParameters CreatePublicKeyParams(BigInteger publicKey)
     {
         return new ECPublicKeyParameters(
@@ -65,37 +42,45 @@ public class StarkCurve
                 new ECDomainParameters(curve, curve.CreatePoint(GetGx(), GetGy()), N));
     }
 
-    /**
-     * creates public key from private key
-     *
-     * @param privateKey
-     * @return public Key
-     */
-    public BigInteger GeneratePublicKeyFromPrivateKey(BigInteger privateKey)
-    {
-        return new BigInteger(pointG.Multiply(privateKey).GetEncoded(true));
-    }
-
-    /**
-     * creates private key parameters with respect to G point
-     *
-     * @param privateKey
-     * @return ECPrivateKeyParameters
-     */
+    /// <summary>
+    /// Creates PrivateKey parameters.
+    /// </summary>
+    /// <param name="privateKey">X coordinate of selected point on the curve.</param>
+    /// <returns>
+    /// Private key parameters with respect to G.
+    /// </returns>
     public ECPrivateKeyParameters CreatePrivateKeyParams(BigInteger privateKey)
     {
         return CreatePrivateKeyParams(privateKey, GetGx(), GetGy());
     }
 
-    /**
-     *  returns point on curve which has given coordinates
-     * @param x
-     * @param y
-     * @return point on the curve
-     */
+    /// <summary>
+    /// Creates a point in the curve.
+    /// </summary>
+    /// <param name="x">X coordinate of selected point on the curve.</param>
+    /// <param name="y">Y coordinate of selected point on the curve.</param>
+    /// <returns>
+    /// Return an point in the stark curve.
+    /// </returns>
     public ECPoint CreatePoint(BigInteger x, BigInteger y)
     {
         return curve.CreatePoint(x, y);
+    }
+
+    /// <summary>
+    /// Creates hash from the parameters.
+    /// </summary>
+    /// <param name="privateKey">Private key to apply to project from the given coords.</param>
+    /// <param name="x">X coordinate of selected point on the curve.</param>
+    /// <param name="y">Y coordinate of selected point on the curve.</param>
+    /// <returns>
+    /// Private key with respect to selected point.
+    /// </returns>
+    private ECPrivateKeyParameters CreatePrivateKeyParams(BigInteger privateKey, BigInteger x, BigInteger y)
+    {
+        return new ECPrivateKeyParameters(
+            privateKey,
+            new ECDomainParameters(curve, curve.CreatePoint(x, y), N));
     }
 
     private BigInteger GetGx()

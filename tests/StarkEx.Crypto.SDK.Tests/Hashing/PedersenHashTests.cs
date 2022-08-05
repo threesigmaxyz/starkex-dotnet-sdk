@@ -33,7 +33,7 @@ public class PedersenHashTests
 
     private IPedersenHash CreatePedersenHash()
     {
-        return new PeadersonHash(
+        return new PedersenHash(
             new StarkCurve());
     }
 }

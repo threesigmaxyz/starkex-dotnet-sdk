@@ -5,13 +5,13 @@ using Org.BouncyCastle.Math.EC;
 using StarkEx.Crypto.SDK.Constants;
 using StarkEx.Crypto.SDK.Signing;
 
-public class PeadersonHash : IPeadersonHash
+public class PedersenHash : IPedersenHash
 {
     private static readonly BigInteger Prime = new("800000000000011000000000000000000000000000000000000000000000001", 16);
     private readonly StarkCurve starkCurve;
     private readonly ECPoint shiftPoint;
 
-    public PeadersonHash(StarkCurve starkCurve)
+    public PedersenHash(StarkCurve starkCurve)
     {
         this.starkCurve = starkCurve;
         shiftPoint = GetEcPoint(0);

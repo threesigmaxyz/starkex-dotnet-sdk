@@ -2,7 +2,7 @@
 
 using Org.BouncyCastle.Math;
 
-public interface IPeadersonHash
+public interface IPedersenHash
 {
     /// <summary>
     /// Creates hash from the parameters

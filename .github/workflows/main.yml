@@ -19,7 +19,7 @@ jobs:
               with:
                   dotnet-version: ${{ env.dotnet-version }}
             - name: Add nuget sources
-              run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
+              run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
             - name: Install dependencies
               run: dotnet restore
             - name: Build

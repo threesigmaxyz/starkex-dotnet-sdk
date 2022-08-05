@@ -7,11 +7,11 @@ using StarkEx.Crypto.SDK.Extensions;
 
 public class SpotTradingMessageHasher : ISpotTradingMessageHasher
 {
-    private readonly PeadersonHash peadersonHash;
+    private readonly PedersenHash pedersenHash;
 
-    public SpotTradingMessageHasher(PeadersonHash peadersonHash)
+    public SpotTradingMessageHasher(PedersenHash pedersenHash)
     {
-        this.peadersonHash = peadersonHash;
+        this.pedersenHash = pedersenHash;
     }
 
     public BigInteger EncodeLimitOrderWithFees(
@@ -44,7 +44,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(assetIdUsedForFees, 16));
         var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
-        return peadersonHash.CreateHash(thirdInnerHash, fifthWeight);
+        return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
     public BigInteger EncodeTransferWithFees(
@@ -71,11 +71,11 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             quantizedAmountToLimitMaxFee,
             expirationTimestamp);
 
-        var firstInnerHash = peadersonHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
-        var secondInnerHash = peadersonHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
-        var thirdInnerHash = peadersonHash.CreateHash(secondInnerHash, fourthWeight);
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
+        var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
-        return peadersonHash.CreateHash(thirdInnerHash, fifthWeight);
+        return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
     public BigInteger EncodeConditionalTransferWithFees(
@@ -133,14 +133,12 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             quantizedAmountToLimitMaxFee,
             expirationTimestamp);
 
-        var sixthWeight = new BigInteger(condition, 16);
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
+        var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, new BigInteger(condition, 16));
+        var fourthInnerHash = pedersenHash.CreateHash(thirdInnerHash, fourthWeight);
 
-        var firstInnerHash = peadersonHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
-        var secondInnerHash = peadersonHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
-        var thirdInnerHash = peadersonHash.CreateHash(secondInnerHash, sixthWeight);
-        var fourthInnerHash = peadersonHash.CreateHash(thirdInnerHash, fourthWeight);
-
-        return peadersonHash.CreateHash(fourthInnerHash, fifthWeight);
+        return pedersenHash.CreateHash(fourthInnerHash, fifthWeight);
     }
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
@@ -163,8 +161,8 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = peadersonHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdBought, 16));
-        return peadersonHash.CreateHash(firstInnerHash, thirdWeight);
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdBought, 16));
+        return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
@@ -186,8 +184,8 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = peadersonHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
-        return peadersonHash.CreateHash(firstInnerHash, thirdWeight);
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
+        return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
@@ -210,10 +208,10 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = peadersonHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
-        var secondInnerHash = peadersonHash.CreateHash(firstInnerHash, new BigInteger(condition, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(condition, 16));
 
-        return peadersonHash.CreateHash(secondInnerHash, thirdWeight);
+        return pedersenHash.CreateHash(secondInnerHash, thirdWeight);
     }
 
     [Obsolete("This calculation of the third weight is marked as deprecated in starkex docs")]
