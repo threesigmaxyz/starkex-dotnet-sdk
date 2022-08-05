@@ -8,7 +8,7 @@ using StarkEx.Crypto.SDK.Signing;
 using Xunit;
 
 [ExcludeFromCodeCoverage]
-public class PeadersonHashTests
+public class PedersenHashTests
 {
     [Theory]
     [InlineData("3d937c035c878245caf64531a5756109c53068da139362728feb561405371cb", "208a0a10250e382e1e4bbe2880906c2791bf6275695e02fbbc6aeff9cd8b31a", "30e480bed5fe53fa909cc0f8c4d99b8f9f2c016be4c41e13a4848797979c662")]
@@ -22,7 +22,7 @@ public class PeadersonHashTests
         var leftField = new BigInteger(leftFieldHex, 16);
         var rightField = new BigInteger(rightFieldHex, 16);
         var expectedOutput = new BigInteger(expectedOutputHex, 16);
-        var target = CreatePeadersonHash();
+        var target = CreatePedersenHash();
 
         // Act
         var result = target.CreateHash(leftField, rightField);
@@ -31,7 +31,7 @@ public class PeadersonHashTests
         result.Should().Be(expectedOutput);
     }
 
-    private IPeadersonHash CreatePeadersonHash()
+    private IPedersenHash CreatePedersenHash()
     {
         return new PeadersonHash(
             new StarkCurve());
