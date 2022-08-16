@@ -1,0 +1,8 @@
+﻿{
+    "tx": {
+        "requester_stark_key": "0x7c65c1e82e2e662f728b4fa42485e3a0a5d2f346baa9455e3e70682c2094cac",
+        "type": "FalseFullWithdrawalRequest",
+        "vault_id": 1654615998
+    },
+    "tx_id": 1234
+}

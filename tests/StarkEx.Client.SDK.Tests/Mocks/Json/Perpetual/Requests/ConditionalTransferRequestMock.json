@@ -1,0 +1,20 @@
+﻿{
+    "tx": {
+        "amount": "7758176404715800194",
+        "asset_id": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+        "expiration_timestamp": "2404381470",
+        "fact": "6461646162616461626164616461626164616261646164616261646162616461",
+        "fact_registry_address": "0x599f9eC17474c2E25C9859ee34A6A02fE9738083",
+        "nonce": "2195908194",
+        "receiver_position_id": "6091063652223914538",
+        "receiver_public_key": "0x259f432e6f4590b9a164106cf6a659eb4862b21fb97d43588561712e8e5216b",
+        "sender_position_id": "9309829342914403545",
+        "sender_public_key": "0x243343249edf36010f231a63f3e102c5510f6dfcb270990e15a6317c747e65",
+        "signature": {
+            "r": "0x8a46893fa614eba8f681843c484abe055e03462235810d3514c2266a033a89",
+            "s": "0x6350cf237ca1df18700ccb72ebd74759c7249c32c92e578d684455a631e9a3e"
+        },
+        "type": "CONDITIONAL_TRANSFER"
+    },
+    "tx_id": 1234
+}

@@ -1,0 +1,10 @@
+﻿{
+    "tx": {
+        "amount": "653212427667887001",
+        "is_valid": false,
+        "position_id": "12811351868539174612",
+        "public_key": "0x758e9e1803bd82196a71da4b085725b195de5d9c50908e3a6399351982ced6",
+        "type": "FORCED_WITHDRAWAL"
+    },
+    "tx_id": 1234
+}

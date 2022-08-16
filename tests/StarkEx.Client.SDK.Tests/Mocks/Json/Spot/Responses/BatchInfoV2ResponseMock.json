@@ -1,0 +1,19 @@
+﻿{
+    "prev_batch_id": 5677,
+    "sequence_number": 1234,
+    "time_created": 1614665098,
+    "txs_info": [
+        {
+            "alt_txs": [],
+            "original_tx": {
+                "amount": "1000",
+                "stark_key": "0x51ddea3f6955ab96cdbb24e2b88c7ce6e7d1afea354e41be88d9dca5c7f0651",
+                "token_id": "0x2dc6cb834b9f656f3366c0c263e75458a814074b165bc1661b7460e7c972759",
+                "type": "DepositRequest",
+                "vault_id": 931081472
+            },
+            "tx_id": 123456,
+            "was_replaced": false
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+﻿{
+    "tx": {
+        "amount": "2569146471088859254",
+        "position_id": "7758176404715800194",
+        "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+        "type": "DEPOSIT"
+    },
+    "tx_id": 1234
+}

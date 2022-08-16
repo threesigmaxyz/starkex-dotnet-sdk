@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>ThreeSigma</Authors>
+        <Company>ThreeSigma</Company>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AssemblyName>StarkEx.Commons.SDK</AssemblyName>
+        <RootNamespace>StarkEx.Commons.SDK</RootNamespace>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <CodeAnalysisRuleSet>$(SolutionDir)starkex.sdk.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <CodeAnalysisRuleSet>$(SolutionDir)starkex.sdk.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Models" />
+    </ItemGroup>
+
+</Project>

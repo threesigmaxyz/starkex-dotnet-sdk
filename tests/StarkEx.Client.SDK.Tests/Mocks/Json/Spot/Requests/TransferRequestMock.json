@@ -1,0 +1,28 @@
+﻿{
+    "tx": {
+        "amount": "7106521602475165645",
+        "expiration_timestamp": 2728011,
+        "fee_info_exchange": {
+            "destination_stark_key": "0x7c65c1e82e2e662f728b4fa42485e3a0a5d2f346baa9455e3e70682c2094cac",
+            "destination_vault_id": 1654615998,
+            "fee_taken": "5"
+        },
+        "fee_info_user": {
+            "fee_limit": "15",
+            "source_vault_id": 1210484339,
+            "token_id": "0x23a77118133287637ebdcd9e87a1613e443df789558867f5ba91faf7a024204"
+        },
+        "nonce": 1806341205,
+        "receiver_public_key": "0x5548582de1b372ad3fbf47a7e5b1e7f9ca5499d004ae545a0116be5ab0c1681",
+        "receiver_vault_id": 1047589226,
+        "sender_public_key": "0x6f25e2a5a92118719c78df48f4ff31e78de58575487ce1eaf19922ad9b8a714",
+        "sender_vault_id": 1358054485,
+        "signature": {
+            "r": "0x0",
+            "s": "0x0"
+        },
+        "token": "0x71545a17a1d50068d723104f77383c13458a748e9bb17bca3f2c9bf9c6316b9",
+        "type": "TransferRequest"
+    },
+    "tx_id": 1234
+}

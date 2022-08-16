@@ -1,0 +1,52 @@
+﻿{
+    "tx": {
+        "oracle_prices": {
+            "0x0": {
+                "price": "4345629098988793194",
+                "signed_prices": {
+                    "0x2ae10445c08f66270cd8d3a71cdac5630a541b1f7d13e47ec1d0373ce3e8fd3": {
+                        "external_asset_id": "0x425443555344000000000000000000004d616b6572",
+                        "price": "10117956201985462554675959028152",
+                        "timestamped_signature": {
+                            "signature": {
+                                "r": "0x6f301f84b4622bcd472a0f375469ce1118d0ce45cb8f9f089ce403981ce5154",
+                                "s": "0xd17a6912b8dd4110ff9f643422448f3a9e725a07be3108aeeccf4a9e9dbdd0"
+                            },
+                            "timestamp": "3618339112"
+                        }
+                    }
+                }
+            },
+            "0x1": {
+                "price": "14829673561266596382",
+                "signed_prices": {
+                    "0x35007be34c2c3d47d2216cb3e13f61d65f4c3c76bb4c57bf1afbe7388bc3238": {
+                        "external_asset_id": "0x455448555344000000000000000000004d616b6572",
+                        "price": "216314955048675504460053108771",
+                        "timestamped_signature": {
+                            "signature": {
+                                "r": "0x7272c78aab3a1d59cde4cec98630ea164ba79a7efd07dd987f0c4eb3b32d6e3",
+                                "s": "0x6b86d1c1d08bb9b3bb9dde346bf76a1bf5b4c8a13cf875ba194080756312932"
+                            },
+                            "timestamp": "4265854110"
+                        }
+                    },
+                    "0x4722c15415ba4ab0a1b3a516be64b94846e9257d25e619c6014f8af08acf90c": {
+                        "external_asset_id": "0x455448555344000000000000000000004d616b6572",
+                        "price": "345280244044647467828513979784",
+                        "timestamped_signature": {
+                            "signature": {
+                                "r": "0x7912daf400f5d87299b2f9f7593f99015835b62cd15efe74f2a31a590c59773",
+                                "s": "0x57eed714363fc4cae375a0adb938651d5e450fc6efaf61ce73ec64f578f0566"
+                            },
+                            "timestamp": "2685496293"
+                        }
+                    }
+                }
+            }
+        },
+        "timestamp": "3485918757",
+        "type": "ORACLE_PRICES_TICK"
+    },
+    "tx_id": 1234
+}

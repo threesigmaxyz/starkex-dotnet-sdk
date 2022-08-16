@@ -1,0 +1,35 @@
+﻿{
+    "update": {
+        "order_root": "000AB5B4CE84EB13D24D4DC89BC96BA10756A91CF180BE92E015F7941D7E",
+        "orders": {
+            "54850": {
+                "fulfilled_amount": "845"
+            },
+            "54851": {
+                "fulfilled_amount": "1975"
+            }
+        },
+        "prev_batch_id": 5677,
+        "rollup_vault_root": "DEADBEEF",
+        "rollup_vaults": {
+            "9223372037023444327": {
+                "balance": "9",
+                "stark_key": "0x1234",
+                "token": "0x5678"
+            }
+        },
+        "vault_root": "037912467B7B3CC02DEEC7B56829E3AE494B8D96F4E79D6CA7CC766C64D1",
+        "vaults": {
+            "168668519": {
+                "balance": "300",
+                "stark_key": "0xc35327b2be68ae537e02f0d16dd81cf6baac5e02ba28d0342ec8e",
+                "token": "0x31e95e8dc9447dfb706f0dfa2d8243c832de7d8da4edd87aa8f3f0008"
+            },
+            "694774812": {
+                "balance": "1000",
+                "stark_key": "0x7c5a4b3c65e46bc7b7b1e5dce60b5b5c56d9429f27acf53ec45b9",
+                "token": "0x31e95e8dc9447dfb706f0dfa2d8243c832de7d8da4edd87aa8f3f0008"
+            }
+        }
+    }
+}

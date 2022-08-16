@@ -1,0 +1,18 @@
+﻿{
+    "tx": {
+        "amount": "7758176404715800194",
+        "asset_id": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+        "expiration_timestamp": "2404381470",
+        "nonce": "2195908194",
+        "receiver_position_id": "6091063652223914538",
+        "receiver_public_key": "0x259f432e6f4590b9a164106cf6a659eb4862b21fb97d43588561712e8e5216b",
+        "sender_position_id": "9309829342914403545",
+        "sender_public_key": "0x463ef5fbed3a0b89e1fd1d630544c4cb2a358e93f5305c5d04ea919810633c7",
+        "signature": {
+            "r": "0x9ae426da12f9084cabb23793249439b1580e2fa794130b99a35d051af4e3e6",
+            "s": "0x1aab922485eb0df5ef6856d0fcbdadad0acea652b5a0ec24bcabb5385ddc0a3"
+        },
+        "type": "TRANSFER"
+    },
+    "tx_id": 1234
+}

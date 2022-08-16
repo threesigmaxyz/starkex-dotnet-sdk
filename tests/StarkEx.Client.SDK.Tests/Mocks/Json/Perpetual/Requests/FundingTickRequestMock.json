@@ -1,0 +1,13 @@
+﻿{
+    "tx": {
+        "global_funding_indices": {
+            "indices": {
+                "0x0": "-431710025170174585",
+                "0x1": "6084712057446794809"
+            },
+            "timestamp": "3900315155"
+        },
+        "type": "FUNDING_TICK"
+    },
+    "tx_id": 1234
+}

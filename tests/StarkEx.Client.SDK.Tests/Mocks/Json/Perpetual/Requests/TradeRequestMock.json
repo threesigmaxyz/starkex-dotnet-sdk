@@ -1,0 +1,44 @@
+﻿{
+    "tx": {
+        "actual_a_fee": "8791662011684601223",
+        "actual_b_fee": "9309829342914403545",
+        "actual_collateral": "7758176404715800194",
+        "actual_synthetic": "15308084094301570617",
+        "party_a_order": {
+            "amount_collateral": "15334874138764573096",
+            "amount_fee": "17677494534592486883",
+            "amount_synthetic": "15460142528840632302",
+            "asset_id_collateral": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+            "asset_id_synthetic": "0x2",
+            "expiration_timestamp": "3608164305",
+            "is_buying_synthetic": true,
+            "nonce": "1210484339",
+            "order_type": "LIMIT_ORDER_WITH_FEES",
+            "position_id": "4805234989534244506",
+            "public_key": "0x6b974202431eb8c0692c9c8111528d947bc7e70f7ffefaffbab7455dfa5d4f7",
+            "signature": {
+                "r": "0x54730fcf60f37072926ba182d17e55e21104fbc22886d876a7e8b191b2d456f",
+                "s": "0x1f32f41a809b2f2b888bddc2bdbf5ef709403a00d4e5e23dbaef09e55130464"
+            }
+        },
+        "party_b_order": {
+            "amount_collateral": "7800133567066683830",
+            "amount_fee": "10547508580746848044",
+            "amount_synthetic": "17015053283814123498",
+            "asset_id_collateral": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+            "asset_id_synthetic": "0x2",
+            "expiration_timestamp": "3407305306",
+            "is_buying_synthetic": false,
+            "nonce": "2046685052",
+            "order_type": "LIMIT_ORDER_WITH_FEES",
+            "position_id": "5076743434755564658",
+            "public_key": "0x7784139b0eee3f6fd937bba714acc2b199af2877565ba7c926d3f10d0bca378",
+            "signature": {
+                "r": "0x929a5a30bb98b23d0fcfcc75a1ff5f0f5a437edac75002cb6ebca78173ffd3",
+                "s": "0x2abbf077eb504ae44b2cf1ca81c1aa73489a38aead87600a7dadf82bd39efcc"
+            }
+        },
+        "type": "TRADE"
+    },
+    "tx_id": 1234
+}

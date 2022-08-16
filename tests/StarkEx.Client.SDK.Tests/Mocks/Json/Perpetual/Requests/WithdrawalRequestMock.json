@@ -1,0 +1,15 @@
+﻿{
+    "tx": {
+        "amount": "2569146471088859254",
+        "expiration_timestamp": "631194409",
+        "nonce": "3433407905",
+        "position_id": "7758176404715800194",
+        "public_key": "0x35989d400b783796677a03aec2a321cd7e0f8e85d9e62f595209ca9b17beefc",
+        "signature": {
+            "r": "0x4b3b9e4934d635f6d1d015212cf773217abd65a32a804f0bd5c6cf3eab926f4",
+            "s": "0x377ea02a33203f8f497ff1290e9b59c1e586134e41c3287b262f9c6e02e66c2"
+        },
+        "type": "WITHDRAWAL"
+    },
+    "tx_id": 1234
+}
