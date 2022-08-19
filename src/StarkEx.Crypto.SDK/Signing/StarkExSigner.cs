@@ -4,7 +4,7 @@ using Org.BouncyCastle.Crypto.Digests;
 using Org.BouncyCastle.Crypto.Signers;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Utilities;
-using StarkEx.SDK.Models;
+using StarkEx.Commons.SDK.Models;
 
 // TODO Assert ranges in whole solution!
 public class StarkExSigner : IStarkExSigner
@@ -52,9 +52,8 @@ public class StarkExSigner : IStarkExSigner
     private static byte[] ToByteArray(BigInteger value)
     {
         var signedValue = value.ToByteArray();
-        return signedValue[0] != 0x00 ?
-            signedValue :
-            Arrays.CopyOfRange(signedValue, 1, signedValue.Length);
+
+        return signedValue[0] != 0x00 ? signedValue : Arrays.CopyOfRange(signedValue, 1, signedValue.Length);
     }
 
     private static BigInteger FixMessageLength(BigInteger messageHash)

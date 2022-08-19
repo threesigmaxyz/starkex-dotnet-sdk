@@ -5,7 +5,7 @@ using Org.BouncyCastle.Math;
 public interface ISpotTradingMessageHasher
 {
     /// <summary>
-    /// Encode Limit Order with Fees
+    ///     Encode Limit Order with Fees
     /// </summary>
     /// <param name="assetIdSold">Id of the Asset sold.</param>
     /// <param name="assetIdBought">Id of the Asset bought.</param>
@@ -19,7 +19,7 @@ public interface ISpotTradingMessageHasher
     /// <param name="vaultIdUsedForBuying">Id of the vault used for buying.</param>
     /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch</param>
     /// <returns>
-    /// Hash number
+    ///     Hash number
     /// </returns>
     BigInteger EncodeLimitOrderWithFees(
         string assetIdSold,
@@ -35,7 +35,7 @@ public interface ISpotTradingMessageHasher
         int expirationTimestamp);
 
     /// <summary>
-    /// Encode Transfer transaction with Fees
+    ///     Encode Transfer transaction with Fees
     /// </summary>
     /// <param name="assetIdSold">Id of the Asset sold.</param>
     /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
@@ -48,7 +48,7 @@ public interface ISpotTradingMessageHasher
     /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
     /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
     /// <returns>
-    /// Hash number
+    ///     Hash number
     /// </returns>
     BigInteger EncodeTransferWithFees(
         string assetIdSold,
@@ -63,7 +63,7 @@ public interface ISpotTradingMessageHasher
         int expirationTimestamp);
 
     /// <summary>
-    /// Encode Conditional Transfer transaction with Fees
+    ///     Encode Conditional Transfer transaction with Fees
     /// </summary>
     /// <param name="assetIdSold">Id of the Asset sold.</param>
     /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
@@ -75,10 +75,11 @@ public interface ISpotTradingMessageHasher
     /// <param name="quantizedAmountToTransfer">Quantized amount to transfer.</param>
     /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
     /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
-    /// <param name="fact">Transfer condition hex encoded.</param> //
+    /// <param name="fact">Transfer condition hex encoded.</param>
+    /// //
     /// <param name="factRegistryAddress">Contract address to validate the fact hex encoded.</param>
     /// <returns>
-    /// Hash number
+    ///     Hash number
     /// </returns>
     BigInteger EncodeConditionalTransferWithFees(
         string assetIdSold,
@@ -95,7 +96,7 @@ public interface ISpotTradingMessageHasher
         string factRegistryAddress);
 
     /// <summary>
-    /// Encode Conditional Transfer transaction with Fees.
+    ///     Encode Conditional Transfer transaction with Fees.
     /// </summary>
     /// <param name="assetIdSold">Id of the Asset sold.</param>
     /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
@@ -107,9 +108,10 @@ public interface ISpotTradingMessageHasher
     /// <param name="quantizedAmountToTransfer">Quantized amount to transfer.</param>
     /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
     /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
-    /// <param name="condition">Perdersen hash of the contract address and fact.</param> //
+    /// <param name="condition">Perdersen hash of the contract address and fact.</param>
+    /// //
     /// <returns>
-    /// Hash number.
+    ///     Hash number.
     /// </returns>
     public BigInteger EncodeConditionalTransferWithFees(
         string assetIdSold,

@@ -1,0 +1,10 @@
+﻿{
+    "tx": {
+        "amount": "4029557120079369747",
+        "stark_key": "0x7c65c1e82e2e662f728b4fa42485e3a0a5d2f346baa9455e3e70682c2094cac",
+        "token_id": "0x400b7527a024204f7c1bd874da5e709d4713d60c8a70639eb1167b367a9c378",
+        "type": "MintRequest",
+        "vault_id": 1654615998
+    },
+    "tx_id": 1234
+}

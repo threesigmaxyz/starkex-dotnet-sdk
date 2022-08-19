@@ -1,0 +1,27 @@
+﻿{
+    "tx": {
+        "actual_collateral": "7758176404715800194",
+        "actual_liquidator_fee": "8791662011684601223",
+        "actual_synthetic": "15308084094301570617",
+        "liquidated_position_id": "15419682365516802845",
+        "liquidator_order": {
+            "amount_collateral": "8187132600743567510",
+            "amount_fee": "11081939229867047606",
+            "amount_synthetic": "16558026091473266411",
+            "asset_id_collateral": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+            "asset_id_synthetic": "0x2",
+            "expiration_timestamp": "1430804514",
+            "is_buying_synthetic": false,
+            "nonce": "3900315155",
+            "order_type": "LIMIT_ORDER_WITH_FEES",
+            "position_id": "11534118754833929857",
+            "public_key": "0x5db665983e23607de57d6dc068797336bfdcb954238044688bec922ca296d3e",
+            "signature": {
+                "r": "0x4ac8a77f5863238a8bfb8a2e7f2dcc70cb8cad7b45692497b4b2c3ff06f6c94",
+                "s": "0x6fd86c349a6c6266d34c11da0ff8c0cf211cafbadc39ba4a4c38124344f3bb1"
+            }
+        },
+        "type": "LIQUIDATE"
+    },
+    "tx_id": 1234
+}

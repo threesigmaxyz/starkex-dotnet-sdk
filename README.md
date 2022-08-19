@@ -1,9 +1,12 @@
-# StarkEX C# Crypto SDK
+# StarkEX C# SDK
 
 ## What is StarkEX C# Crypto SDK?
 StarkEX C# Crypto SDK is a .Net library for signatures, key generation and hashing on a STARK friendly elliptic curve.
 
-## Features
+## What is StarkEX C# Client SDK?
+StarkEX C# SDK is the .Net integration library to interact with the StarkEX [Spot API](https://starkware.co/starkex-restapi-v4/gateway.html) and [Perpetual API](https://starkware.co/starkex-perpetual-api-v2/gateway.html).
+
+## StarkEX Crypto SDK Features
 This SDK provides the following cryptographic operations over the STARK curve described [here](https://docs.starkware.co/starkex-v4/crypto/stark-curve):
 - ECDSA Signatures.
 - Pederson Hashing.
@@ -12,12 +15,19 @@ This SDK provides the following cryptographic operations over the STARK curve de
 Additionally, it also contains utilities for the following StarkEx specific operations:
 - StarkEx Spot/Perpetual [message encoding](https://docs.starkware.co/starkex-v4/starkex-deep-dive/message-encodings).
 - Computation of StarkEx [asset identifiers](https://docs.starkware.co/starkex-v4/starkex-deep-dive/starkex-specific-concepts#assetinfo-assettype-and-assetid).
+
+## StarkEX Client SDK Features
+
+- StarkEx [Spot API](https://starkware.co/starkex-restapi-v4/gateway.html) client.
+- StarkEx [Perpetual API](https://starkware.co/starkex-perpetual-api-v2/gateway.html) client.
+
 ## Installation
 Currently the package is inside a private repository, so organization outsiders will not be able to install it.
 After it has been made publicly available you can install it with the following command:
 
 ```bash
-dotnet add PROJECT package StarkEx.Crypto.SDK --version 1.0.0
+dotnet add PROJECT package StarkEx.Crypto.SDK --version 1.0.2
+dotnet add PROJECT package StarkEx.Client.SDK --version 1.5.2
 ```
 
 ## Testing
@@ -25,9 +35,10 @@ We provide a full testing suit for the SDK that can be run via:
 
 ```bash
 dotnet test StarkEx.Crypto.SDK.Tests
+dotnet test StarkEx.Client.SDK.Tests
 ```
 
-## Code samples
+## StarkEX Crypto SDK Code samples
 In this section we present some short examples illustrating how to utilize some core features of the crypto SDK. More examples are available in the `StarkEx.Crypto.SDK.Tests` package.
 
 ### ECDSA Signatures
@@ -114,4 +125,16 @@ var result = AssetEncoder.GetAssetId(
 
 // output "0x400f163c4d559288a2edbb10162eed11f4de87c56875b970fee1534da69cc80"
 Console.Out.WriteLine(encoded);
+```
+
+## StarkEX Client SDK Code samples
+
+The code sample above describes the project Settings.
+
+![](./src/images/settings.png)
+
+You can inject the dependencies with the following code
+
+```
+services.AddStarkEx();
 ```

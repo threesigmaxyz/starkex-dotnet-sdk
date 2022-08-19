@@ -218,7 +218,6 @@ public class MessageHasherTests
 
     private static ISpotTradingMessageHasher CreateSpotTradingEncoder()
     {
-        return new SpotTradingMessageHasher(
-            new PedersenHash(new StarkCurve()));
+        return new SpotTradingMessageHasher(new PedersenHash(new StarkCurve()));
     }
 }

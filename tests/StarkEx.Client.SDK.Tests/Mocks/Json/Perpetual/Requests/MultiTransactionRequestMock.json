@@ -1,0 +1,29 @@
+﻿{
+    "tx": {
+        "txs": [
+            {
+                "amount": "2569146471088859254",
+                "position_id": "7758176404715800194",
+                "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                "type": "DEPOSIT"
+            },
+            {
+                "amount": "13942126818862981423",
+                "asset_id": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+                "expiration_timestamp": "2628077981",
+                "nonce": "3874773259",
+                "receiver_position_id": "11534118754833929857",
+                "receiver_public_key": "0x66194cbd71037d1b83e90ec17e0aa3c03983ca8ea7e9d498c778ea6eb2083e7",
+                "sender_position_id": "10326739782786242647",
+                "sender_public_key": "0x6306fae7e23046b2fc9763011b703ae8dae5099180c96125bddd421d30b048a",
+                "signature": {
+                    "r": "0x399bbab600b27b983c7807c32caadf38bb897f412055d9989c63661416d56e4",
+                    "s": "0x73bae1a10349372ca04487d2271f3e3c0733c327b4114238de8cf0c5ded3b1b"
+                },
+                "type": "TRANSFER"
+            }
+        ],
+        "type": "MULTI_TRANSACTION"
+    },
+    "tx_id": 1234
+}

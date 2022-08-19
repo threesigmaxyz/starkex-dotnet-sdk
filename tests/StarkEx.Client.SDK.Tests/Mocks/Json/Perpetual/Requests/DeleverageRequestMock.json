@@ -1,0 +1,12 @@
+﻿{
+    "tx": {
+        "amount_collateral": "5721212930748269353",
+        "amount_synthetic": "9309829342914403545",
+        "deleveraged_position_id": "7758176404715800194",
+        "deleverager_is_buying_synthetic": false,
+        "deleverager_position_id": "15308084094301570617",
+        "synthetic_asset_id": "0x1",
+        "type": "DELEVERAGE"
+    },
+    "tx_id": 1234
+}

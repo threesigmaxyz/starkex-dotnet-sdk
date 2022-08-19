@@ -162,6 +162,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             expirationTimestamp / 3600);
 
         var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdBought, 16));
+
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 
@@ -185,6 +186,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             expirationTimestamp / 3600);
 
         var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
+
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 

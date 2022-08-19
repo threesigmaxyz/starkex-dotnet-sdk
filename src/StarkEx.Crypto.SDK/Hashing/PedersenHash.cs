@@ -8,8 +8,8 @@ using StarkEx.Crypto.SDK.Signing;
 public class PedersenHash : IPedersenHash
 {
     private static readonly BigInteger Prime = new("800000000000011000000000000000000000000000000000000000000000001", 16);
-    private readonly StarkCurve starkCurve;
     private readonly ECPoint shiftPoint;
+    private readonly StarkCurve starkCurve;
 
     public PedersenHash(StarkCurve starkCurve)
     {
@@ -65,6 +65,7 @@ public class PedersenHash : IPedersenHash
         var hexConstantPoint = EllipticCurveConstantPoints.HexConstantPoints.ElementAt(index);
         var pointX = new BigInteger(hexConstantPoint.Item1, 16);
         var pointY = new BigInteger(hexConstantPoint.Item2, 16);
+
         return starkCurve.CreatePoint(pointX, pointY);
     }
 }

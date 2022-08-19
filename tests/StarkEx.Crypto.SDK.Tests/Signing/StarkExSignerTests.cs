@@ -2,8 +2,8 @@
 
 using System.Diagnostics.CodeAnalysis;
 using FluentAssertions;
+using StarkEx.Commons.SDK.Models;
 using StarkEx.Crypto.SDK.Signing;
-using StarkEx.SDK.Models;
 using Xunit;
 
 [ExcludeFromCodeCoverage]
@@ -30,7 +30,7 @@ public class StarkExSignerTests
         // Arrange
         var privateKey = "2dccce1da22003777062ee0870e9881b460a8b7eca276870f57c601f182136c";
         var target = CreateStarkExSigner();
-        var expectedResult = new SignatureModel()
+        var expectedResult = new SignatureModel
         {
             R = expectedR,
             S = expectedS,

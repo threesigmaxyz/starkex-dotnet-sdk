@@ -1,0 +1,31 @@
+﻿{
+    "update": {
+        "order_root": "000AB5B4CE84EB13D24D4DC89BC96BA10756A91CF180BE92E015F7941D7E",
+        "orders": {
+            "54850": {
+                "fulfilled_amount": "845"
+            },
+            "54851": {
+                "fulfilled_amount": "1975"
+            }
+        },
+        "position_root": "037912467B7B3CC02DEEC7B56829E3AE494B8D96F4E79D6CA7CC766C64D1",
+        "positions": {
+            "168668519": {
+                "assets": {
+                    "0x17": {
+                        "balance": "64",
+                        "cached_funding_index": "16"
+                    },
+                    "0x37": {
+                        "balance": "26",
+                        "cached_funding_index": "84"
+                    }
+                },
+                "collateral_balance": "88",
+                "public_key": "0xc35327b2be68ae537e02f0d16dd81cf6baac5e02ba28d0342ec8e"
+            }
+        },
+        "prev_batch_id": 5677
+    }
+}

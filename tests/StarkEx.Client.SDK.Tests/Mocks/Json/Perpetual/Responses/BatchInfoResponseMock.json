@@ -1,0 +1,171 @@
+﻿{
+    "order_root": "33353732303235373731323634383839363236393439383130353737363838353737333732323333353635323133353239343736323830303631333239333735303231373238323133373832",
+    "position_root": "32383836323838323130373630343134343730323233333739383938383634333839393538343037383336363036393338353238353138303339303538353538393136393438343237373530",
+    "previous_batch_id": "49",
+    "previous_order_root": "373238373735323237343130393633303836383637373531333331353630323731313234313835373237313231363632343735333930373335343938313931373635343232323632343530",
+    "previous_position_root": "32393330353130363031373330333131393736333636373530313938393831383031333436303830313231333134363830313038303437363733323532323836393338353634393836343938",
+    "sequence_number": "97",
+    "time_created": "1649950823",
+    "txs_info": [
+        {
+            "alt_txs": [
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                }
+            ],
+            "original_tx": {
+                "amount": "2011762206806500866",
+                "position_id": "4089715063379223119",
+                "public_key": "0x149818d1759edc372ae22448b0163c1cd9d2b7d247a8333f7b0b7d2cda8056d",
+                "type": "DEPOSIT"
+            },
+            "original_tx_id": "93",
+            "was_replaced": true
+        },
+        {
+            "alt_txs": [],
+            "original_tx": {
+                "amount": "4466088725509430642",
+                "position_id": "10098502384506607689",
+                "public_key": "0x5129fb76288e1a5cc45782198a6416d1775336d71eacd0549a3e80e966e1278",
+                "type": "DEPOSIT"
+            },
+            "original_tx_id": "90",
+            "was_replaced": false
+        },
+        {
+            "alt_txs": [
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                }
+            ],
+            "original_tx": {
+                "amount": "10693485545316635201",
+                "position_id": "3444551907925535972",
+                "public_key": "0x148b275d7ab792809e469e6ec62b2c82648ee38e07405eb215663abc1f254b9",
+                "type": "DEPOSIT"
+            },
+            "original_tx_id": "24",
+            "was_replaced": true
+        },
+        {
+            "alt_txs": [],
+            "original_tx": {
+                "amount": "6134209306631123328",
+                "position_id": "1519513457529745562",
+                "public_key": "0x30bcab0d857010255d44936a1515607964a870c7c879b741d878f9f9cdf5a87",
+                "type": "DEPOSIT"
+            },
+            "original_tx_id": "84",
+            "was_replaced": false
+        },
+        {
+            "alt_txs": [
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                },
+                {
+                    "amount": "2569146471088859254",
+                    "position_id": "7758176404715800194",
+                    "public_key": "0x37ebdcde87a1613e443df789558867f5ba91faf7a024204f7c1bd874da5e70a",
+                    "type": "DEPOSIT"
+                }
+            ],
+            "original_tx": {
+                "amount": "399123234584416836",
+                "position_id": "4035659881156086534",
+                "public_key": "0x950fd11db53334fb0323a1d576d4155ec17dbe176ea1b164264cd51ea45cd7",
+                "type": "DEPOSIT"
+            },
+            "original_tx_id": "12",
+            "was_replaced": true
+        }
+    ]
+}
