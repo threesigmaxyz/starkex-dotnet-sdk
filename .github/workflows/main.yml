@@ -26,6 +26,8 @@ jobs:
               run: dotnet build --configuration Release --no-restore
             - name: Packaging
               run: dotnet pack --configuration Release
+            - name: Publish Commons SDK
+              run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
             - name: Publish Crypto SDK
               run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
             - name: Publish Client SDK

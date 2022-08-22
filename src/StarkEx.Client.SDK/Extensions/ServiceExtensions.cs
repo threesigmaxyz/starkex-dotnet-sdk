@@ -10,8 +10,17 @@ public static class ServiceExtensions
 {
     public static IServiceCollection AddStarkEx(this IServiceCollection services)
     {
+        // Spot Clients
         services.AddSingleton<ISpotClient, SpotClient>();
+        services.AddSingleton<ISpotGatewayClient, SpotGatewayClient>();
+        services.AddSingleton<ISpotFeederGatewayClient, SpotFeederGatewayClient>();
+        services.AddSingleton<ISpotAvailabilityGatewayClient, SpotAvailabilityGatewayClient>();
+
+        // Perpetual Clients
         services.AddSingleton<IPerpetualClient, PerpetualClient>();
+        services.AddSingleton<IPerpetualGatewayClient, PerpetualGatewayClient>();
+        services.AddSingleton<IPerpetualFeederGatewayClient, PerpetualFeederGatewayClient>();
+        services.AddSingleton<IPerpetualAvailabilityGatewayClient, PerpetualAvailabilityGatewayClient>();
 
         return services;
     }

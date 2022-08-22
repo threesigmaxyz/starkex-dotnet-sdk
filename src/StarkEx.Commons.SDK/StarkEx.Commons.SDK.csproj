@@ -1,6 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <PackageId>StarkEx.Commons.SDK</PackageId>
+        <VersionPrefix>1.0.1</VersionPrefix>
+        <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
         <Authors>ThreeSigma</Authors>
         <Company>ThreeSigma</Company>
         <TargetFramework>net6.0</TargetFramework>
@@ -8,6 +11,7 @@
         <Nullable>disable</Nullable>
         <AssemblyName>StarkEx.Commons.SDK</AssemblyName>
         <RootNamespace>StarkEx.Commons.SDK</RootNamespace>
+        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
