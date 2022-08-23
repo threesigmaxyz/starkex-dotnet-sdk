@@ -40,8 +40,8 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             vaultIdUsedForBuying,
             expirationTimestamp);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdBought, 16));
-        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(assetIdUsedForFees, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(assetIdBought.RemoveHexPrefix(), 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(assetIdUsedForFees.RemoveHexPrefix(), 16));
         var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
@@ -71,8 +71,8 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             quantizedAmountToLimitMaxFee,
             expirationTimestamp);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
-        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(assetIdUsedForFees.RemoveHexPrefix(), 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
         var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
@@ -92,7 +92,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         string fact,
         string factRegistryAddress)
     {
-        var condition = pedersenHash.CreateHash(new BigInteger(fact, 16), new BigInteger(factRegistryAddress, 16));
+        var condition = pedersenHash.CreateHash(new BigInteger(fact.RemoveHexPrefix(), 16), new BigInteger(factRegistryAddress.RemoveHexPrefix(), 16));
 
         return EncodeConditionalTransferWithFees(
             assetIdSold,
@@ -133,9 +133,9 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             quantizedAmountToLimitMaxFee,
             expirationTimestamp);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdUsedForFees, 16));
-        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey, 16));
-        var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, new BigInteger(condition, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(assetIdUsedForFees.RemoveHexPrefix(), 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
+        var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, new BigInteger(condition.RemoveHexPrefix(), 16));
         var fourthInnerHash = pedersenHash.CreateHash(thirdInnerHash, fourthWeight);
 
         return pedersenHash.CreateHash(fourthInnerHash, fifthWeight);
@@ -161,7 +161,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(assetIdBought, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(assetIdBought.RemoveHexPrefix(), 16));
 
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
@@ -185,7 +185,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
 
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
@@ -210,8 +210,8 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             nonce,
             expirationTimestamp / 3600);
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold, 16), new BigInteger(receiverStarkKey, 16));
-        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(condition, 16));
+        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
+        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(condition.RemoveHexPrefix(), 16));
 
         return pedersenHash.CreateHash(secondInnerHash, thirdWeight);
     }

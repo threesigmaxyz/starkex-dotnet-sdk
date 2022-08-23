@@ -1,5 +1,6 @@
 ﻿namespace StarkEx.Crypto.SDK.Hashing;
 
+using Nethereum.Hex.HexConvertors.Extensions;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 using StarkEx.Crypto.SDK.Constants;
@@ -17,13 +18,23 @@ public class PedersenHash : IPedersenHash
         shiftPoint = GetEcPoint(0);
     }
 
-    public BigInteger CreateHash(BigInteger leftField, BigInteger rightField)
+    public BigInteger CreateHash(params BigInteger[] fields)
     {
-        ValidateHashInput(leftField, nameof(leftField));
-        ValidateHashInput(rightField, nameof(rightField));
+        if (fields.Length < 1)
+        {
+            throw new ArgumentException("Number of fields must be at least 1");
+        }
 
-        var point = CalculateEllipticCurvePoint(shiftPoint, 0, leftField);
-        point = CalculateEllipticCurvePoint(point, 1, rightField);
+        ValidateHashInput(fields[0], nameof(fields));
+
+        var point = CalculateEllipticCurvePoint(shiftPoint, 0, fields[0]);
+        var index = 1;
+
+        foreach (var field in fields.Skip(1))
+        {
+            ValidateHashInput(field, nameof(fields));
+            point = CalculateEllipticCurvePoint(point, index++, field);
+        }
 
         return point.XCoord.ToBigInteger();
     }
@@ -63,8 +74,8 @@ public class PedersenHash : IPedersenHash
     private ECPoint GetEcPoint(int index)
     {
         var hexConstantPoint = EllipticCurveConstantPoints.HexConstantPoints.ElementAt(index);
-        var pointX = new BigInteger(hexConstantPoint.Item1, 16);
-        var pointY = new BigInteger(hexConstantPoint.Item2, 16);
+        var pointX = new BigInteger(hexConstantPoint.Item1.RemoveHexPrefix(), 16);
+        var pointY = new BigInteger(hexConstantPoint.Item2.RemoveHexPrefix(), 16);
 
         return starkCurve.CreatePoint(pointX, pointY);
     }
