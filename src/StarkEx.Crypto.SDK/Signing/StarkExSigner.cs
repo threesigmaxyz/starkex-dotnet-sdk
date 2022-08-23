@@ -1,5 +1,6 @@
 ﻿namespace StarkEx.Crypto.SDK.Signing;
 
+using Nethereum.Hex.HexConvertors.Extensions;
 using Org.BouncyCastle.Crypto.Digests;
 using Org.BouncyCastle.Crypto.Signers;
 using Org.BouncyCastle.Math;
@@ -19,8 +20,8 @@ public class StarkExSigner : IStarkExSigner
     // TODO Segregate Models into a separate sdk to prevent circular dependencies
     public SignatureModel SignMessage(string messageHash, string privateKey)
     {
-        var messageHashAsBigInteger = new BigInteger(messageHash, 16);
-        var privateKeyAsBigInteger = new BigInteger(privateKey, 16);
+        var messageHashAsBigInteger = new BigInteger(messageHash.RemoveHexPrefix(), 16);
+        var privateKeyAsBigInteger = new BigInteger(privateKey.RemoveHexPrefix(), 16);
 
         var hMacDsaKCalculator = new HMacDsaKCalculator(new Sha256Digest());
         var signer = new ECDsaSigner(hMacDsaKCalculator);
@@ -36,8 +37,8 @@ public class StarkExSigner : IStarkExSigner
 
     public bool VerifySignature(string messageHash, string publicKey, SignatureModel signature)
     {
-        var messageHashAsBigInteger = new BigInteger(messageHash, 16);
-        var publicKeyAsBigInteger = new BigInteger(publicKey, 16);
+        var messageHashAsBigInteger = new BigInteger(messageHash.RemoveHexPrefix(), 16);
+        var publicKeyAsBigInteger = new BigInteger(publicKey.RemoveHexPrefix(), 16);
 
         var signer = new ECDsaSigner();
         var publicKeyParameters = starkCurve.CreatePublicKeyParams(publicKeyAsBigInteger);
@@ -45,8 +46,8 @@ public class StarkExSigner : IStarkExSigner
 
         return signer.VerifySignature(
             ToByteArray(FixMessageLength(messageHashAsBigInteger)),
-            new BigInteger(signature.R, 16),
-            new BigInteger(signature.S, 16));
+            new BigInteger(signature.R.RemoveHexPrefix(), 16),
+            new BigInteger(signature.S.RemoveHexPrefix(), 16));
     }
 
     private static byte[] ToByteArray(BigInteger value)

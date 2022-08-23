@@ -63,7 +63,7 @@ public static class AssetEncoder
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
-        var keccackHashAsBigInteger = new BigInteger(keccackHash, 16);
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
         keccackHashAsBigInteger = keccackHashAsBigInteger.And(BitMask);
 
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
@@ -77,7 +77,7 @@ public static class AssetEncoder
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
-        var keccackHashAsBigInteger = new BigInteger(keccackHash, 16);
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
         keccackHashAsBigInteger = keccackHashAsBigInteger.And(BitMask);
 
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
@@ -89,10 +89,10 @@ public static class AssetEncoder
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
-        assetId = assetId.ShiftLeft(256).Add(new BigInteger(blobHash, 16));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(blobHash.RemoveHexPrefix(), 16));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
-        var keccackHashAsBigInteger = new BigInteger(keccackHash, 16);
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
         keccackHashAsBigInteger = keccackHashAsBigInteger
             .And(MintableAndBitMask)
             .Or(MintableOrBitMask);
@@ -106,10 +106,10 @@ public static class AssetEncoder
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
-        assetId = assetId.ShiftLeft(256).Add(new BigInteger(blobHash, 16));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(blobHash.RemoveHexPrefix(), 16));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
-        var keccackHashAsBigInteger = new BigInteger(keccackHash, 16);
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
         keccackHashAsBigInteger = keccackHashAsBigInteger
             .And(MintableAndBitMask)
             .Or(MintableOrBitMask);

@@ -1,5 +1,6 @@
 ﻿namespace StarkEx.Crypto.SDK.Hashing;
 
+using Nethereum.Hex.HexConvertors.Extensions;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 using StarkEx.Crypto.SDK.Constants;
@@ -73,8 +74,8 @@ public class PedersenHash : IPedersenHash
     private ECPoint GetEcPoint(int index)
     {
         var hexConstantPoint = EllipticCurveConstantPoints.HexConstantPoints.ElementAt(index);
-        var pointX = new BigInteger(hexConstantPoint.Item1, 16);
-        var pointY = new BigInteger(hexConstantPoint.Item2, 16);
+        var pointX = new BigInteger(hexConstantPoint.Item1.RemoveHexPrefix(), 16);
+        var pointY = new BigInteger(hexConstantPoint.Item2.RemoveHexPrefix(), 16);
 
         return starkCurve.CreatePoint(pointX, pointY);
     }
