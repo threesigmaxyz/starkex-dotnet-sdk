@@ -17,13 +17,23 @@ public class PedersenHash : IPedersenHash
         shiftPoint = GetEcPoint(0);
     }
 
-    public BigInteger CreateHash(BigInteger leftField, BigInteger rightField)
+    public BigInteger CreateHash(params BigInteger[] fields)
     {
-        ValidateHashInput(leftField, nameof(leftField));
-        ValidateHashInput(rightField, nameof(rightField));
+        if (fields.Length < 1)
+        {
+            throw new ArgumentException("Number of fields must be at least 1");
+        }
 
-        var point = CalculateEllipticCurvePoint(shiftPoint, 0, leftField);
-        point = CalculateEllipticCurvePoint(point, 1, rightField);
+        ValidateHashInput(fields[0], nameof(fields));
+
+        var point = CalculateEllipticCurvePoint(shiftPoint, 0, fields[0]);
+        var index = 1;
+
+        foreach (var field in fields.Skip(1))
+        {
+            ValidateHashInput(field, nameof(fields));
+            point = CalculateEllipticCurvePoint(point, index++, field);
+        }
 
         return point.XCoord.ToBigInteger();
     }

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>StarkEx.Client.SDK</PackageId>
-        <VersionPrefix>1.5.3</VersionPrefix>
+        <VersionPrefix>1.5.4</VersionPrefix>
         <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
         <Authors>ThreeSigma</Authors>
         <Company>ThreeSigma</Company>
