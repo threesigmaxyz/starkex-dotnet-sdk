@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>StarkEx.Client.SDK</PackageId>
-        <VersionPrefix>1.5.2</VersionPrefix>
+        <VersionPrefix>1.5.3</VersionPrefix>
         <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
         <Authors>ThreeSigma</Authors>
         <Company>ThreeSigma</Company>
@@ -11,7 +11,7 @@
         <Nullable>disable</Nullable>
         <AssemblyName>StarkEx.Client.SDK</AssemblyName>
         <RootNamespace>StarkEx.Client.SDK</RootNamespace>
-        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-crypto-sdk</RepositoryUrl>
+        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

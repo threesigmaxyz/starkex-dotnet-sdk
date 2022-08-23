@@ -5,7 +5,7 @@ using StarkEx.Client.SDK.Interfaces.Spot;
 /// <inheritdoc />
 public class SpotClient : ISpotClient
 {
-    private SpotClient(
+    public SpotClient(
         ISpotAvailabilityGatewayClient availabilityGatewayClient,
         ISpotFeederGatewayClient feederGatewayClient,
         ISpotGatewayClient gatewayClient)

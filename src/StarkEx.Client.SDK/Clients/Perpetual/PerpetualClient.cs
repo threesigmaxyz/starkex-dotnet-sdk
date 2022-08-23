@@ -5,7 +5,7 @@ using StarkEx.Client.SDK.Interfaces.Perpetual;
 /// <inheritdoc />
 public class PerpetualClient : IPerpetualClient
 {
-    private PerpetualClient(
+    public PerpetualClient(
         IPerpetualAvailabilityGatewayClient availabilityGatewayClient,
         IPerpetualFeederGatewayClient feederGatewayClient,
         IPerpetualGatewayClient gatewayClient)

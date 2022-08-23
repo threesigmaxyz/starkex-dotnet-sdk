@@ -2,14 +2,14 @@
 
     <PropertyGroup>
         <PackageId>StarkEx.Crypto.SDK</PackageId>
-        <VersionPrefix>1.0.2</VersionPrefix>
+        <VersionPrefix>1.0.3</VersionPrefix>
         <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
         <Authors>ThreeSigma</Authors>
         <Company>ThreeSigma</Company>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
-        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-crypto-sdk</RepositoryUrl>
+        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,9 +21,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BouncyCastle.NetCore" Version="1.9.0"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0"/>
-        <PackageReference Include="Nethereum.Util" Version="4.7.0"/>
+        <PackageReference Include="BouncyCastle.NetCore" Version="1.9.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Nethereum.Util" Version="4.7.0" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -31,7 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\StarkEx.Client.SDK\StarkEx.Client.SDK.csproj"/>
+      <ProjectReference Include="..\StarkEx.Commons.SDK\StarkEx.Commons.SDK.csproj" />
     </ItemGroup>
 
 </Project>

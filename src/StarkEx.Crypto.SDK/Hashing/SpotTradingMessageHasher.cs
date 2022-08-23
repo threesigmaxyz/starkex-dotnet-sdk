@@ -7,9 +7,9 @@ using StarkEx.Crypto.SDK.Extensions;
 
 public class SpotTradingMessageHasher : ISpotTradingMessageHasher
 {
-    private readonly PedersenHash pedersenHash;
+    private readonly IPedersenHash pedersenHash;
 
-    public SpotTradingMessageHasher(PedersenHash pedersenHash)
+    public SpotTradingMessageHasher(IPedersenHash pedersenHash)
     {
         this.pedersenHash = pedersenHash;
     }
