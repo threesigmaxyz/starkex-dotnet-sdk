@@ -38,8 +38,19 @@ public class StarkCurve
     /// </returns>
     public ECPublicKeyParameters CreatePublicKeyParams(BigInteger publicKey)
     {
+        var encodedKey = publicKey.ToByteArray();
+        var coordLength = (curve.FieldSize + 7) / 8;
+        if (encodedKey.Length <= coordLength)
+        {
+            // pad key X coord to 64 bytes
+            encodedKey = PadArray(encodedKey, coordLength);
+
+            // add 0x02 prefix for compressed key encoding (only X)
+            encodedKey = encodedKey.Prepend((byte)0x02).ToArray();
+        }
+
         return new ECPublicKeyParameters(
-            curve.DecodePoint(publicKey.ToByteArray()),
+            curve.DecodePoint(encodedKey),
             new ECDomainParameters(curve, curve.CreatePoint(GetGx(), GetGy()), N));
     }
 
@@ -92,5 +103,13 @@ public class StarkCurve
     private BigInteger GetGy()
     {
         return pointG.YCoord.ToBigInteger();
+    }
+
+    private static byte[] PadArray(byte[] arr, int size)
+    {
+        var padded = new byte[size];
+        var startAt = padded.Length - arr.Length;
+        Array.Copy(arr, 0, padded, startAt, arr.Length);
+        return padded;
     }
 }
