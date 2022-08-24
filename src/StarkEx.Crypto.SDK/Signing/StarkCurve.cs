@@ -79,6 +79,14 @@ public class StarkCurve
         return curve.CreatePoint(x, y);
     }
 
+    private static byte[] PadArray(byte[] arr, int size)
+    {
+        var padded = new byte[size];
+        var startAt = padded.Length - arr.Length;
+        Array.Copy(arr, 0, padded, startAt, arr.Length);
+        return padded;
+    }
+
     /// <summary>
     ///     Creates hash from the parameters.
     /// </summary>
@@ -103,13 +111,5 @@ public class StarkCurve
     private BigInteger GetGy()
     {
         return pointG.YCoord.ToBigInteger();
-    }
-
-    private static byte[] PadArray(byte[] arr, int size)
-    {
-        var padded = new byte[size];
-        var startAt = padded.Length - arr.Length;
-        Array.Copy(arr, 0, padded, startAt, arr.Length);
-        return padded;
     }
 }
