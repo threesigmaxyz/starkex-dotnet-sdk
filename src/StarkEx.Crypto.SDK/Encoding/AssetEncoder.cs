@@ -38,6 +38,34 @@ public static class AssetEncoder
         };
     }
 
+    public static string GetAssetType(AssetType assetType, long quantum, string address = null)
+    {
+        var assetInfo = GetAssetInfo(assetType, address);
+        assetInfo = assetInfo
+            .ShiftLeft(256)
+            .Add(new BigInteger(quantum.ToString()));
+
+        var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetInfo.ToString(16));
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
+        keccackHashAsBigInteger = keccackHashAsBigInteger.And(BitMask);
+
+        return $"0x{keccackHashAsBigInteger.ToString(16)}";
+    }
+
+    public static BigInteger GetAssetInfo(AssetType assetType, string address = null)
+    {
+        return assetType switch
+        {
+            AssetType.Eth => new BigInteger(EthSelector.RemoveHexPrefix(), 16),
+            AssetType.Erc20 => GetErcAssetInfo(Erc20Selector, address),
+            AssetType.Erc721 => GetErcAssetInfo(Erc721Selector, address),
+            AssetType.Erc1155 => GetErcAssetInfo(Erc1155Selector, address),
+            AssetType.MintableErc721 => GetErcAssetInfo(MintableErc721Selector, address),
+            AssetType.MintableErc20 => GetErcAssetInfo(MintableErc20Selector, address),
+            _ => throw new ArgumentOutOfRangeException(nameof(assetType), assetType, "AssetType isn't valid"),
+        };
+    }
+
     private static BigInteger GetErcAssetInfo(string selector, string address)
     {
         return new BigInteger(selector.RemoveHexPrefix(), 16)
@@ -115,33 +143,5 @@ public static class AssetEncoder
             .Or(MintableOrBitMask);
 
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
-    }
-
-    private static string GetAssetType(AssetType assetType, long quantum, string address = null)
-    {
-        var assetInfo = GetAssetInfo(assetType, address);
-        assetInfo = assetInfo
-            .ShiftLeft(256)
-            .Add(new BigInteger(quantum.ToString()));
-
-        var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetInfo.ToString(16));
-        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
-        keccackHashAsBigInteger = keccackHashAsBigInteger.And(BitMask);
-
-        return $"0x{keccackHashAsBigInteger.ToString(16)}";
-    }
-
-    private static BigInteger GetAssetInfo(AssetType assetType, string address = null)
-    {
-        return assetType switch
-        {
-            AssetType.Eth => new BigInteger(EthSelector.RemoveHexPrefix(), 16),
-            AssetType.Erc20 => GetErcAssetInfo(Erc20Selector, address),
-            AssetType.Erc721 => GetErcAssetInfo(Erc721Selector, address),
-            AssetType.Erc1155 => GetErcAssetInfo(Erc1155Selector, address),
-            AssetType.MintableErc721 => GetErcAssetInfo(MintableErc721Selector, address),
-            AssetType.MintableErc20 => GetErcAssetInfo(MintableErc20Selector, address),
-            _ => throw new ArgumentOutOfRangeException(nameof(assetType), assetType, "AssetType isn't valid"),
-        };
     }
 }
