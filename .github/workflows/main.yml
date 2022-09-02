@@ -6,8 +6,22 @@ on:
             - 'main'
 
 jobs:
+    release:
+        name: Create release
+        runs-on: ubuntu-latest
+        env:
+            MAJOR: 2
+            MINOR: 0
+        outputs:
+            release_version: ${{ steps.version.outputs.value }}
+        steps:
+            - id: version
+              name: Create Release
+              run: echo "::set-output name=value::${{ env.MAJOR }}.${{ env.MINOR }}.$(date +%y%j | tr -d '\n')"
+
     build:
         name: Building and publishing SDK
+        needs: release
         runs-on: ubuntu-latest
         env:
             dotnet-version: '6.0'
@@ -18,14 +32,14 @@ jobs:
               uses: actions/setup-dotnet@v2
               with:
                   dotnet-version: ${{ env.dotnet-version }}
-            - name: Add nuget sources
-              run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
             - name: Install dependencies
               run: dotnet restore
             - name: Build
               run: dotnet build --configuration Release --no-restore
             - name: Packaging
-              run: dotnet pack --configuration Release
+              run: dotnet pack --configuration Release -p:PackageVersion=${{needs.release.outputs.release_version}}
+            - name: Add nuget sources
+              run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"  
             - name: Publish Commons SDK
               run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
             - name: Publish Crypto SDK
