@@ -1,4 +1,5 @@
 ﻿// TODO THIS SDK CANT GO PUBLIC WITHOUT A LICENSE FIRST!
+// TODO Only publish relevant assemblies, no need to publish helpers classes like converters
 
 namespace StarkEx.Client.SDK.Clients.Spot;
 

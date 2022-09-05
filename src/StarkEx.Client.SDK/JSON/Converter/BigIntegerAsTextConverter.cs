@@ -8,6 +8,7 @@ using System.Text.Json.Serialization;
 // StarkExApi must serialize number with more than 64 bits (long) as string
 // from their BE and convert the string another custom data type that supports number with more than 64 bits.
 // Hence why we need this converter
+// This convert from string to big integer
 public class BigIntegerAsTextConverter : JsonConverter<BigInteger>
 {
     public override BigInteger Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

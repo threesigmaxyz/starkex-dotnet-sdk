@@ -30,6 +30,6 @@ public class BatchEnclosingIdConverter : JsonConverter<BatchEnclosingIdResponseM
 
     public override void Write(Utf8JsonWriter writer, BatchEnclosingIdResponseModel value, JsonSerializerOptions options)
     {
-        throw new NotImplementedException();
+        throw new NotSupportedException();
     }
 }
