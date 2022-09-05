@@ -24,8 +24,10 @@ public static class AssetEncoder
         string mintingBlob = null,
         string address = null,
         string tokenId = null,
-        long quantum = 1)
+        BigInteger quantum = null)
     {
+        quantum ??= BigInteger.One;
+
         return assetType switch
         {
             AssetType.Eth => GetEthAssetId(quantum),
@@ -38,7 +40,7 @@ public static class AssetEncoder
         };
     }
 
-    public static string GetAssetType(AssetType assetType, long quantum, string address = null)
+    public static string GetAssetType(AssetType assetType, BigInteger quantum, string address = null)
     {
         var assetInfo = GetAssetInfo(assetType, address);
         assetInfo = assetInfo
@@ -73,19 +75,19 @@ public static class AssetEncoder
             .Add(new BigInteger(address.RemoveHexPrefix(), 16));
     }
 
-    private static string GetEthAssetId(long quantum)
+    private static string GetEthAssetId(BigInteger quantum)
     {
         return GetAssetType(AssetType.Eth, quantum);
     }
 
-    private static string GetErc20AssetId(long quantum, string address)
+    private static string GetErc20AssetId(BigInteger quantum, string address)
     {
         return GetAssetType(AssetType.Erc20, quantum, address);
     }
 
     private static string GetErc721AssetId(string tokenId, string address)
     {
-        var assetType = GetAssetType(AssetType.Erc721, 1, address);
+        var assetType = GetAssetType(AssetType.Erc721, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NFT:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
@@ -99,7 +101,7 @@ public static class AssetEncoder
 
     private static string GetErc1155AssetId(string tokenId, string address)
     {
-        var assetType = GetAssetType(AssetType.Erc1155, 1, address);
+        var assetType = GetAssetType(AssetType.Erc1155, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NON_MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
@@ -113,7 +115,7 @@ public static class AssetEncoder
 
     private static string GetMintableErc721AssetId(string mintingBlob, string address)
     {
-        var assetType = GetAssetType(AssetType.MintableErc721, 1, address);
+        var assetType = GetAssetType(AssetType.MintableErc721, BigInteger.One, address);
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
@@ -128,7 +130,7 @@ public static class AssetEncoder
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
     }
 
-    private static string GetMintableErc20AssetId(string mintingBlob, string address, long quantum)
+    private static string GetMintableErc20AssetId(string mintingBlob, string address, BigInteger quantum)
     {
         var assetType = GetAssetType(AssetType.MintableErc20, quantum, address);
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
