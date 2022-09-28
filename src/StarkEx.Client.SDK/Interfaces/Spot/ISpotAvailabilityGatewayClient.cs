@@ -15,8 +15,11 @@ public interface ISpotAvailabilityGatewayClient
     ///     </para>
     /// </summary>
     /// <param name="committeeSignature">Committee signature data.</param>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Signature acknowledgement.</returns>
-    Task<bool> ApproveNewRootsAsync(CommitteeSignatureModel committeeSignature);
+    Task<bool> ApproveNewRootsAsync(
+        CommitteeSignatureModel committeeSignature,
+        CancellationToken cancellationToken);
 
     /// <summary>
     ///     Get the data availability information for a specific batch.
@@ -33,8 +36,12 @@ public interface ISpotAvailabilityGatewayClient
     /// </summary>
     /// <param name="batchId">Batch ID to query.</param>
     /// <param name="validateRollup">Whether or not to respond with rollup vault modification data.</param>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Batch information.</returns>
-    Task<BatchModel> GetBatchDataAsync(int batchId, bool validateRollup);
+    Task<BatchModel> GetBatchDataAsync(
+        int batchId,
+        bool validateRollup,
+        CancellationToken cancellationToken);
 
     /// <summary>
     ///     Query the API for the height of the order tree.
@@ -43,8 +50,9 @@ public interface ISpotAvailabilityGatewayClient
     ///             href="https://starkware.co/starkex-restapi-v4/availability_gateway.html#services.starkex.availability_gateway.availability_gateway.AvailabilityGateway.order_tree_height" />
     ///     </para>
     /// </summary>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Height of the order tree.</returns>
-    Task<int> GetOrderTreeHeightAsync();
+    Task<int> GetOrderTreeHeightAsync(CancellationToken cancellationToken);
 
     // TODO Task<bool> InitDummyBatchStateUpdate(bool withRollup);
     // TODO Task UpdateSignedBatches();

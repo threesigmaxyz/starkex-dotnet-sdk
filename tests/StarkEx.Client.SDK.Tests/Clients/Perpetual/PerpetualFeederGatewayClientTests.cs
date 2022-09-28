@@ -229,7 +229,7 @@ public class PerpetualFeederGatewayClientTests
 
         // Act
         var target = CreateService();
-        var response = await target.GetBatchInfoAsync(batchId);
+        var response = await target.GetBatchInfoAsync(batchId, CancellationToken.None);
 
         // Assert
         httpMessageHandler.Protected()

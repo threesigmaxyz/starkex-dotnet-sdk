@@ -20,16 +20,19 @@ public class PerpetualFeederGatewayClient : IPerpetualFeederGatewayClient
     }
 
     /// <inheritdoc />
-    public async Task<BatchInfoResponseModel> GetBatchInfoAsync(int batchId)
+    public async Task<BatchInfoResponseModel> GetBatchInfoAsync(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         const string path = "/feeder_gateway/get_batch_info";
         var query = $"?batch_id={batchId}";
 
         var client = CreateClient();
-        var response = await client.GetAsync(path + query);
+        var response = await client.GetAsync(path + query, cancellationToken);
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<BatchInfoResponseModel>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<BatchInfoResponseModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     private HttpClient CreateClient()

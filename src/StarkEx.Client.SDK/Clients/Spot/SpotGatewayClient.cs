@@ -32,96 +32,70 @@ public class SpotGatewayClient : ISpotGatewayClient
         this.settings = settings;
     }
 
+    /// <param name="cancellationToken"></param>
     /// <inheritdoc />
-    public async Task<int> GetFirstUnusedTxAsync()
+    public async Task<int> GetFirstUnusedTxAsync(CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         var endpoint = $"/{settings.Version}/gateway/testing/get_first_unused_tx_id";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return int.Parse(await response.Content.ReadAsStringAsync());
+        return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
 
     /// <inheritdoc />
-    public async Task<string> GetStarkDexAddress()
+    public async Task<string> GetStarkDexAddress(CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         var endpoint = $"/{settings.Version}/gateway/testing/get_stark_dex_address";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return await response.Content.ReadAsStringAsync();
+        return await response.Content.ReadAsStringAsync(cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<int> GetTimeSpentByOldestUnacceptedTxInSystem()
+    public async Task<int> GetTimeSpentByOldestUnacceptedTxInSystem(CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         var endpoint = $"/{settings.Version}/gateway/get_time_spent_by_oldest_unaccepted_tx_in_system";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return int.Parse(await response.Content.ReadAsStringAsync());
+        return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
+    }
+
+    public async Task<ResponseModel> AddTransactionAsync<T>(
+        T requestModel,
+        CancellationToken cancellationToken)
+        where T : BaseRequestModel
+    {
+        ValidateRequestModel(requestModel);
+
+        return await SendRequestAsync(requestModel, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<TransactionModel> GetTransactionAsync(int txId)
+    public async Task<TransactionModel> GetTransactionAsync(
+        int txId,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         var endpoint = $"/{settings.Version}/gateway/get_transaction?tx_id={txId}";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<TransactionModel>(await response.Content.ReadAsStreamAsync());
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(MintRequestModel mintRequestModel)
-    {
-        return await SendTransactionAsync(mintRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(SettlementRequestModel settlementRequestModel)
-    {
-        return await SendTransactionAsync(settlementRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(TransferRequestModel transferRequestModel)
-    {
-        return await SendTransactionAsync(transferRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(DepositRequestModel depositRequestModel)
-    {
-        return await SendTransactionAsync(depositRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(WithdrawalRequestModel withdrawalRequestModel)
-    {
-        return await SendTransactionAsync(withdrawalRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(FullWithdrawalRequestModel fullWithdrawalRequestModel)
-    {
-        return await SendTransactionAsync(fullWithdrawalRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(FalseFullWithdrawalRequestModel falseFullWithdrawalRequestModel)
-    {
-        return await SendTransactionAsync(falseFullWithdrawalRequestModel);
-    }
-
-    public async Task<ResponseModel> AddTransactionAsync(MultiTransactionRequestModel multiTransactionRequestModel)
-    {
-        return await SendTransactionAsync(multiTransactionRequestModel);
+        return await JsonSerializer.DeserializeAsync<TransactionModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     private static void ValidateRequestModel(BaseRequestModel requestModel)
@@ -132,15 +106,9 @@ public class SpotGatewayClient : ISpotGatewayClient
         }
     }
 
-    private async Task<ResponseModel> SendTransactionAsync<T>(T requestModel)
-        where T : BaseRequestModel
-    {
-        ValidateRequestModel(requestModel);
-
-        return await SendRequestAsync(requestModel);
-    }
-
-    private async Task<ResponseModel> SendRequestAsync<T>(T requestModel)
+    private async Task<ResponseModel> SendRequestAsync<T>(
+        T requestModel,
+        CancellationToken cancellationToken)
         where T : BaseRequestModel
     {
         var client = CreateClient();
@@ -150,11 +118,12 @@ public class SpotGatewayClient : ISpotGatewayClient
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
-        var response = await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody);
+        var response = await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<ResponseModel>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<ResponseModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     private HttpClient CreateClient()

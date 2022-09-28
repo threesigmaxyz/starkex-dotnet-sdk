@@ -57,7 +57,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(mintRequestModel);
+        await target.AddTransactionAsync(mintRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -128,7 +128,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(settlementRequestModel);
+        await target.AddTransactionAsync(settlementRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedSettlementRequestModel);
@@ -176,7 +176,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(transferRequestModel);
+        await target.AddTransactionAsync(transferRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedTransferRequestModel);
@@ -203,7 +203,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(depositRequestModel);
+        await target.AddTransactionAsync(depositRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedDepositRequestModel);
@@ -230,7 +230,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(withdrawalRequestModel);
+        await target.AddTransactionAsync(withdrawalRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedWithdrawalRequestModel);
@@ -255,7 +255,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(fullWithdrawalRequestModel);
+        await target.AddTransactionAsync(fullWithdrawalRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedFullWithdrawalRequestModel);
@@ -280,7 +280,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(fullWithdrawalRequestModel);
+        await target.AddTransactionAsync(fullWithdrawalRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedFullWithdrawalRequestModel);
@@ -320,7 +320,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(multiTransactionRequestModel);
+        await target.AddTransactionAsync(multiTransactionRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedMultiTransactionRequestModel);
@@ -333,7 +333,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        var action = async () => await target.AddTransactionAsync((MintRequestModel)null!);
+        var action = async () => await target.AddTransactionAsync((MintRequestModel)null!, CancellationToken.None);
 
         // Assert
         await action
@@ -357,7 +357,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.AddTransactionAsync(mintRequestModel);
+        var responseModel = await target.AddTransactionAsync(mintRequestModel, CancellationToken.None);
 
         // Assert
         responseModel.Should().BeEquivalentTo(expectedResponseModel);

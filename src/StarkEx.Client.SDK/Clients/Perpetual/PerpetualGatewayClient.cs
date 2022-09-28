@@ -30,94 +30,26 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
     }
 
     /// <inheritdoc />
-    public async Task<int> GetFirstUnusedTxAsync()
+    public async Task<int> GetFirstUnusedTxAsync(CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         const string endpoint = "/get_first_unused_tx_id";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return int.Parse(await response.Content.ReadAsStringAsync());
+        return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
 
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(ConditionalTransferRequestModel conditionalTransferRequestModel)
+    public async Task<TransactionResponseModel> AddTransactionAsync<T>(
+        T requestModel,
+        CancellationToken cancellationToken)
+        where T : BaseRequestModel
     {
-        return await SendTransactionAsync(conditionalTransferRequestModel);
-    }
+        ValidateRequestModel(requestModel);
 
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(DeleverageRequestModel deleverageRequestModel)
-    {
-        return await SendTransactionAsync(deleverageRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(DepositRequestModel depositRequestModel)
-    {
-        return await SendTransactionAsync(depositRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(ForcedTradeRequestModel forcedTradeRequestModel)
-    {
-        return await SendTransactionAsync(forcedTradeRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(ForcedWithdrawalRequestModel forcedTradeRequestModel)
-    {
-        return await SendTransactionAsync(forcedTradeRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(FundingTickRequestModel fundingTickRequestModel)
-    {
-        return await SendTransactionAsync(fundingTickRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(LiquidateRequestModel liquidateRequestModel)
-    {
-        return await SendTransactionAsync(liquidateRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(MultiTransactionRequestModel multiTransactionRequestModel)
-    {
-        return await SendTransactionAsync(multiTransactionRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(OraclePricesTickRequestModel oraclePricesTickRequestModel)
-    {
-        return await SendTransactionAsync(oraclePricesTickRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(TradeRequestModel tradeRequestModel)
-    {
-        return await SendTransactionAsync(tradeRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(TransferRequestModel transferRequestModel)
-    {
-        return await SendTransactionAsync(transferRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(WithdrawalRequestModel withdrawalRequestModel)
-    {
-        return await SendTransactionAsync(withdrawalRequestModel);
-    }
-
-    /// <inheritdoc />
-    public async Task<TransactionResponseModel> AddTransactionAsync(WithdrawalToAddressRequestModel withdrawalToAddressRequestModel)
-    {
-        return await SendTransactionAsync(withdrawalToAddressRequestModel);
+        return await SendRequestAsync(requestModel, cancellationToken);
     }
 
     private static void ValidateRequestModel(BaseRequestModel requestModel)
@@ -128,15 +60,9 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
         }
     }
 
-    private async Task<TransactionResponseModel> SendTransactionAsync<T>(T requestModel)
-        where T : BaseRequestModel
-    {
-        ValidateRequestModel(requestModel);
-
-        return await SendRequestAsync(requestModel);
-    }
-
-    private async Task<TransactionResponseModel> SendRequestAsync<T>(T requestModel)
+    private async Task<TransactionResponseModel> SendRequestAsync<T>(
+        T requestModel,
+        CancellationToken cancellationToken)
         where T : BaseRequestModel
     {
         var client = CreateClient();
@@ -145,11 +71,12 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
             JsonSerializer.Serialize(requestModel, requestSerializerOptions),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
-        var response = await client.PostAsync("/add_transaction", jsonBody);
+        var response = await client.PostAsync("/add_transaction", jsonBody, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<TransactionResponseModel>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<TransactionResponseModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     private HttpClient CreateClient()

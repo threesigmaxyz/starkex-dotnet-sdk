@@ -22,78 +22,90 @@ public class SpotFeederGatewayClient : ISpotFeederGatewayClient
     }
 
     /// <inheritdoc />
-    public async Task<BatchEnclosingIdResponseModel> GetBatchEnclosingIdsAsync(int batchId)
+    public async Task<BatchEnclosingIdResponseModel> GetBatchEnclosingIdsAsync(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_batch_enclosing_ids";
         var query = $"?batch_id={batchId}";
 
-        return await SendGetRequest<BatchEnclosingIdResponseModel>(path, query);
+        return await SendGetRequest<BatchEnclosingIdResponseModel>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<BatchIdsResponseModel> GetBatchIdsAsync(string vaultRoot, string orderRoot, int sequenceNumber)
+    public async Task<BatchIdsResponseModel> GetBatchIdsAsync(
+        string vaultRoot,
+        string orderRoot,
+        int sequenceNumber,
+        CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_batch_ids";
         var query = $"?vault_root={vaultRoot}&order_root={orderRoot}&sequence_number={sequenceNumber}";
 
-        return await SendGetRequest<BatchIdsResponseModel>(path, query);
+        return await SendGetRequest<BatchIdsResponseModel>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<BatchInfoResponseModel> GetBatchInfoAsync(int batchId)
+    public async Task<BatchInfoResponseModel> GetBatchInfoAsync(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_batch_info";
         var query = $"?batch_id={batchId}";
 
-        return await SendGetRequest<BatchInfoResponseModel>(path, query);
+        return await SendGetRequest<BatchInfoResponseModel>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<BatchInfoV2ResponseModel> GetBatchInfoV2Async(int batchId)
+    public async Task<BatchInfoV2ResponseModel> GetBatchInfoV2Async(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_batch_info_version2";
         var query = $"?batch_id={batchId}";
 
-        return await SendGetRequest<BatchInfoV2ResponseModel>(path, query);
+        return await SendGetRequest<BatchInfoV2ResponseModel>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<int> GetChainIdAsync()
+    public async Task<int> GetChainIdAsync(CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_l1_blockchain_id";
         var query = string.Empty;
 
-        return await SendGetRequest<int>(path, query);
+        return await SendGetRequest<int>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<int> GetLastBatchIdAsync()
+    public async Task<int> GetLastBatchIdAsync(CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_last_batch_id";
         var query = string.Empty;
 
-        return await SendGetRequest<int>(path, query);
+        return await SendGetRequest<int>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<int> GetPrevBatchIdRequestAsync(int batchId)
+    public async Task<int> GetPrevBatchIdRequestAsync(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/get_prev_batch_id";
         var query = $"?batch_id={batchId}";
 
-        return await SendGetRequest<int>(path, query);
+        return await SendGetRequest<int>(path, query, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<bool> GetIsAliveAsync()
+    public async Task<bool> GetIsAliveAsync(CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/is_alive";
 
         var client = CreateClient();
-        var response = await client.GetAsync(path);
+        var response = await client.GetAsync(path, cancellationToken);
         response.EnsureSuccessStatusCode();
 
-        var responseValue = await response.Content.ReadAsStringAsync();
+        var responseValue = await response.Content.ReadAsStringAsync(cancellationToken);
 
         var successMessage = GetEnumMemberAttrValue(typeof(FeederGatewayResponseMessages), FeederGatewayResponseMessages.FeederGatewayIsAliveMessage);
 
@@ -101,15 +113,15 @@ public class SpotFeederGatewayClient : ISpotFeederGatewayClient
     }
 
     /// <inheritdoc />
-    public async Task<bool> GetIsReadyAsync()
+    public async Task<bool> GetIsReadyAsync(CancellationToken cancellationToken)
     {
         var path = $"/{settings.Version}/feeder_gateway/is_ready";
 
         var client = CreateClient();
-        var response = await client.GetAsync(path);
+        var response = await client.GetAsync(path, cancellationToken);
         response.EnsureSuccessStatusCode();
 
-        var responseValue = await response.Content.ReadAsStringAsync();
+        var responseValue = await response.Content.ReadAsStringAsync(cancellationToken);
 
         var successMessage = GetEnumMemberAttrValue(typeof(FeederGatewayResponseMessages), FeederGatewayResponseMessages.FeederGatewayIsReadyMessage);
 
@@ -133,12 +145,16 @@ public class SpotFeederGatewayClient : ISpotFeederGatewayClient
         return client;
     }
 
-    private async Task<T> SendGetRequest<T>(string path, string query)
+    private async Task<T> SendGetRequest<T>(
+        string path,
+        string query,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
-        var response = await client.GetAsync(path + query);
+        var response = await client.GetAsync(path + query, cancellationToken);
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<T>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<T>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 }

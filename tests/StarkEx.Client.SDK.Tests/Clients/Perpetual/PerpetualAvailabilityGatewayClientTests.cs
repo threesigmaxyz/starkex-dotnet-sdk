@@ -49,7 +49,7 @@ public class PerpetualAvailabilityGatewayClientTests
         var target = CreateService();
 
         // Act
-        var response = await target.ApproveNewRootsAsync(committeeSignatureModel);
+        var response = await target.ApproveNewRootsAsync(committeeSignatureModel, CancellationToken.None);
 
         // Assert
         response.Should().Be(expectedResponse);
@@ -117,7 +117,7 @@ public class PerpetualAvailabilityGatewayClientTests
 
         // Act
         var target = CreateService();
-        var response = await target.GetBatchData(batchId);
+        var response = await target.GetBatchData(batchId, CancellationToken.None);
 
         // Assert
         httpMessageHandler.Protected()

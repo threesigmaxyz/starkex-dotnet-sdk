@@ -29,7 +29,9 @@ public class SpotAvailabilityGatewayClient : ISpotAvailabilityGatewayClient
     }
 
     /// <inheritdoc />
-    public async Task<bool> ApproveNewRootsAsync(CommitteeSignatureModel committeeSignature)
+    public async Task<bool> ApproveNewRootsAsync(
+        CommitteeSignatureModel committeeSignature,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
@@ -37,28 +39,32 @@ public class SpotAvailabilityGatewayClient : ISpotAvailabilityGatewayClient
             JsonSerializer.Serialize(committeeSignature, requestSerializerOptions),
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
-        var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody);
+        var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return (await response.Content.ReadAsStringAsync()).Equals("signature accepted");
+        return (await response.Content.ReadAsStringAsync(cancellationToken)).Equals("signature accepted");
     }
 
     /// <inheritdoc />
-    public async Task<BatchModel> GetBatchDataAsync(int batchId, bool validateRollup)
+    public async Task<BatchModel> GetBatchDataAsync(
+        int batchId,
+        bool validateRollup,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         var endpoint = $"/availability_gateway/get_batch_data?batch_id={batchId}&validate_rollup={validateRollup}";
-        var response = await client.GetAsync(endpoint);
+        var response = await client.GetAsync(endpoint, cancellationToken);
 
         response.EnsureSuccessStatusCode();
 
-        return await JsonSerializer.DeserializeAsync<BatchModel>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<BatchModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     /// <inheritdoc />
-    public Task<int> GetOrderTreeHeightAsync()
+    public Task<int> GetOrderTreeHeightAsync(CancellationToken cancellationToken)
     {
         // TODO reference to this endpoint is incomplete in the docs.
         throw new NotImplementedException();
