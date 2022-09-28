@@ -5,6 +5,7 @@ using System.Numerics;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
+// This converts from number to big integer
 public class BigIntegerConverter : JsonConverter<BigInteger>
 {
     public override BigInteger Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

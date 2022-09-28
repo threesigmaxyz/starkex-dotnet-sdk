@@ -48,7 +48,7 @@ public class SpotAvailabilityGatewayClientTest
 
         // Act
         var target = CreateService();
-        var result = await target.ApproveNewRootsAsync(committeeSignature);
+        var result = await target.ApproveNewRootsAsync(committeeSignature, CancellationToken.None);
 
         // Assert
         result.Should().BeTrue();
@@ -65,7 +65,7 @@ public class SpotAvailabilityGatewayClientTest
 
         // Act
         var target = CreateService();
-        var result = await target.GetBatchDataAsync(1234, true);
+        var result = await target.GetBatchDataAsync(1234, true, CancellationToken.None);
 
         // Assert
         var expectedResult = new BatchModel

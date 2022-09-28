@@ -46,7 +46,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetBatchEnclosingIdsAsync(batchId);
+        var responseModel = await target.GetBatchEnclosingIdsAsync(batchId, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -70,7 +70,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetBatchIdsAsync(vaultRoot, orderRoot, sequenceNumber);
+        var responseModel = await target.GetBatchIdsAsync(vaultRoot, orderRoot, sequenceNumber, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -132,7 +132,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetBatchInfoAsync(batchId);
+        var responseModel = await target.GetBatchInfoAsync(batchId, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -173,7 +173,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetBatchInfoV2Async(batchId);
+        var responseModel = await target.GetBatchInfoV2Async(batchId, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -192,7 +192,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var response = await target.GetChainIdAsync();
+        var response = await target.GetChainIdAsync(CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -211,7 +211,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetLastBatchIdAsync();
+        var responseModel = await target.GetLastBatchIdAsync(CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -231,7 +231,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetPrevBatchIdRequestAsync(batchId);
+        var responseModel = await target.GetPrevBatchIdRequestAsync(batchId, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -251,7 +251,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetIsAliveAsync();
+        var responseModel = await target.GetIsAliveAsync(CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);
@@ -272,7 +272,7 @@ public class SpotFeederGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.GetIsReadyAsync();
+        var responseModel = await target.GetIsReadyAsync(CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(path, query);

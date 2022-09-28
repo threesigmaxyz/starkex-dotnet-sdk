@@ -4,5 +4,7 @@ using StarkEx.Client.SDK.Models.Perpetual.ResponseModels;
 
 public interface IPerpetualFeederGatewayClient
 {
-    Task<BatchInfoResponseModel> GetBatchInfoAsync(int batchId);
+    Task<BatchInfoResponseModel> GetBatchInfoAsync(
+        int batchId,
+        CancellationToken cancellationToken);
 }

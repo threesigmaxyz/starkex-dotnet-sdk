@@ -29,7 +29,9 @@ public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayC
     }
 
     /// <inheritdoc />
-    public async Task<string> ApproveNewRootsAsync(CommitteeSignatureModel committeeSignatureModel)
+    public async Task<string> ApproveNewRootsAsync(
+        CommitteeSignatureModel committeeSignatureModel,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
@@ -38,22 +40,25 @@ public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayC
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
-        var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody);
+        var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody, cancellationToken);
 
-        return await response.Content.ReadAsStringAsync();
+        return await response.Content.ReadAsStringAsync(cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<PerpetualBatchModel> GetBatchData(int batchId)
+    public async Task<PerpetualBatchModel> GetBatchData(
+        int batchId,
+        CancellationToken cancellationToken)
     {
         var client = CreateClient();
 
         const string path = "/availability_gateway/get_batch_data";
         var query = $"?batch_id={batchId}";
 
-        var response = await client.GetAsync(path + query);
+        var response = await client.GetAsync(path + query, cancellationToken);
 
-        return await JsonSerializer.DeserializeAsync<PerpetualBatchModel>(await response.Content.ReadAsStreamAsync());
+        return await JsonSerializer.DeserializeAsync<PerpetualBatchModel>(
+            await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
     private HttpClient CreateClient()

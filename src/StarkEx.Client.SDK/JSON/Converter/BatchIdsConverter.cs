@@ -25,6 +25,6 @@ public class BatchIdsConverter : JsonConverter<BatchIdsResponseModel>
 
     public override void Write(Utf8JsonWriter writer, BatchIdsResponseModel value, JsonSerializerOptions options)
     {
-        throw new NotImplementedException();
+        throw new NotSupportedException();
     }
 }

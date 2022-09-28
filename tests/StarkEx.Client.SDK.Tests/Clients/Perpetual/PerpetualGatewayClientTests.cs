@@ -48,7 +48,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        var response = await target.GetFirstUnusedTxAsync();
+        var response = await target.GetFirstUnusedTxAsync(CancellationToken.None);
 
         // Assert
         httpMessageHandler.Protected()
@@ -95,7 +95,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(conditionalTransferRequestModel);
+        await target.AddTransactionAsync(conditionalTransferRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -124,7 +124,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(deleverageRequestModel);
+        await target.AddTransactionAsync(deleverageRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -150,7 +150,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(depositRequestModel);
+        await target.AddTransactionAsync(depositRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -184,7 +184,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(forcedTradeRequestModel);
+        await target.AddTransactionAsync(forcedTradeRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -211,7 +211,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(forcedWithdrawalRequestModel);
+        await target.AddTransactionAsync(forcedWithdrawalRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -243,7 +243,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(fundingTickRequestModel);
+        await target.AddTransactionAsync(fundingTickRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -289,7 +289,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(liquidateRequestModel);
+        await target.AddTransactionAsync(liquidateRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -337,7 +337,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(multiTransactionRequestModel);
+        await target.AddTransactionAsync(multiTransactionRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -433,7 +433,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(oraclePricesTickRequestModel);
+        await target.AddTransactionAsync(oraclePricesTickRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -498,7 +498,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(tradeRequestModel);
+        await target.AddTransactionAsync(tradeRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -534,7 +534,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(transferRequestModel);
+        await target.AddTransactionAsync(transferRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -567,7 +567,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(withdrawalRequestModel);
+        await target.AddTransactionAsync(withdrawalRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -602,7 +602,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        await target.AddTransactionAsync(withdrawalToAddressRequestModel);
+        await target.AddTransactionAsync(withdrawalToAddressRequestModel, CancellationToken.None);
 
         // Assert
         AssertHttpRequestMessage(expectedRequestModel);
@@ -626,7 +626,7 @@ public class PerpetualGatewayClientTests
         var target = CreateService();
 
         // Act
-        var responseModel = await target.AddTransactionAsync(conditionalTransferRequestModel);
+        var responseModel = await target.AddTransactionAsync(conditionalTransferRequestModel, CancellationToken.None);
 
         // Assert
         responseModel.Should().BeEquivalentTo(expectedResponseModel);

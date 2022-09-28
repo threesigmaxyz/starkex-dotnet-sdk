@@ -19,8 +19,9 @@ public interface ISpotGatewayClient
     ///             href="https://starkware.co/starkex-restapi-v4/gateway.html#services.starkex.gateway.gateway.GatewayServiceVersion2.get_first_unused_tx_id" />
     ///     </para>
     /// </summary>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>The next consecutive transaction id.</returns>
-    Task<int> GetFirstUnusedTxAsync();
+    Task<int> GetFirstUnusedTxAsync(CancellationToken cancellationToken);
 
     /// <summary>
     ///     Get the StarkEx contract address.
@@ -30,8 +31,9 @@ public interface ISpotGatewayClient
     ///             href="https://starkware.co/starkex-restapi-v4/gateway.html#services.starkex.gateway.gateway.GatewayServiceVersion2.get_stark_dex_address" />
     ///     </para>
     /// </summary>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>The on-chain StarkEx contract address.</returns>
-    Task<string> GetStarkDexAddress();
+    Task<string> GetStarkDexAddress(CancellationToken cancellationToken);
 
     /// <summary>
     ///     Get the time (in seconds) that the tx id following the last tx id accepted on-chain has spent in the system.
@@ -41,8 +43,9 @@ public interface ISpotGatewayClient
     ///             href="https://starkware.co/starkex-restapi-v4/gateway.html#services.starkex.gateway.gateway.GatewayServiceVersion2.get_time_spent_by_oldest_unaccepted_tx_in_system" />
     ///     </para>
     /// </summary>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>The time spent in the system of the next tx id which was not accepted on-chain.</returns>
-    Task<int> GetTimeSpentByOldestUnacceptedTxInSystem();
+    Task<int> GetTimeSpentByOldestUnacceptedTxInSystem(CancellationToken cancellationToken);
 
     /// <summary>
     ///     Get specific a transaction’s information.
@@ -52,62 +55,17 @@ public interface ISpotGatewayClient
     ///     </para>
     /// </summary>
     /// <param name="txId">Transaction ID to query.</param>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Information about the queried transaction.</returns>
-    Task<TransactionModel> GetTransactionAsync(int txId);
+    Task<TransactionModel> GetTransactionAsync(int txId, CancellationToken cancellationToken);
 
     /// <summary>
     ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
     /// </summary>
-    /// <param name="mintRequestModel">Representation for a MintRequestModel.</param>
+    /// <typeparam name="T">Request model type.</typeparam>
+    /// <param name="requestModel">Representation for a MintRequestModel.</param>
+    /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(MintRequestModel mintRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="settlementRequestModel">Representation for a SettlementRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(SettlementRequestModel settlementRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="transferRequestModel">Representation for a TransferRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(TransferRequestModel transferRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="depositRequestModel">Representation for a DepositRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(DepositRequestModel depositRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="withdrawalRequestModel">Representation for a WithdrawalRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(WithdrawalRequestModel withdrawalRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="fullWithdrawalRequestModel">Representation for a FullWithdrawalRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(FullWithdrawalRequestModel fullWithdrawalRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="falseFullWithdrawalRequestModel">Representation for a FalseFullWithdrawalRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(FalseFullWithdrawalRequestModel falseFullWithdrawalRequestModel);
-
-    /// <summary>
-    ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
-    /// </summary>
-    /// <param name="multiTransactionRequestModel">Representation for a MultiTransactionRequestModel.</param>
-    /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync(MultiTransactionRequestModel multiTransactionRequestModel);
+    Task<ResponseModel> AddTransactionAsync<T>(T requestModel, CancellationToken cancellationToken)
+        where T : BaseRequestModel;
 }
