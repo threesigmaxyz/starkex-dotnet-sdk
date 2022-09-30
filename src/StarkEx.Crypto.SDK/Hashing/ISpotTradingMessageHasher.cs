@@ -25,13 +25,13 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string assetIdBought,
         string assetIdUsedForFees,
-        long quantizedAmountSold,
-        long quantizedAmountBought,
-        long quantizedAmountUsedForFees,
+        BigInteger quantizedAmountSold,
+        BigInteger quantizedAmountBought,
+        BigInteger quantizedAmountUsedForFees,
         int nonce,
-        int vaultIdUsedForFees,
-        int vaultIdUsedForSelling,
-        int vaultIdUsedForBuying,
+        BigInteger vaultIdUsedForFees,
+        BigInteger vaultIdUsedForSelling,
+        BigInteger vaultIdUsedForBuying,
         int expirationTimestamp);
 
     /// <summary>
@@ -54,12 +54,12 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string assetIdUsedForFees,
         string receiverStarkKey,
-        int vaultIdFromSender,
-        int vaultIdFromReceiver,
-        int vaultIdUsedForFees,
+        BigInteger vaultIdFromSender,
+        BigInteger vaultIdFromReceiver,
+        BigInteger vaultIdUsedForFees,
         int nonce,
-        long quantizedAmountToTransfer,
-        long quantizedAmountToLimitMaxFee,
+        BigInteger quantizedAmountToTransfer,
+        BigInteger quantizedAmountToLimitMaxFee,
         int expirationTimestamp);
 
     /// <summary>
@@ -85,12 +85,12 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string assetIdUsedForFees,
         string receiverStarkKey,
-        int vaultIdFromSender,
-        int vaultIdFromReceiver,
-        int vaultIdUsedForFees,
+        BigInteger vaultIdFromSender,
+        BigInteger vaultIdFromReceiver,
+        BigInteger vaultIdUsedForFees,
         int nonce,
-        long quantizedAmountToTransfer,
-        long quantizedAmountToLimitMaxFee,
+        BigInteger quantizedAmountToTransfer,
+        BigInteger quantizedAmountToLimitMaxFee,
         int expirationTimestamp,
         string fact,
         string factRegistryAddress);
@@ -117,12 +117,12 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string assetIdUsedForFees,
         string receiverStarkKey,
-        int vaultIdFromSender,
-        int vaultIdFromReceiver,
-        int vaultIdUsedForFees,
+        BigInteger vaultIdFromSender,
+        BigInteger vaultIdFromReceiver,
+        BigInteger vaultIdUsedForFees,
         int nonce,
-        long quantizedAmountToTransfer,
-        long quantizedAmountToLimitMaxFee,
+        BigInteger quantizedAmountToTransfer,
+        BigInteger quantizedAmountToLimitMaxFee,
         int expirationTimestamp,
         string condition);
 
@@ -130,31 +130,31 @@ public interface ISpotTradingMessageHasher
     BigInteger DeprecatedHashLimitOrder(
         string assetIdSold,
         string assetIdBought,
-        long quantizedAmountSold,
-        long quantizedAmountBought,
+        BigInteger quantizedAmountSold,
+        BigInteger quantizedAmountBought,
         int nonce,
-        int vaultIdUsedForSelling,
-        int vaultIdUsedForBuying,
+        BigInteger vaultIdUsedForSelling,
+        BigInteger vaultIdUsedForBuying,
         int expirationTimestamp);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     BigInteger DeprecatedHashTransferOrder(
         string assetIdSold,
         string receiverStarkKey,
-        long quantizedAmountSold,
+        BigInteger quantizedAmountSold,
         int nonce,
-        int vaultIdUsedOfReceiver,
-        int vaultIdUsedForBuying,
+        BigInteger vaultIdUsedOfReceiver,
+        BigInteger vaultIdUsedForBuying,
         int expirationTimestamp);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     BigInteger DeprecatedHashConditionalTransfer(
         string assetIdSold,
         string receiverStarkKey,
-        long quantizedAmountSold,
+        BigInteger quantizedAmountSold,
         int nonce,
-        int vaultIdUsedOfReceiver,
-        int vaultIdUsedForBuying,
+        BigInteger vaultIdUsedOfReceiver,
+        BigInteger vaultIdUsedForBuying,
         int expirationTimestamp,
         string condition);
 }
