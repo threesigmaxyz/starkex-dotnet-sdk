@@ -15,39 +15,39 @@ public class MessageHasherTests
         "5fa3383597691ea9d827a79e1a4f0f7989c35ced18ca9619de8ab97e661020",
         "774961c824a3b0fb3d2965f01471c9c7734bf8dbde659e0c08dca2ef18d56a",
         "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
-        2154686749748910716,
-        1470242115489520459,
-        7,
+        "2154686749748910716",
+        "1470242115489520459",
+        "7",
         0,
-        593128169,
-        21,
-        27,
+        "593128169",
+        "21",
+        "27",
         1580230800,
         "2a6c0382404920ebd73c1cbc319cd38974e7e255e00394345e652b0ce2cefbd")]
     [InlineData(
         "774961c824a3b0fb3d2965f01471c9c7734bf8dbde659e0c08dca2ef18d56a",
         "5fa3383597691ea9d827a79e1a4f0f7989c35ced18ca9619de8ab97e661020",
         "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
-        14702421154895,
-        21546867497489,
-        7,
+        "14702421154895",
+        "21546867497489",
+        "7",
         1,
-        593128169,
-        221,
-        227,
+        "593128169",
+        "221",
+        "227",
         1688266800,
         "1924a457d5573e6ab300b73cda341fd73a19e5f4077d805a3cb33d28ca105ee")]
     public void EncodeLimitOrderWithFees_InputsAreValid_ResultIsAsExpected(
         string assetIdSold,
         string assetIdBought,
         string assetIdUsedForFees,
-        long quantizedAmountSold,
-        long quantizedAmountBought,
-        long quantizedAmountUsedForFees,
+        string quantizedAmountSold,
+        string quantizedAmountBought,
+        string quantizedAmountUsedForFees,
         int nonce,
-        int vaultIdUsedForFees,
-        int vaultIdUsedForSelling,
-        int vaultIdUsedForBuying,
+        string vaultIdUsedForFees,
+        string vaultIdUsedForSelling,
+        string vaultIdUsedForBuying,
         int expirationTimestamp,
         string expectedHashHex)
     {
@@ -60,13 +60,13 @@ public class MessageHasherTests
             assetIdSold,
             assetIdBought,
             assetIdUsedForFees,
-            quantizedAmountSold,
-            quantizedAmountBought,
-            quantizedAmountUsedForFees,
+            new BigInteger(quantizedAmountSold),
+            new BigInteger(quantizedAmountBought),
+            new BigInteger(quantizedAmountUsedForFees),
             nonce,
-            vaultIdUsedForFees,
-            vaultIdUsedForSelling,
-            vaultIdUsedForBuying,
+            new BigInteger(vaultIdUsedForFees),
+            new BigInteger(vaultIdUsedForSelling),
+            new BigInteger(vaultIdUsedForBuying),
             expirationTimestamp);
 
         // Assert
@@ -85,12 +85,12 @@ public class MessageHasherTests
             "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
             "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
             "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
-            34,
-            21,
-            593128169,
+            new BigInteger("34"),
+            new BigInteger("21"),
+            new BigInteger("593128169"),
             1,
-            2154549703648910716,
-            7,
+            new BigInteger("2154549703648910716"),
+            new BigInteger("7"),
             1580230800);
 
         // Assert
@@ -109,12 +109,12 @@ public class MessageHasherTests
             "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
             "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
             "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
-            34,
-            21,
-            593128169,
+            new BigInteger("34"),
+            new BigInteger("21"),
+            new BigInteger("593128169"),
             1,
-            2154549703648910716,
-            7,
+            new BigInteger("2154549703648910716"),
+            new BigInteger("7"),
             1580230800,
             "318ff6d26cf3175c77668cd6434ab34d31e59f806a6a7c06d08215bccb7eaf8");
 
@@ -126,31 +126,31 @@ public class MessageHasherTests
     [InlineData(
         "5fa3383597691ea9d827a79e1a4f0f7989c35ced18ca9619de8ab97e661020",
         "774961c824a3b0fb3d2965f01471c9c7734bf8dbde659e0c08dca2ef18d56a",
-        2154686749748910716,
-        1470242115489520459,
+        "2154686749748910716",
+        "1470242115489520459",
         0,
-        21,
-        27,
+        "21",
+        "27",
         438953 * 3600,
         "397e76d1667c4454bfb83514e120583af836f8e32a516765497823eabe16a3f")]
     [InlineData(
         "774961c824a3b0fb3d2965f01471c9c7734bf8dbde659e0c08dca2ef18d56a",
         "5fa3383597691ea9d827a79e1a4f0f7989c35ced18ca9619de8ab97e661020",
-        14702421154895, // These should be the inverse of the first dataset row
-        21546867497489,
+        "14702421154895", // These should be the inverse of the first dataset row
+        "21546867497489",
         1,
-        221,
-        227,
+        "221",
+        "227",
         468963 * 3600,
         "6adb14408452ede28b89f40ca1847eca4de6a2dd6eb2c7d6dc5584f9399586")]
     public void DeprecatedHashLimitOrder_InputsAreValid_ResultIsAsExpected(
         string assetIdSold,
         string assetIdBought,
-        long quantizedAmountSold,
-        long quantizedAmountBought,
+        string quantizedAmountSold,
+        string quantizedAmountBought,
         int nonce,
-        int vaultIdUsedForSelling,
-        int vaultIdUsedForBuying,
+        string vaultIdUsedForSelling,
+        string vaultIdUsedForBuying,
         int expirationTimestamp,
         string expectedHashHex)
     {
@@ -162,11 +162,11 @@ public class MessageHasherTests
         var result = target.DeprecatedHashLimitOrder(
             assetIdSold,
             assetIdBought,
-            quantizedAmountSold,
-            quantizedAmountBought,
+            new BigInteger(quantizedAmountSold),
+            new BigInteger(quantizedAmountBought),
             nonce,
-            vaultIdUsedForSelling,
-            vaultIdUsedForBuying,
+            new BigInteger(vaultIdUsedForSelling),
+            new BigInteger(vaultIdUsedForBuying),
             expirationTimestamp);
 
         // Assert
@@ -184,10 +184,10 @@ public class MessageHasherTests
         var result = target.DeprecatedHashTransferOrder(
             "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
             "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
-            2154549703648910716,
+            new BigInteger("2154549703648910716"),
             1,
-            21,
-            34,
+            new BigInteger("21"),
+            new BigInteger("34"),
             438953 * 3600);
 
         // Assert
@@ -205,10 +205,10 @@ public class MessageHasherTests
         var result = target.DeprecatedHashConditionalTransfer(
             "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
             "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
-            2154549703648910716,
+            new BigInteger("2154549703648910716"),
             1,
-            21,
-            34,
+            new BigInteger("21"),
+            new BigInteger("34"),
             438953 * 3600,
             "318ff6d26cf3175c77668cd6434ab34d31e59f806a6a7c06d08215bccb7eaf8");
 
