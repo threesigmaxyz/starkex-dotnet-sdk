@@ -32,7 +32,7 @@ public interface ISpotTradingMessageHasher
         BigInteger vaultIdUsedForFees,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp);
+        long expirationTimestamp);
 
     /// <summary>
     ///     Encode Transfer transaction with Fees
@@ -60,7 +60,7 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp);
+        long expirationTimestamp);
 
     /// <summary>
     ///     Encode Conditional Transfer transaction with Fees
@@ -91,7 +91,7 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string fact,
         string factRegistryAddress);
 
@@ -123,7 +123,7 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string condition);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
@@ -135,7 +135,7 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp);
+        long expirationTimestamp);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     BigInteger DeprecatedHashTransferOrder(
@@ -145,7 +145,7 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp);
+        long expirationTimestamp);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     BigInteger DeprecatedHashConditionalTransfer(
@@ -155,6 +155,6 @@ public interface ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string condition);
 }
