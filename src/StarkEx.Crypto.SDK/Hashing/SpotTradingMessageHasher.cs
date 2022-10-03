@@ -25,7 +25,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger vaultIdUsedForFees,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp)
+        long expirationTimestamp)
     {
         var fourthWeight = CalculateFourthWeight(
             quantizedAmountSold,
@@ -57,7 +57,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp)
+        long expirationTimestamp)
     {
         var fourthWeight = CalculateFourthWeight(
             vaultIdFromSender,
@@ -88,7 +88,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string fact,
         string factRegistryAddress)
     {
@@ -118,7 +118,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string condition)
     {
         var fourthWeight = CalculateFourthWeight(
@@ -150,7 +150,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp)
+        long expirationTimestamp)
     {
         var thirdWeight = CalculateThirdWeight(
             OrderType.LimitOrder,
@@ -174,7 +174,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp)
+        long expirationTimestamp)
     {
         var thirdWeight = CalculateThirdWeight(
             OrderType.Transfer,
@@ -198,7 +198,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         int nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
-        int expirationTimestamp,
+        long expirationTimestamp,
         string condition) // Only accepting the condition here to validate against starkware dataset
     {
         var thirdWeight = CalculateThirdWeight(
@@ -224,7 +224,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger paramD,
         BigInteger paramE,
         int paramF,
-        int paramG)
+        long paramG)
     {
         return BigInteger.Zero
             .ShiftLeft(4).Add(new BigInteger(orderType.ToIntegerString()))
@@ -255,7 +255,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger paramB,
         BigInteger paramC,
         BigInteger paramD,
-        int paramE)
+        long paramE)
     {
         return BigInteger.Zero
             .ShiftLeft(10).Add(new BigInteger(orderType.ToIntegerString()))
@@ -270,7 +270,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         OrderType orderType,
         BigInteger paramB,
         BigInteger paramC,
-        int paramD)
+        long paramD)
     {
         return BigInteger.Zero
             .ShiftLeft(10).Add(new BigInteger(orderType.ToIntegerString()))
