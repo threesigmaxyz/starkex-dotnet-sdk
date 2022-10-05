@@ -37,7 +37,7 @@ public class PartyModel
     ///     Gets or sets the timestamp after which this request is no longer valid.
     /// </summary>
     [JsonPropertyName("expiration_timestamp")]
-    public int ExpirationTimestamp { get; set; }
+    public long ExpirationTimestamp { get; set; }
 
     /// <summary>
     ///     Gets or sets the information about the fee.
