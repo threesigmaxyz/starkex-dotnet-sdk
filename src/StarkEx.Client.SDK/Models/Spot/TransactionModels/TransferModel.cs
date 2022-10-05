@@ -23,7 +23,7 @@ public class TransferModel : TransactionModel
     ///     Gets or sets the expiration timestamp for the transfer, in hours since the Unix epoch (Unix timestamp / 3600).
     /// </summary>
     [JsonPropertyName("expiration_timestamp")]
-    public int ExpirationTimestamp { get; set; }
+    public long ExpirationTimestamp { get; set; }
 
     /// <summary>
     ///     Gets or sets the fee information given by the exchange.
