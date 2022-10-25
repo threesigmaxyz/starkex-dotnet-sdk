@@ -90,7 +90,7 @@ public static class AssetEncoder
         var assetType = GetAssetType(AssetType.Erc721, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NFT:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
-        assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId.RemoveHexPrefix(), 16));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
         var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
@@ -104,7 +104,7 @@ public static class AssetEncoder
         var assetType = GetAssetType(AssetType.Erc1155, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NON_MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
-        assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(tokenId.RemoveHexPrefix(), 16));
 
         var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
         var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
