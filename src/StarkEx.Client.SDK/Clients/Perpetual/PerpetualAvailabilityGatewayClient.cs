@@ -4,6 +4,7 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StarkEx.Client.SDK.Commons;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels;
 using StarkEx.Client.SDK.Settings;
@@ -41,6 +42,8 @@ public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayC
             MediaTypeNames.Application.Json);
 
         var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody, cancellationToken);
+
+        await ClientResponseValidation.ValidateSuccessStatusCode(response, cancellationToken);
 
         return await response.Content.ReadAsStringAsync(cancellationToken);
     }

@@ -7,6 +7,7 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StarkEx.Client.SDK.Commons;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.RequestModels;
 using StarkEx.Client.SDK.Models.Spot.ResponseModels;
@@ -119,9 +120,10 @@ public class SpotGatewayClient : ISpotGatewayClient
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
-        var response = await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody, cancellationToken);
+        var response =
+            await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await ClientResponseValidation.ValidateSuccessStatusCode(response, cancellationToken);
 
         return await JsonSerializer.DeserializeAsync<ResponseModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);

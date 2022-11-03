@@ -1,5 +1,7 @@
 ﻿namespace StarkEx.Client.SDK.Enums.Spot;
 
+//TODO change this according to the docs: https://starkware.co/starkex-restapi-v4/error_codes.html
+
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 

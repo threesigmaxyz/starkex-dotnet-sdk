@@ -6,6 +6,7 @@ using Moq;
 using Moq.Protected;
 using StarkEx.Client.SDK.Clients.Spot;
 using StarkEx.Client.SDK.Enums.Spot;
+using StarkEx.Client.SDK.Exceptions;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.RequestModels;
 using StarkEx.Client.SDK.Models.Spot.ResponseModels;
@@ -262,7 +263,8 @@ public class SpotGatewayClientTests
     }
 
     [Fact]
-    public async Task AddTransactionAsync_FalseFullWithdrawalRequestModelIsValid_PostRequestIsSentWithCorrectRequestBody()
+    public async Task
+        AddTransactionAsync_FalseFullWithdrawalRequestModelIsValid_PostRequestIsSentWithCorrectRequestBody()
     {
         // Arrange
         MockHttpClient();
@@ -363,16 +365,47 @@ public class SpotGatewayClientTests
         responseModel.Should().BeEquivalentTo(expectedResponseModel);
     }
 
+    [Fact]
+    public async Task AddTransactionAsync_MintRequestModelIsInValid_PostRequestExceptionIsThrown()
+    {
+        // Arrange
+        var expectedResponseModel = CommonStarkExApiResponses.GetExpectedInternalServerErrorResponseModel();
+        MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
+        var mintRequestModel = new MintRequestModel
+        {
+            TransactionId = 1234,
+            Transaction = new MintModel
+            {
+                Amount = 4029557120079369747,
+                StarkKey = "0x7c65c1e82e2e662f728b4fa42485e3a0a5d2f346baa9455e3e70682c2094cac",
+                TokenId = "7527a024204f7c1bd874da5e709d4713d60c8a70639eb1167b367a9c378",
+                VaultId = 1654615998,
+            },
+        };
+
+        var target = CreateService();
+
+        // Act
+        var action = async () => await target.AddTransactionAsync(mintRequestModel, CancellationToken.None);
+
+        // Assert
+        var exception = await Assert.ThrowsAsync<InternalServerErrorException>(async () => await action());
+        Assert.Equal(typeof(InternalServerErrorException), exception.GetType());
+        Assert.Equal(SpotApiCodes.SchemaValidationError, exception.Code);
+    }
+
     private static IEnumerable<object[]> Data()
     {
-        yield return new object[] { "{\"code\": \"API_FUNCTION_TEMPORARILY_DISABLED\"}", SpotApiCodes.ApiFunctionTemporarilyDisabled };
+        yield return new object[]
+            { "{\"code\": \"API_FUNCTION_TEMPORARILY_DISABLED\"}", SpotApiCodes.ApiFunctionTemporarilyDisabled };
         yield return new object[] { "{\"code\": \"BATCH_CREATION_FAILURE\"}", SpotApiCodes.BatchCreationFailure };
         yield return new object[] { "{\"code\": \"BATCH_FULL\"}", SpotApiCodes.BatchFull };
         yield return new object[] { "{\"code\": \"BATCH_NOT_READY\"}", SpotApiCodes.BatchNotReady };
         yield return new object[] { "{\"code\": \"CONFLICTING_ORDER_AMOUNTS\"}", SpotApiCodes.ConflictingOrderAmounts };
         yield return new object[] { "{\"code\": \"CONNECTION_ERROR\"}", SpotApiCodes.ConnectionError };
         yield return new object[] { "{\"code\": \"FACT_NOT_REGISTERED\"}", SpotApiCodes.FactNotRegistered };
-        yield return new object[] { "{\"code\": \"INSUFFICIENT_ON_CHAIN_BALANCE\"}", SpotApiCodes.InsufficientOnChainBalance };
+        yield return new object[]
+            { "{\"code\": \"INSUFFICIENT_ON_CHAIN_BALANCE\"}", SpotApiCodes.InsufficientOnChainBalance };
         yield return new object[] { "{\"code\": \"INVALID_BATCH_ID\"}", SpotApiCodes.InvalidBatchId };
         yield return new object[] { "{\"code\": \"INVALID_CLAIM_HASH\"}", SpotApiCodes.InvalidClaimHash };
         yield return new object[] { "{\"code\": \"INVALID_COMMITTEE_MEMBER\"}", SpotApiCodes.InvalidCommitteeMember };
@@ -384,7 +417,8 @@ public class SpotGatewayClientTests
         yield return new object[] { "{\"code\": \"INVALID_ORDER_ID\"}", SpotApiCodes.InvalidOrderId };
         yield return new object[] { "{\"code\": \"INVALID_ORDER_TYPE\"}", SpotApiCodes.InvalidOrderType };
         yield return new object[] { "{\"code\": \"INVALID_REQUEST\"}", SpotApiCodes.InvalidRequest };
-        yield return new object[] { "{\"code\": \"INVALID_REQUEST_PARAMETERS\"}", SpotApiCodes.InvalidRequestParameters };
+        yield return new object[]
+            { "{\"code\": \"INVALID_REQUEST_PARAMETERS\"}", SpotApiCodes.InvalidRequestParameters };
         yield return new object[] { "{\"code\": \"INVALID_SETTLEMENT_INFO\"}", SpotApiCodes.InvalidSettlementInfo };
         yield return new object[] { "{\"code\": \"INVALID_SETTLEMENT_RATIO\"}", SpotApiCodes.InvalidSettlementRatio };
         yield return new object[] { "{\"code\": \"INVALID_SETTLEMENT_TOKENS\"}", SpotApiCodes.InvalidSettlementTokens };
@@ -394,20 +428,25 @@ public class SpotGatewayClientTests
         yield return new object[] { "{\"code\": \"INVALID_TRANSACTION_ID\"}", SpotApiCodes.InvalidTransactionId };
         yield return new object[] { "{\"code\": \"INVALID_VAULT\"}", SpotApiCodes.InvalidVault };
         yield return new object[] { "{\"code\": \"MALFORMED_REQUEST\"}", SpotApiCodes.MalformedRequest };
-        yield return new object[] { "{\"code\": \"MIGRATED_PIPELINE_OBJECT_MISSING\"}", SpotApiCodes.MigratedPipelineObjectMissing };
+        yield return new object[]
+            { "{\"code\": \"MIGRATED_PIPELINE_OBJECT_MISSING\"}", SpotApiCodes.MigratedPipelineObjectMissing };
         yield return new object[] { "{\"code\": \"MISSING_BLOCKCHAIN_ID\"}", SpotApiCodes.MissingBlockchainId };
         yield return new object[] { "{\"code\": \"MISSING_FEE_OBJECT\"}", SpotApiCodes.MissingFeeObject };
         yield return new object[] { "{\"code\": \"ORDER_OVERDUE\"}", SpotApiCodes.OrderOverdue };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_AMOUNT\"}", SpotApiCodes.OutOfRangeAmount };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_BALANCE\"}", SpotApiCodes.OutOfRangeBalance };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_BATCH_ID\"}", SpotApiCodes.OutOfRangeBatchId };
-        yield return new object[] { "{\"code\": \"OUT_OF_RANGE_EXPIRATION_TIMESTAMP\"}", SpotApiCodes.OutOfRangeExpirationTimestamp };
+        yield return new object[]
+            { "{\"code\": \"OUT_OF_RANGE_EXPIRATION_TIMESTAMP\"}", SpotApiCodes.OutOfRangeExpirationTimestamp };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_NONCE\"}", SpotApiCodes.OutOfRangeNonce };
-        yield return new object[] { "{\"code\": \"OUT_OF_RANGE_ORACLE_PRICE_QUORUM\"}", SpotApiCodes.OutOfRangeOraclePriceQuorum };
+        yield return new object[]
+            { "{\"code\": \"OUT_OF_RANGE_ORACLE_PRICE_QUORUM\"}", SpotApiCodes.OutOfRangeOraclePriceQuorum };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_ORDER_ID\"}", SpotApiCodes.OutOfRangeOrderId };
-        yield return new object[] { "{\"code\": \"OUT_OF_RANGE_POSITIVE_AMOUNT\"}", SpotApiCodes.OutOfRangePositiveAmount };
+        yield return new object[]
+            { "{\"code\": \"OUT_OF_RANGE_POSITIVE_AMOUNT\"}", SpotApiCodes.OutOfRangePositiveAmount };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_PUBLIC_KEY\"}", SpotApiCodes.OutOfRangePublicKey };
-        yield return new object[] { "{\"code\": \"OUT_OF_RANGE_SIGNATURE_SUBFIELD\"}", SpotApiCodes.OutOfRangeSignatureSubfield };
+        yield return new object[]
+            { "{\"code\": \"OUT_OF_RANGE_SIGNATURE_SUBFIELD\"}", SpotApiCodes.OutOfRangeSignatureSubfield };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_TOKEN_ID\"}", SpotApiCodes.OutOfRangeTokenId };
         yield return new object[] { "{\"code\": \"OUT_OF_RANGE_VAULT_ID\"}", SpotApiCodes.OutOfRangeVaultId };
         yield return new object[] { "{\"code\": \"REPLACED_BEFORE\"}", SpotApiCodes.ReplacedBefore };
@@ -421,13 +460,16 @@ public class SpotGatewayClientTests
         return new SpotGatewayClient(httpClientFactory.Object, settings);
     }
 
-    private void MockHttpClient(string expectedCode = "{\"code\": \"TRANSACTION_PENDING\"}")
+    private void MockHttpClient(
+        string expectedContent = "{\"code\": \"TRANSACTION_PENDING\"}",
+        HttpStatusCode expectedHttpStatusCode = HttpStatusCode.OK)
     {
         httpMessageHandler.Protected()
-            .Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>())
-            .ReturnsAsync(new HttpResponseMessage(HttpStatusCode.OK)
+            .Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.IsAny<HttpRequestMessage>(),
+                ItExpr.IsAny<CancellationToken>())
+            .ReturnsAsync(new HttpResponseMessage(expectedHttpStatusCode)
             {
-                Content = new StringContent(expectedCode),
+                Content = new StringContent(expectedContent),
             })
             .Verifiable();
 
@@ -446,7 +488,8 @@ public class SpotGatewayClientTests
                 Times.Exactly(1),
                 ItExpr.Is<HttpRequestMessage>(x =>
                     x.RequestUri!.AbsolutePath.Equals($"/{settings.Version}/gateway/add_transaction") &&
-                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim().Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
+                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim()
+                        .Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
                 ItExpr.IsAny<CancellationToken>());
     }
 }

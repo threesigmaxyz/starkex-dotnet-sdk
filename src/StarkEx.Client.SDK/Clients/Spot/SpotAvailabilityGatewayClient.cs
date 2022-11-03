@@ -4,6 +4,7 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StarkEx.Client.SDK.Commons;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.AvailabilityGateway;
 using StarkEx.Client.SDK.Settings;
@@ -41,7 +42,7 @@ public class SpotAvailabilityGatewayClient : ISpotAvailabilityGatewayClient
             MediaTypeNames.Application.Json);
         var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await ClientResponseValidation.ValidateSuccessStatusCode(response, cancellationToken);
 
         return (await response.Content.ReadAsStringAsync(cancellationToken)).Equals("signature accepted");
     }
@@ -70,7 +71,7 @@ public class SpotAvailabilityGatewayClient : ISpotAvailabilityGatewayClient
         throw new NotImplementedException();
     }
 
-    private HttpClient CreateClient()
+   private HttpClient CreateClient()
     {
         var client = httpClientFactory.CreateClient();
 

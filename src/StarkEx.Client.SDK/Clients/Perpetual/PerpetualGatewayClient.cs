@@ -4,6 +4,7 @@ using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using StarkEx.Client.SDK.Commons;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.RequestModels;
 using StarkEx.Client.SDK.Models.Perpetual.ResponseModels;
@@ -73,7 +74,7 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
             MediaTypeNames.Application.Json);
         var response = await client.PostAsync("/add_transaction", jsonBody, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await ClientResponseValidation.ValidateSuccessStatusCode(response, cancellationToken);
 
         return await JsonSerializer.DeserializeAsync<TransactionResponseModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);

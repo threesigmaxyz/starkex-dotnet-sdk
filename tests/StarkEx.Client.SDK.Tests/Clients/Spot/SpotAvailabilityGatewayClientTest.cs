@@ -6,6 +6,8 @@ using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using StarkEx.Client.SDK.Clients.Spot;
+using StarkEx.Client.SDK.Enums.Spot;
+using StarkEx.Client.SDK.Exceptions;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.AvailabilityGateway;
 using StarkEx.Client.SDK.Settings;
@@ -37,7 +39,9 @@ public class SpotAvailabilityGatewayClientTest
     public async Task ApproveNewRootsAsync_CommitteeSignatureIsValid_PostRequestIsSentWithCorrectRequestBody()
     {
         // Arrange
-        MockHttpClient("signature accepted");
+        var expectedResponseModel = CommonStarkExApiResponses.GetExpectedInternalServerErrorResponseModel();
+        MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
+
         var committeeSignature = new CommitteeSignatureModel
         {
             BatchId = 5678,
@@ -48,13 +52,12 @@ public class SpotAvailabilityGatewayClientTest
 
         // Act
         var target = CreateService();
-        var result = await target.ApproveNewRootsAsync(committeeSignature, CancellationToken.None);
+        var action = async () => await target.ApproveNewRootsAsync(committeeSignature, CancellationToken.None);
 
         // Assert
-        result.Should().BeTrue();
-        AssertHttpRequestMessage(
-            "/availability_gateway/approve_new_roots",
-            SpotStarkExApiRequests.GetExpectedCommitteeSignatureModel());
+        var exception = await Assert.ThrowsAsync<InternalServerErrorException>(async () => await action());
+        Assert.Equal(typeof(InternalServerErrorException), exception.GetType());
+        Assert.Equal(SpotApiCodes.SchemaValidationError, exception.Code);
     }
 
     [Fact]
@@ -82,7 +85,8 @@ public class SpotAvailabilityGatewayClientTest
                 RollupVaultRoot = "DEADBEEF",
                 RollupVaults = new Dictionary<string, VaultStateModel>
                 {
-                    ["9223372037023444327"] = new() { StarkKey = "0x1234", TokenId = "0x5678", Balance = new BigInteger(9) },
+                    ["9223372037023444327"] = new()
+                        { StarkKey = "0x1234", TokenId = "0x5678", Balance = new BigInteger(9) },
                 },
                 VaultRoot = "037912467B7B3CC02DEEC7B56829E3AE494B8D96F4E79D6CA7CC766C64D1",
                 Vaults = new Dictionary<string, VaultStateModel>
@@ -110,11 +114,16 @@ public class SpotAvailabilityGatewayClientTest
         return new SpotAvailabilityGatewayClient(httpClientFactory.Object, settings);
     }
 
-    private void MockHttpClient(string response)
+    private void MockHttpClient(
+        string response,
+        HttpStatusCode expectedHttpStatusCode = HttpStatusCode.OK)
     {
         httpMessageHandler.Protected()
-            .Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>())
-            .ReturnsAsync(new HttpResponseMessage(HttpStatusCode.OK)
+            .Setup<Task<HttpResponseMessage>>(
+                "SendAsync",
+                ItExpr.IsAny<HttpRequestMessage>(),
+                ItExpr.IsAny<CancellationToken>())
+            .ReturnsAsync(new HttpResponseMessage(expectedHttpStatusCode)
             {
                 Content = new StringContent(response),
             })
@@ -135,7 +144,8 @@ public class SpotAvailabilityGatewayClientTest
                 Times.Exactly(1),
                 ItExpr.Is<HttpRequestMessage>(x =>
                     x.RequestUri!.AbsolutePath.Equals(expectedEndpoint) &&
-                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim().Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
+                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim()
+                        .Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
                 ItExpr.IsAny<CancellationToken>());
     }
 }
