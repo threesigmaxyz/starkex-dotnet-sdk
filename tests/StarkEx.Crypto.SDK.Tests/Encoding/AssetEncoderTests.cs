@@ -27,12 +27,13 @@ public class AssetEncoderTests
         string expectedAssetId)
     {
         // Arrange && Act
-        var result = AssetEncoder.GetAssetId(
-            assetType,
-            quantum: new BigInteger(quantum),
-            address: tokenAddress,
-            tokenId: tokenId,
-            mintingBlob: mintingBlob);
+        var result =
+            AssetEncoder.GetAssetId(
+                assetType,
+                quantum: new BigInteger(quantum),
+                address: tokenAddress,
+                tokenId: tokenId,
+                mintingBlob: mintingBlob);
 
         // Assert
         result.Should().Be(expectedAssetId);

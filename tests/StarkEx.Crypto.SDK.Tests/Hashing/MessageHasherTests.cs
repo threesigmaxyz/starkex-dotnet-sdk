@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using FluentAssertions;
 using Org.BouncyCastle.Math;
 using StarkEx.Crypto.SDK.Hashing;
+using StarkEx.Crypto.SDK.Models;
 using StarkEx.Crypto.SDK.Signing;
 using Xunit;
 
@@ -56,7 +57,7 @@ public class MessageHasherTests
         var expectedResult = new BigInteger(expectedHashHex, 16);
 
         // Act
-        var result = target.EncodeLimitOrderWithFees(
+        var result = target.EncodeLimitOrderWithFees(new EncodeLimitOrderWithFeesModel(
             assetIdSold,
             assetIdBought,
             assetIdUsedForFees,
@@ -67,7 +68,7 @@ public class MessageHasherTests
             new BigInteger(vaultIdUsedForFees),
             new BigInteger(vaultIdUsedForSelling),
             new BigInteger(vaultIdUsedForBuying),
-            expirationTimestamp);
+            expirationTimestamp));
 
         // Assert
         result.Should().Be(expectedResult);
@@ -81,7 +82,7 @@ public class MessageHasherTests
         var expectedResult = new BigInteger("5359c71cf08f394b7eb713532f1a0fcf1dccdf1836b10db2813e6ff6b6548db", 16);
 
         // Act
-        var result = target.EncodeTransferWithFees(
+        var result = target.EncodeTransferWithFees(new EncodeTransferWithFeesModel(
             "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
             "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
             "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
@@ -91,7 +92,7 @@ public class MessageHasherTests
             1,
             new BigInteger("2154549703648910716"),
             new BigInteger("7"),
-            1580230800);
+            1580230800));
 
         // Assert
         result.Should().Be(expectedResult);
@@ -106,16 +107,17 @@ public class MessageHasherTests
 
         // Act
         var result = target.EncodeConditionalTransferWithFees(
-            "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
-            "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
-            "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
-            new BigInteger("34"),
-            new BigInteger("21"),
-            new BigInteger("593128169"),
-            1,
-            new BigInteger("2154549703648910716"),
-            new BigInteger("7"),
-            1580230800,
+            new EncodeTransferWithFeesModel(
+                "3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4",
+                "70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9",
+                "5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020",
+                new BigInteger("34"),
+                new BigInteger("21"),
+                new BigInteger("593128169"),
+                1,
+                new BigInteger("2154549703648910716"),
+                new BigInteger("7"),
+                1580230800),
             "318ff6d26cf3175c77668cd6434ab34d31e59f806a6a7c06d08215bccb7eaf8");
 
         // Assert

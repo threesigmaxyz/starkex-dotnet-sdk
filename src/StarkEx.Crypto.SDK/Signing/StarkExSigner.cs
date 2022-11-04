@@ -7,7 +7,6 @@ using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Utilities;
 using StarkEx.Commons.SDK.Models;
 
-// TODO Assert ranges in whole solution!
 public class StarkExSigner : IStarkExSigner
 {
     private readonly StarkCurve starkCurve;
@@ -17,7 +16,6 @@ public class StarkExSigner : IStarkExSigner
         this.starkCurve = starkCurve;
     }
 
-    // TODO Segregate Models into a separate sdk to prevent circular dependencies
     public SignatureModel SignMessage(string messageHash, string privateKey)
     {
         var messageHashAsBigInteger = new BigInteger(messageHash.RemoveHexPrefix(), 16);

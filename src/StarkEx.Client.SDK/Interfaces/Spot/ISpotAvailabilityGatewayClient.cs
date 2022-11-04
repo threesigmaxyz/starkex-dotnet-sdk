@@ -14,11 +14,11 @@ public interface ISpotAvailabilityGatewayClient
     ///             href="https://starkware.co/starkex-restapi-v4/availability_gateway.html#services.starkex.availability_gateway.availability_gateway.AvailabilityGateway.approve_new_roots" />
     ///     </para>
     /// </summary>
-    /// <param name="committeeSignature">Committee signature data.</param>
+    /// <param name="committeeSignatureModel">Committee signature data.</param>
     /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Signature acknowledgement.</returns>
     Task<bool> ApproveNewRootsAsync(
-        CommitteeSignatureModel committeeSignature,
+        CommitteeSignatureModel committeeSignatureModel,
         CancellationToken cancellationToken);
 
     /// <summary>
@@ -55,5 +55,7 @@ public interface ISpotAvailabilityGatewayClient
     Task<int> GetOrderTreeHeightAsync(CancellationToken cancellationToken);
 
     // TODO Task<bool> InitDummyBatchStateUpdate(bool withRollup);
+    // Still not specified on the docs
     // TODO Task UpdateSignedBatches();
+    // Still not specified on the docs
 }

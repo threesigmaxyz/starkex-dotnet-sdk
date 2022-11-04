@@ -1,10 +1,15 @@
 ﻿namespace StarkEx.Client.SDK.Tests.Mocks.Helpers;
 
-public class CommonStarkExApiResponses
+public static class CommonStarkExApiResponses
 {
-    public static string GetExpectedInternalServerErrorResponseModel()
+    public static string GetExpectedStarkExErrorExceptionResponseModel()
     {
-        return ReadJsonFile($"Mocks/Json/Common/InternalServerErrorResponseMock.json");
+        return ReadJsonFile("Mocks/Json/Common/StarkExErrorExceptionResponseMock.json");
+    }
+
+    public static string GetExpectedStarkExErrorExceptionComplexProblemsResponseModel()
+    {
+        return ReadJsonFile("Mocks/Json/Common/StarkExErrorExceptionProblemsResponseMock.json");
     }
 
     private static string ReadJsonFile(string path)

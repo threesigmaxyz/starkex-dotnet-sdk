@@ -6,8 +6,6 @@ using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using StarkEx.Client.SDK.Clients.Spot;
-using StarkEx.Client.SDK.Enums.Spot;
-using StarkEx.Client.SDK.Exceptions;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.AvailabilityGateway;
 using StarkEx.Client.SDK.Settings;
@@ -33,31 +31,6 @@ public class SpotAvailabilityGatewayClientTest
             BaseAddress = new Uri(BaseAddress),
             Version = Version,
         };
-    }
-
-    [Fact]
-    public async Task ApproveNewRootsAsync_CommitteeSignatureIsValid_PostRequestIsSentWithCorrectRequestBody()
-    {
-        // Arrange
-        var expectedResponseModel = CommonStarkExApiResponses.GetExpectedInternalServerErrorResponseModel();
-        MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
-
-        var committeeSignature = new CommitteeSignatureModel
-        {
-            BatchId = 5678,
-            Signature = "0x1256a4d7d152a0aafa2b75eb06eddbd0abb5621572fd4292",
-            MemberKey = "0xb2849CBc25853685bfc4815Ab51d28E810606A48",
-            ClaimHash = "0x476a9f237758279caadaa21ecadd0126fe7ae99eb5c41b7cfdf1f42fd63db577",
-        };
-
-        // Act
-        var target = CreateService();
-        var action = async () => await target.ApproveNewRootsAsync(committeeSignature, CancellationToken.None);
-
-        // Assert
-        var exception = await Assert.ThrowsAsync<InternalServerErrorException>(async () => await action());
-        Assert.Equal(typeof(InternalServerErrorException), exception.GetType());
-        Assert.Equal(SpotApiCodes.SchemaValidationError, exception.Code);
     }
 
     [Fact]
@@ -106,7 +79,8 @@ public class SpotAvailabilityGatewayClientTest
                 },
             },
         };
-        result.Should().BeEquivalentTo(expectedResult); // TODO is this correct?
+
+        result.Should().BeEquivalentTo(expectedResult);
     }
 
     private ISpotAvailabilityGatewayClient CreateService()

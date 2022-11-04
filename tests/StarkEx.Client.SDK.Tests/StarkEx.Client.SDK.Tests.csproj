@@ -127,8 +127,11 @@
         <None Update="Mocks\Json\Spot\Responses\BatchInfoV2ResponseMock.json">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
-        <None Update="Mocks\Json\Common\InternalServerErrorResponseMock.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <None Update="Mocks\Json\Common\StarkExErrorExceptionResponseMock.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Update="Mocks\Json\Common\StarkExErrorExceptionProblemsResponseMock.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 

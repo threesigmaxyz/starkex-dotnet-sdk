@@ -3,25 +3,15 @@
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using StarkEx.Client.SDK.Commons;
+using StarkEx.Client.SDK.Extensions;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.RequestModels;
 using StarkEx.Client.SDK.Models.Perpetual.ResponseModels;
 using StarkEx.Client.SDK.Settings;
 
-/// <inheritdoc />
-public class PerpetualGatewayClient : IPerpetualGatewayClient
+/// <inheritdoc cref="StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient" />
+public class PerpetualGatewayClient : BaseClient, IPerpetualGatewayClient
 {
-    private readonly IHttpClientFactory httpClientFactory;
-
-    private readonly JsonSerializerOptions requestSerializerOptions = new()
-    {
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
-    private readonly StarkExApiSettings settings;
-
     public PerpetualGatewayClient(
         IHttpClientFactory httpClientFactory,
         StarkExApiSettings settings)
@@ -38,7 +28,7 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
         const string endpoint = "/get_first_unused_tx_id";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
@@ -74,7 +64,7 @@ public class PerpetualGatewayClient : IPerpetualGatewayClient
             MediaTypeNames.Application.Json);
         var response = await client.PostAsync("/add_transaction", jsonBody, cancellationToken);
 
-        await ClientResponseValidation.ValidateSuccessStatusCode(response, cancellationToken);
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return await JsonSerializer.DeserializeAsync<TransactionResponseModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);

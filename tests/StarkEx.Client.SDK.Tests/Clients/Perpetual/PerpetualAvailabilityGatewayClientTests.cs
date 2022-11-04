@@ -5,12 +5,9 @@ using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using StarkEx.Client.SDK.Clients.Perpetual;
-using StarkEx.Client.SDK.Enums.Spot;
-using StarkEx.Client.SDK.Exceptions;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels;
 using StarkEx.Client.SDK.Settings;
-using StarkEx.Client.SDK.Tests.Mocks.Helpers;
 using StarkEx.Client.SDK.Tests.Mocks.Helpers.Perpetual;
 using Xunit;
 
@@ -56,33 +53,6 @@ public class PerpetualAvailabilityGatewayClientTests
 
         // Assert
         response.Should().Be(expectedResponse);
-    }
-
-    [Fact]
-    public async Task ApproveNewRootsAsync_RequestIsInValid_PostRequestExceptionIsThrown()
-    {
-        // Arrange
-        var expectedResponseModel = CommonStarkExApiResponses.GetExpectedInternalServerErrorResponseModel();
-        MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
-
-        var committeeSignatureModel = new CommitteeSignatureModel
-        {
-            BatchId = 5678,
-            Signature = "1256a4d7d152a0aafa2b75eb06eddbd0abb5621572fd4292",
-            MemberKey = "b2849CBc25853685bfc4815Ab51d28E810606A48",
-            ClaimHash = "476a9f237758279caadaa21ecadd0126fe7ae99eb5c41b7cfdf1f42fd63db577",
-        };
-
-        var target = CreateService();
-
-        // Act
-        var action = async () =>
-            await target.ApproveNewRootsAsync(committeeSignatureModel, CancellationToken.None);
-
-        // Assert
-        var exception = await Assert.ThrowsAsync<InternalServerErrorException>(async () => await action());
-        Assert.Equal(typeof(InternalServerErrorException), exception.GetType());
-        Assert.Equal(SpotApiCodes.SchemaValidationError, exception.Code);
     }
 
     [Fact]
@@ -147,7 +117,7 @@ public class PerpetualAvailabilityGatewayClientTests
 
         // Act
         var target = CreateService();
-        var response = await target.GetBatchData(batchId, CancellationToken.None);
+        var response = await target.GetBatchDataAsync(batchId, CancellationToken.None);
 
         // Assert
         httpMessageHandler.Protected()

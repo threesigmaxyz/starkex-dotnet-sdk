@@ -1,6 +1,6 @@
-﻿#nullable enable
+﻿namespace StarkEx.Client.SDK.Models.Spot.TransactionModels;
 
-namespace StarkEx.Client.SDK.Models.Spot.TransactionModels;
+#nullable enable
 
 using System.Numerics;
 using System.Text.Json.Serialization;
@@ -11,7 +11,7 @@ using StarkEx.Commons.SDK.Models;
 /// <summary>
 ///     Representation for the party model.
 /// </summary>
-public class PartyModel
+public class OrderRequestModel
 {
     /// <summary>
     ///     Gets or sets the amount to buy.
@@ -75,8 +75,6 @@ public class PartyModel
     /// </summary>
     [JsonPropertyName("token_sell")]
     public string TokenSell { get; set; } = null!;
-
-    // TODO Should this be included? This prop isn't listed in the OrderRequestModel in https://starkware.co/starkex-restapi-v4/common.html#common.objects.api.transaction_requests.OrderRequest
 
     /// <summary>
     ///     Gets or sets the Transaction Type.

@@ -4,8 +4,17 @@ using System.Text.Json.Serialization;
 using StarkEx.Client.SDK.Enums.Spot;
 
 [Serializable]
-public class InternalServerErrorException : Exception
+public class StarkExErrorException : Exception
 {
+    public StarkExErrorException()
+    {
+    }
+
+    public StarkExErrorException(string body)
+    {
+        RawBody = body;
+    }
+
     [JsonPropertyName("code")]
     public SpotApiCodes Code { get; set; }
 
@@ -14,4 +23,6 @@ public class InternalServerErrorException : Exception
 
     [JsonPropertyName("problems")]
     public object Problems { get; set; }
+
+    public string RawBody { get; set; }
 }
