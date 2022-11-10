@@ -7,6 +7,5 @@ using StarkEx.Client.SDK.JSON.Converter;
 public abstract class BaseRequestModel
 {
     [JsonPropertyName("tx_id")]
-    [JsonConverter(typeof(BigIntegerConverter))]
-    public BigInteger TransactionId { get; set; }
+    public long TransactionId { get; set; }
 }
