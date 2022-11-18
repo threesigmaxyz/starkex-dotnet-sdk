@@ -34,30 +34,6 @@ public class SpotAvailabilityGatewayClientTest
     }
 
     [Fact]
-    public async Task ApproveNewRootsAsync_CommitteeSignatureIsValid_PostRequestIsSentWithCorrectRequestBody()
-    {
-        // Arrange
-        MockHttpClient("signature accepted");
-        var committeeSignature = new CommitteeSignatureModel
-        {
-            BatchId = 5678,
-            Signature = "0x1256a4d7d152a0aafa2b75eb06eddbd0abb5621572fd4292",
-            MemberKey = "0xb2849CBc25853685bfc4815Ab51d28E810606A48",
-            ClaimHash = "0x476a9f237758279caadaa21ecadd0126fe7ae99eb5c41b7cfdf1f42fd63db577",
-        };
-
-        // Act
-        var target = CreateService();
-        var result = await target.ApproveNewRootsAsync(committeeSignature, CancellationToken.None);
-
-        // Assert
-        result.Should().BeTrue();
-        AssertHttpRequestMessage(
-            "/availability_gateway/approve_new_roots",
-            SpotStarkExApiRequests.GetExpectedCommitteeSignatureModel());
-    }
-
-    [Fact]
     public async Task GetBatchDataAsync_RequestIsValid_ResponseIsCorrectlyParsed()
     {
         // Arrange
@@ -82,7 +58,8 @@ public class SpotAvailabilityGatewayClientTest
                 RollupVaultRoot = "DEADBEEF",
                 RollupVaults = new Dictionary<string, VaultStateModel>
                 {
-                    ["9223372037023444327"] = new() { StarkKey = "0x1234", TokenId = "0x5678", Balance = new BigInteger(9) },
+                    ["9223372037023444327"] = new()
+                        { StarkKey = "0x1234", TokenId = "0x5678", Balance = new BigInteger(9) },
                 },
                 VaultRoot = "037912467B7B3CC02DEEC7B56829E3AE494B8D96F4E79D6CA7CC766C64D1",
                 Vaults = new Dictionary<string, VaultStateModel>
@@ -102,7 +79,8 @@ public class SpotAvailabilityGatewayClientTest
                 },
             },
         };
-        result.Should().BeEquivalentTo(expectedResult); // TODO is this correct?
+
+        result.Should().BeEquivalentTo(expectedResult);
     }
 
     private ISpotAvailabilityGatewayClient CreateService()
@@ -110,11 +88,16 @@ public class SpotAvailabilityGatewayClientTest
         return new SpotAvailabilityGatewayClient(httpClientFactory.Object, settings);
     }
 
-    private void MockHttpClient(string response)
+    private void MockHttpClient(
+        string response,
+        HttpStatusCode expectedHttpStatusCode = HttpStatusCode.OK)
     {
         httpMessageHandler.Protected()
-            .Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>())
-            .ReturnsAsync(new HttpResponseMessage(HttpStatusCode.OK)
+            .Setup<Task<HttpResponseMessage>>(
+                "SendAsync",
+                ItExpr.IsAny<HttpRequestMessage>(),
+                ItExpr.IsAny<CancellationToken>())
+            .ReturnsAsync(new HttpResponseMessage(expectedHttpStatusCode)
             {
                 Content = new StringContent(response),
             })
@@ -135,7 +118,8 @@ public class SpotAvailabilityGatewayClientTest
                 Times.Exactly(1),
                 ItExpr.Is<HttpRequestMessage>(x =>
                     x.RequestUri!.AbsolutePath.Equals(expectedEndpoint) &&
-                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim().Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
+                    x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim()
+                        .Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
                 ItExpr.IsAny<CancellationToken>());
     }
 }

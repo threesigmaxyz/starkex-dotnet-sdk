@@ -17,8 +17,6 @@ public class TransferModel : TransactionModel
     [JsonConverter(typeof(BigIntegerAsTextConverter))]
     public BigInteger Amount { get; set; }
 
-    // TODO Accept this as DateTime and use an epoch converter
-
     /// <summary>
     ///     Gets or sets the expiration timestamp for the transfer, in hours since the Unix epoch (Unix timestamp / 3600).
     /// </summary>

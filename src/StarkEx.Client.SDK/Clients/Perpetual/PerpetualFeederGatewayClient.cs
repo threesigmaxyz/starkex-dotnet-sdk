@@ -5,12 +5,9 @@ using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.ResponseModels;
 using StarkEx.Client.SDK.Settings;
 
-/// <inheritdoc />
-public class PerpetualFeederGatewayClient : IPerpetualFeederGatewayClient
+/// <inheritdoc cref="StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient" />
+public class PerpetualFeederGatewayClient : BaseClient, IPerpetualFeederGatewayClient
 {
-    private readonly IHttpClientFactory httpClientFactory;
-    private readonly StarkExApiSettings settings;
-
     public PerpetualFeederGatewayClient(
         IHttpClientFactory httpClientFactory,
         StarkExApiSettings settings)

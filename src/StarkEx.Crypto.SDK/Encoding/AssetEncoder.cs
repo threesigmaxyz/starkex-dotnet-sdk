@@ -5,6 +5,7 @@ using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Util;
 using Org.BouncyCastle.Math;
 using StarkEx.Crypto.SDK.Enums;
+using StarkEx.Crypto.SDK.Guards;
 
 // Based on https://docs.starkware.co/starkex-v4/starkex-deep-dive/starkex-specific-concepts#assetinfo-assettype-and-assetid
 public static class AssetEncoder
@@ -42,6 +43,8 @@ public static class AssetEncoder
 
     public static string GetAssetType(AssetType assetType, BigInteger quantum, string address = null)
     {
+        Guards.NotNull(quantum);
+
         var assetInfo = GetAssetInfo(assetType, address);
         assetInfo = assetInfo
             .ShiftLeft(256)
@@ -70,6 +73,9 @@ public static class AssetEncoder
 
     private static BigInteger GetErcAssetInfo(string selector, string address)
     {
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotInvalidHex(address, nameof(address));
+
         return new BigInteger(selector.RemoveHexPrefix(), 16)
             .ShiftLeft(256)
             .Add(new BigInteger(address.RemoveHexPrefix(), 16));
@@ -77,16 +83,26 @@ public static class AssetEncoder
 
     private static string GetEthAssetId(BigInteger quantum)
     {
+        Guards.NotNull(quantum);
+
         return GetAssetType(AssetType.Eth, quantum);
     }
 
     private static string GetErc20AssetId(BigInteger quantum, string address)
     {
+        Guards.NotNull(quantum);
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotInvalidHex(address, nameof(address));
+
         return GetAssetType(AssetType.Erc20, quantum, address);
     }
 
     private static string GetErc721AssetId(string tokenId, string address)
     {
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotNullOrEmptyOrWhitespace(tokenId);
+        Guards.NotInvalidHex(address, nameof(address));
+
         var assetType = GetAssetType(AssetType.Erc721, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NFT:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
@@ -101,6 +117,10 @@ public static class AssetEncoder
 
     private static string GetErc1155AssetId(string tokenId, string address)
     {
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotNullOrEmptyOrWhitespace(tokenId);
+        Guards.NotInvalidHex(address, nameof(address));
+
         var assetType = GetAssetType(AssetType.Erc1155, BigInteger.One, address);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("NON_MINTABLE:"));
         assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
@@ -115,6 +135,10 @@ public static class AssetEncoder
 
     private static string GetMintableErc721AssetId(string mintingBlob, string address)
     {
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotNullOrEmptyOrWhitespace(mintingBlob);
+        Guards.NotInvalidHex(address, nameof(address));
+
         var assetType = GetAssetType(AssetType.MintableErc721, BigInteger.One, address);
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));
@@ -132,6 +156,12 @@ public static class AssetEncoder
 
     private static string GetMintableErc20AssetId(string mintingBlob, string address, BigInteger quantum)
     {
+        Guards.NotNull(quantum);
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotInvalidHex(address, nameof(address));
+        Guards.NotNullOrEmptyOrWhitespace(mintingBlob);
+        Guards.NotInvalidHex(mintingBlob, nameof(mintingBlob));
+
         var assetType = GetAssetType(AssetType.MintableErc20, quantum, address);
         var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
         var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));

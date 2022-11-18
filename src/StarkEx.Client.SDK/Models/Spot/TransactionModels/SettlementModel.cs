@@ -5,10 +5,10 @@ using System.Text.Json.Serialization;
 public class SettlementModel : TransactionModel
 {
     [JsonPropertyName("party_a_order")]
-    public PartyModel PartyA { get; set; }
+    public OrderRequestModel PartyA { get; set; }
 
     [JsonPropertyName("party_b_order")]
-    public PartyModel PartyB { get; set; }
+    public OrderRequestModel PartyB { get; set; }
 
     [JsonPropertyName("settlement_info")]
     public SettlementInfoModel SettlementInfo { get; set; }

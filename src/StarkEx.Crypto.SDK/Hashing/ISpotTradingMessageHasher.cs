@@ -1,130 +1,48 @@
 ﻿namespace StarkEx.Crypto.SDK.Hashing;
 
 using Org.BouncyCastle.Math;
+using StarkEx.Crypto.SDK.Models;
 
 public interface ISpotTradingMessageHasher
 {
     /// <summary>
-    ///     Encode Limit Order with Fees
+    ///     Encode Limit Order with Fees.
     /// </summary>
-    /// <param name="assetIdSold">Id of the Asset sold.</param>
-    /// <param name="assetIdBought">Id of the Asset bought.</param>
-    /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
-    /// <param name="quantizedAmountSold">Quantized amount of the asset sold.</param>
-    /// <param name="quantizedAmountBought">Quantized amount of the asset bought.</param>
-    /// <param name="quantizedAmountUsedForFees">Quantized amount of the asset used to pay for fees.</param>
-    /// <param name="nonce">Nonce used.</param>
-    /// <param name="vaultIdUsedForFees">Id of the vault used for fees.</param>
-    /// <param name="vaultIdUsedForSelling">Id of the vault used for selling.</param>
-    /// <param name="vaultIdUsedForBuying">Id of the vault used for buying.</param>
-    /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch</param>
+    /// <param name="encodeLimitOrderWithFeesModel"> Model to encode limit order with fees.</param>
     /// <returns>
-    ///     Hash number
+    ///     Hash number.
     /// </returns>
-    BigInteger EncodeLimitOrderWithFees(
-        string assetIdSold,
-        string assetIdBought,
-        string assetIdUsedForFees,
-        BigInteger quantizedAmountSold,
-        BigInteger quantizedAmountBought,
-        BigInteger quantizedAmountUsedForFees,
-        int nonce,
-        BigInteger vaultIdUsedForFees,
-        BigInteger vaultIdUsedForSelling,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp);
+    BigInteger EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel encodeLimitOrderWithFeesModel);
 
     /// <summary>
-    ///     Encode Transfer transaction with Fees
+    ///     Encode Transfer transaction with Fees.
     /// </summary>
-    /// <param name="assetIdSold">Id of the Asset sold.</param>
-    /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
-    /// <param name="receiverStarkKey">Stark Key of the transfer receiver.</param>
-    /// <param name="vaultIdFromSender">Id of the vault used from the transfer sender.</param>
-    /// <param name="vaultIdFromReceiver">Id of the vault used from the transfer receiver.</param>
-    /// <param name="vaultIdUsedForFees">Id of the vault used to pay the fees.</param>
-    /// <param name="nonce">Nonce used.</param>
-    /// <param name="quantizedAmountToTransfer">Quantized amount to transfer.</param>
-    /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
-    /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
+    /// <param name="encodeTransferWithFeesModel"> Model to encode transfer with fees.</param>
     /// <returns>
-    ///     Hash number
+    ///     Hash number.
     /// </returns>
-    BigInteger EncodeTransferWithFees(
-        string assetIdSold,
-        string assetIdUsedForFees,
-        string receiverStarkKey,
-        BigInteger vaultIdFromSender,
-        BigInteger vaultIdFromReceiver,
-        BigInteger vaultIdUsedForFees,
-        int nonce,
-        BigInteger quantizedAmountToTransfer,
-        BigInteger quantizedAmountToLimitMaxFee,
-        long expirationTimestamp);
-
-    /// <summary>
-    ///     Encode Conditional Transfer transaction with Fees
-    /// </summary>
-    /// <param name="assetIdSold">Id of the Asset sold.</param>
-    /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
-    /// <param name="receiverStarkKey">Stark Key of the transfer receiver.</param>
-    /// <param name="vaultIdFromSender">Id of the vault used from the transfer sender.</param>
-    /// <param name="vaultIdFromReceiver">Id of the vault used from the transfer receiver.</param>
-    /// <param name="vaultIdUsedForFees">Id of the vault used to pay the fees.</param>
-    /// <param name="nonce">Nonce used.</param>
-    /// <param name="quantizedAmountToTransfer">Quantized amount to transfer.</param>
-    /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
-    /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
-    /// <param name="fact">Transfer condition hex encoded.</param>
-    /// //
-    /// <param name="factRegistryAddress">Contract address to validate the fact hex encoded.</param>
-    /// <returns>
-    ///     Hash number
-    /// </returns>
-    BigInteger EncodeConditionalTransferWithFees(
-        string assetIdSold,
-        string assetIdUsedForFees,
-        string receiverStarkKey,
-        BigInteger vaultIdFromSender,
-        BigInteger vaultIdFromReceiver,
-        BigInteger vaultIdUsedForFees,
-        int nonce,
-        BigInteger quantizedAmountToTransfer,
-        BigInteger quantizedAmountToLimitMaxFee,
-        long expirationTimestamp,
-        string fact,
-        string factRegistryAddress);
+    BigInteger EncodeTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel);
 
     /// <summary>
     ///     Encode Conditional Transfer transaction with Fees.
     /// </summary>
-    /// <param name="assetIdSold">Id of the Asset sold.</param>
-    /// <param name="assetIdUsedForFees">Id of the Asset used to pay for fees.</param>
-    /// <param name="receiverStarkKey">Stark Key of the transfer receiver.</param>
-    /// <param name="vaultIdFromSender">Id of the vault used from the transfer sender.</param>
-    /// <param name="vaultIdFromReceiver">Id of the vault used from the transfer receiver.</param>
-    /// <param name="vaultIdUsedForFees">Id of the vault used to pay the fees.</param>
-    /// <param name="nonce">Nonce used.</param>
-    /// <param name="quantizedAmountToTransfer">Quantized amount to transfer.</param>
-    /// <param name="quantizedAmountToLimitMaxFee">Quantized amount to limit max fee.</param>
-    /// <param name="expirationTimestamp">Expiration timestamp in seconds since the Unix epoch.</param>
+    /// <param name="encodeTransferWithFeesModel"> Model to encode transfer with fees.</param>
+    /// <returns>
+    ///     Hash number.
+    /// </returns>
+    BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel);
+
+     /// <summary>
+    ///     Encode Conditional Transfer transaction with Fees.
+    /// </summary>
+    /// <param name="encodeTransferWithFeesModel"> Model to encode transfer with fees.</param>
     /// <param name="condition">Perdersen hash of the contract address and fact.</param>
-    /// //
     /// <returns>
     ///     Hash number.
     /// </returns>
     public BigInteger EncodeConditionalTransferWithFees(
-        string assetIdSold,
-        string assetIdUsedForFees,
-        string receiverStarkKey,
-        BigInteger vaultIdFromSender,
-        BigInteger vaultIdFromReceiver,
-        BigInteger vaultIdUsedForFees,
-        int nonce,
-        BigInteger quantizedAmountToTransfer,
-        BigInteger quantizedAmountToLimitMaxFee,
-        long expirationTimestamp,
-        string condition);
+         EncodeTransferWithFeesModel encodeTransferWithFeesModel,
+         string condition);
 
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     BigInteger DeprecatedHashLimitOrder(

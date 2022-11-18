@@ -3,23 +3,13 @@
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels;
 using StarkEx.Client.SDK.Settings;
 
-/// <inheritdoc />
-public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayClient
+/// <inheritdoc cref="StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient" />
+public class PerpetualAvailabilityGatewayClient : BaseClient, IPerpetualAvailabilityGatewayClient
 {
-    private readonly IHttpClientFactory httpClientFactory;
-
-    private readonly JsonSerializerOptions requestSerializerOptions = new()
-    {
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
-    private readonly StarkExApiSettings settings;
-
     public PerpetualAvailabilityGatewayClient(
         IHttpClientFactory httpClientFactory,
         StarkExApiSettings settings)
@@ -41,12 +31,13 @@ public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayC
             MediaTypeNames.Application.Json);
 
         var response = await client.PostAsync("/availability_gateway/approve_new_roots", jsonBody, cancellationToken);
+        response.EnsureSuccessStatusCode();
 
         return await response.Content.ReadAsStringAsync(cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task<PerpetualBatchModel> GetBatchData(
+    public async Task<PerpetualBatchModel> GetBatchDataAsync(
         int batchId,
         CancellationToken cancellationToken)
     {
@@ -56,6 +47,7 @@ public class PerpetualAvailabilityGatewayClient : IPerpetualAvailabilityGatewayC
         var query = $"?batch_id={batchId}";
 
         var response = await client.GetAsync(path + query, cancellationToken);
+        response.EnsureSuccessStatusCode();
 
         return await JsonSerializer.DeserializeAsync<PerpetualBatchModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);

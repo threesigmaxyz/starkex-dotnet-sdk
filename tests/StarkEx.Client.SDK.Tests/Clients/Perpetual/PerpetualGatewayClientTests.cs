@@ -2,11 +2,14 @@
 
 using System.Net;
 using System.Numerics;
+using System.Text.Json;
 using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using StarkEx.Client.SDK.Clients.Perpetual;
 using StarkEx.Client.SDK.Enums.Perpetual;
+using StarkEx.Client.SDK.Enums.Spot;
+using StarkEx.Client.SDK.Exceptions;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Models.Perpetual.RequestModels;
 using StarkEx.Client.SDK.Models.Perpetual.ResponseModels;
@@ -62,8 +65,7 @@ public class PerpetualGatewayClientTests
     }
 
     [Fact]
-    public async Task
-        AddTransactionAsync_ConditionalTransferRequestModelIsValid_PostRequestIsSentWithCorrectRequestBody()
+    public async Task AddTransactionAsync_ConditionalTransferRequestModelIsValid_PostRequestIsSentWithCorrectRequestBody()
     {
         // Arrange
         MockHttpClient();
@@ -191,6 +193,48 @@ public class PerpetualGatewayClientTests
     }
 
     [Fact]
+    public async Task AddTransactionAsync_ConditionalTransferRequestModelIsInvalid_PostRequestExceptionIsThrown()
+    {
+        // Arrange
+        var expectedResponseModel = CommonStarkExApiResponses.GetExpectedStarkExErrorExceptionResponseModel();
+        MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
+
+        var conditionalTransferRequestModel = new ConditionalTransferRequestModel
+        {
+            TransactionId = 1234,
+            Transaction = new ConditionalTransferModel
+            {
+                Amount = 7758176404715800194,
+                AssetId = "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
+                ExpirationTimestamp = 2404381470,
+                Fact = "6461646162616461626164616461626164616261646164616261646162616461",
+                FactRegistryAddress = "0x599f9eC17474c2E25C9859ee34A6A02fE9738083",
+                Nonce = 2195908194,
+                ReceiverPositionId = 6091063652223914538,
+                ReceiverPublicKey = "259f432e6f4590b9a164106cf6a659eb4862b21fb97d43588561712e8e5216b",
+                SenderPositionId = 9309829342914403545,
+                SenderPublicKey = "0x243343249edf36010f231a63f3e102c5510f6dfcb270990e15a6317c747e65",
+                Signature = new SignatureModel
+                {
+                    R = "0x8a46893fa614eba8f681843c484abe055e03462235810d3514c2266a033a89",
+                    S = "0x6350cf237ca1df18700ccb72ebd74759c7249c32c92e578d684455a631e9a3e",
+                },
+            },
+        };
+
+        var target = CreateService();
+
+        // Act
+        var action = async () =>
+            await target.AddTransactionAsync(conditionalTransferRequestModel, CancellationToken.None);
+
+        // Assert
+        var exception = await Assert.ThrowsAsync<StarkExErrorException>(async () => await action());
+        Assert.Equal(typeof(StarkExErrorException), exception.GetType());
+        Assert.Equal(SpotApiCodes.SchemaValidationError, exception.Code);
+    }
+
+    [Fact]
     public async Task AddTransactionAsync_ForcedWithdrawalRequestModelIsValid_PostRequestIsSentWithCorrectRequestBody()
     {
         // Arrange
@@ -266,7 +310,7 @@ public class PerpetualGatewayClientTests
                 LiquidatedPositionId = 15419682365516802845,
                 LiquidatorOrder = new OrderModel
                 {
-                    AmountCollateral = 8187132600743567510, // TODO BigInteger is not big enough to hold value from docs
+                    AmountCollateral = BigInteger.Parse("8187132600743567510"),
                     AmountFee = 11081939229867047606,
                     AmountSynthetic = 16558026091473266411,
                     AssetIdCollateral = "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
@@ -688,7 +732,9 @@ public class PerpetualGatewayClientTests
         return new PerpetualGatewayClient(httpClientFactory.Object, settings);
     }
 
-    private void MockHttpClient(string expectedCode = "{\"code\": \"TRANSACTION_RECEIVED\"}")
+    private void MockHttpClient(
+        string expectedCode = "{\"code\": \"TRANSACTION_RECEIVED\"}",
+        HttpStatusCode expectedHttpStatusCode = HttpStatusCode.OK)
     {
         httpMessageHandler.Protected()
             .Setup<Task<HttpResponseMessage>>(
@@ -696,7 +742,7 @@ public class PerpetualGatewayClientTests
                 ItExpr.IsAny<HttpRequestMessage>(),
                 ItExpr.IsAny<CancellationToken>())
             .ReturnsAsync(
-                new HttpResponseMessage(HttpStatusCode.OK)
+                new HttpResponseMessage(expectedHttpStatusCode)
                 {
                     Content = new StringContent(expectedCode),
                 })
@@ -718,7 +764,8 @@ public class PerpetualGatewayClientTests
                 ItExpr.Is<HttpRequestMessage>(
                     x =>
                         x.RequestUri!.AbsolutePath.Equals("/add_transaction") &&
-                        x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim().Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
+                        x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim()
+                            .Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
                 ItExpr.IsAny<CancellationToken>());
     }
 }

@@ -117,7 +117,7 @@ public class PerpetualAvailabilityGatewayClientTests
 
         // Act
         var target = CreateService();
-        var response = await target.GetBatchData(batchId, CancellationToken.None);
+        var response = await target.GetBatchDataAsync(batchId, CancellationToken.None);
 
         // Assert
         httpMessageHandler.Protected()
@@ -136,14 +136,16 @@ public class PerpetualAvailabilityGatewayClientTests
         return new PerpetualAvailabilityGatewayClient(httpClientFactory.Object, settings);
     }
 
-    private void MockHttpClient(string expectedCode)
+    private void MockHttpClient(
+        string expectedCode,
+        HttpStatusCode expectedHttpStatusCode = HttpStatusCode.OK)
     {
         httpMessageHandler.Protected()
             .Setup<Task<HttpResponseMessage>>(
                 "SendAsync",
                 ItExpr.IsAny<HttpRequestMessage>(),
                 ItExpr.IsAny<CancellationToken>())
-            .ReturnsAsync(new HttpResponseMessage(HttpStatusCode.OK)
+            .ReturnsAsync(new HttpResponseMessage(expectedHttpStatusCode)
             {
                 Content = new StringContent(expectedCode),
             })

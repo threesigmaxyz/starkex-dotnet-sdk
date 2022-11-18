@@ -1,0 +1,9 @@
+﻿{
+    "code": "SCHEMA_VALIDATION_ERROR",
+    "message": "Schema validation failed",
+    "problems": {
+        "tx": {
+            "token_id": "Expected hex string, got: \"7527a024204f7c1bd874da5e709d4713d60c8a70639eb1167b367a9c378\"."
+        }
+    }
+}

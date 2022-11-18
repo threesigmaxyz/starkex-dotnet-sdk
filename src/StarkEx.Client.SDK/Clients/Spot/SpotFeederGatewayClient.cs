@@ -7,12 +7,9 @@ using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.FeederGatewayModels;
 using StarkEx.Client.SDK.Settings;
 
-/// <inheritdoc />
-public class SpotFeederGatewayClient : ISpotFeederGatewayClient
+/// <inheritdoc cref="StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient" />
+public class SpotFeederGatewayClient : BaseClient, ISpotFeederGatewayClient
 {
-    private readonly IHttpClientFactory httpClientFactory;
-    private readonly StarkExApiSettings settings;
-
     public SpotFeederGatewayClient(
         IHttpClientFactory httpClientFactory,
         StarkExApiSettings settings)

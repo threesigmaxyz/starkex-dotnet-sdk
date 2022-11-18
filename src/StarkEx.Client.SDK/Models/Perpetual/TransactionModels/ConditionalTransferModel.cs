@@ -35,7 +35,7 @@ public class ConditionalTransferModel : TransactionModel
     ///     Gets or sets the fact that should appear in the fact registry as a condition to the transfer. A 32 bytes blob.
     /// </summary>
     [JsonPropertyName("fact")]
-    public string Fact { get; set; } // TODO this should be bytes[], but values from documentation are too big to be converted from int to bytes[]
+    public string Fact { get; set; }
 
     /// <summary>
     ///     Gets or sets the address of the fact registry smart contract. Should be checksum according to

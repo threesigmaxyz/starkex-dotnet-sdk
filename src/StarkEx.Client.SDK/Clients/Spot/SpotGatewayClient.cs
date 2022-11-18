@@ -1,30 +1,18 @@
-﻿// TODO THIS SDK CANT GO PUBLIC WITHOUT A LICENSE FIRST!
-// TODO Only publish relevant assemblies, no need to publish helpers classes like converters
-
-namespace StarkEx.Client.SDK.Clients.Spot;
+﻿namespace StarkEx.Client.SDK.Clients.Spot;
 
 using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+using StarkEx.Client.SDK.Extensions;
 using StarkEx.Client.SDK.Interfaces.Spot;
 using StarkEx.Client.SDK.Models.Spot.RequestModels;
 using StarkEx.Client.SDK.Models.Spot.ResponseModels;
 using StarkEx.Client.SDK.Models.Spot.TransactionModels;
 using StarkEx.Client.SDK.Settings;
 
-/// <inheritdoc />
-public class SpotGatewayClient : ISpotGatewayClient
+/// <inheritdoc cref="StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient" />
+public class SpotGatewayClient : BaseClient, ISpotGatewayClient
 {
-    private readonly IHttpClientFactory httpClientFactory;
-
-    private readonly JsonSerializerOptions requestSerializerOptions = new()
-    {
-        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-    };
-
-    private readonly StarkExApiSettings settings;
-
     public SpotGatewayClient(
         IHttpClientFactory httpClientFactory,
         StarkExApiSettings settings)
@@ -33,7 +21,6 @@ public class SpotGatewayClient : ISpotGatewayClient
         this.settings = settings;
     }
 
-    /// <param name="cancellationToken"></param>
     /// <inheritdoc />
     public async Task<int> GetFirstUnusedTxAsync(CancellationToken cancellationToken)
     {
@@ -42,7 +29,7 @@ public class SpotGatewayClient : ISpotGatewayClient
         var endpoint = $"/{settings.Version}/gateway/testing/get_first_unused_tx_id";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
@@ -55,7 +42,7 @@ public class SpotGatewayClient : ISpotGatewayClient
         var endpoint = $"/{settings.Version}/gateway/testing/get_stark_dex_address";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return await response.Content.ReadAsStringAsync(cancellationToken);
     }
@@ -68,7 +55,7 @@ public class SpotGatewayClient : ISpotGatewayClient
         var endpoint = $"/{settings.Version}/gateway/get_time_spent_by_oldest_unaccepted_tx_in_system";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
@@ -93,7 +80,7 @@ public class SpotGatewayClient : ISpotGatewayClient
         var endpoint = $"/{settings.Version}/gateway/get_transaction?tx_id={txId}";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return await JsonSerializer.DeserializeAsync<TransactionModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
@@ -121,7 +108,7 @@ public class SpotGatewayClient : ISpotGatewayClient
 
         var response = await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody, cancellationToken);
 
-        response.EnsureSuccessStatusCode();
+        await response.ValidateSuccessStatusCode(cancellationToken);
 
         return await JsonSerializer.DeserializeAsync<ResponseModel>(
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
