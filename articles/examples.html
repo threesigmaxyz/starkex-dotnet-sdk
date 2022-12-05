@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>StarkEX Crypto SDK Code samples </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="StarkEX Crypto SDK Code samples ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="starkex-crypto-sdk-code-samples">StarkEX Crypto SDK Code samples</h2>
+
+<p>In this section we present some short examples illustrating how to utilize some core features of the crypto SDK. More examples are available in the <code>StarkEx.Crypto.SDK.Tests</code> package.</p>
+<h3 id="ecdsa-signatures">ECDSA Signatures</h3>
+<p>Calculate signature:</p>
+<pre><code class="lang-csharp">// initialize ECDSA signer
+var signer = CreateStarkExSigner();
+
+// compute signature
+var signature = signer.SignMessage(
+    messageHash: &quot;0xc465dd6b1bbffdb05442eb17f5ca38ad1aa78a6f56bf4415bdee219114a47&quot;,
+    privateKey: &quot;0x2dccce1da22003777062ee0870e9881b460a8b7eca276870f57c601f182136c&quot;);
+
+// output R &quot;0x5f496f6f210b5810b2711c74c15c05244dad43d18ecbbdbe6ed55584bc3b0a2&quot;
+Console.Out.WriteLine(signature.R);
+// output S &quot;0x4e8657b153787f741a67c0666bad6426c3741b478c8eaa3155196fc571416f3&quot;
+Console.Out.WriteLine(signature.S);
+</code></pre>
+<p>Verify signature:</p>
+<pre><code class="lang-csharp">// initialize ECDSA signer
+var signer = CreateStarkExSigner();
+
+// the signatue to verify
+var signature = new SignatureModel{
+    R = &quot;0x5f496f6f210b5810b2711c74c15c05244dad43d18ecbbdbe6ed55584bc3b0a2&quot;,
+    S = &quot;0x4e8657b153787f741a67c0666bad6426c3741b478c8eaa3155196fc571416f3&quot;,
+};
+
+// verify the signature
+var verified = signer.VerifySignature(
+    messageHash: &quot;0xc465dd6b1bbffdb05442eb17f5ca38ad1aa78a6f56bf4415bdee219114a47&quot;,
+    publicKey: &quot;0400499f65ae2f71d5298d2d88823b2e5e19596a71aac1984710479e406a00243904745865467631492cf6ecc433a3cf4ecc580d698097d6b738ad8f3da7c4d66c&quot;,
+    signature: signature);
+    
+// output &quot;true&quot;
+Console.Out.WriteLine(verified);
+</code></pre>
+<h3 id="message-encoding">Message Encoding</h3>
+<p>Compute the message encoding for a StarkEx TransferWithFees operation.</p>
+<pre><code class="lang-csharp">// initialize message encoder
+var encoder = CreateSpotTradingEncoder();
+
+// encode TransferWithFees message
+var encoded = target.EncodeTransferWithFees(
+    assetIdSold: &quot;0x3003a65651d3b9fb2eff934a4416db301afd112a8492aaf8d7297fc87dcd9f4&quot;,
+    assetIdUsedForFees: &quot;0x70bf591713d7cb7150523cf64add8d49fa6b61036bba9f596bd2af8e3bb86f9&quot;,
+    receiverStarkKey: &quot;0x5fa3383597691ea9d827a79e1a4f0f7949435ced18ca9619de8ab97e661020&quot;,
+    vaultIdFromSender: 34,
+    vaultIdFromReceiver: 21,
+    vaultIdUsedForFees: 593128169,
+    nonce: 1,
+    quantizedAmountToTransfer: 2154549703648910716,
+    quantizedAmountToLimitMaxFee: 7,
+    expirationTimestamp: 1580230800);
+
+// output &quot;0x5359c71cf08f394b7eb713532f1a0fcf1dccdf1836b10db2813e6ff6b6548db&quot;
+Console.Out.WriteLine(encoded);
+</code></pre>
+<h3 id="assetid-calculation">AssetId Calculation</h3>
+<p>Calculate the assetId for as ERC1155 asset:</p>
+<pre><code class="lang-csharp">// calculate assetId for ERC1155
+var result = AssetEncoder.GetAssetId(
+    assetType: AssetType.Erc1155,
+    quantum: 1,
+    address: &quot;0x22c36BfdCef207F9c0CC941936eff94D4246d14A&quot;,
+    tokenId: &quot;1337&quot;);
+
+// output &quot;0x3bac60418017ad6c32f23980201722fbe672d9bd108765469484347b00afda&quot;
+Console.Out.WriteLine(encoded);
+</code></pre>
+<p>Calculate the assetId for a MintableERC20 asset with minting blob:</p>
+<pre><code class="lang-csharp">// calculate assetId for MintableERC20
+var result = AssetEncoder.GetAssetId(
+    assetType: AssetType.MintableERC20,
+    quantum: 1000000000,
+    address: &quot;0x5da41d8b03b656ac0daac9f27b98feba461dfbad&quot;,
+    mintingBlob: &quot;0xdeadbeef&quot;);
+
+// output &quot;0x400f163c4d559288a2edbb10162eed11f4de87c56875b970fee1534da69cc80&quot;
+Console.Out.WriteLine(encoded);
+</code></pre>
+<h2 id="starkex-client-sdk-code-samples">StarkEX Client SDK Code samples</h2>
+<p>The code sample above describes the project Settings.</p>
+<p><img src="./src/images/settings.png" alt=""></p>
+<p>You can inject the dependencies with the following code</p>
+<pre><code>services.AddStarkEx();
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/b7e793ea6f8b3ea6a0ca9c50caaddf84a2408b4d/docs/articles/examples.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
