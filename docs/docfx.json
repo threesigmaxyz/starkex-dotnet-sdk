@@ -1,0 +1,77 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "files": "**/StarkEx.Client.SDK.csproj",
+                    "exclude": "**/**Tests.csproj",
+                    "src": ".."
+                }
+            ],
+            "dest": "sdk/client",
+            "disableGitFeatures": false,
+            "disableDefaultFilter": false
+        },
+        {
+            "src": [
+                {
+                    "files": "**/StarkEx.Crypto.SDK.csproj",
+                    "exclude": "**/**Tests.csproj",
+                    "src": ".."
+                }
+            ],
+            "dest": "sdk/crypto",
+            "disableGitFeatures": false,
+            "disableDefaultFilter": false
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "sdk/client/**.yml",
+                    "sdk/crypto/**.yml"
+                ]
+            },
+            {
+                "files": [
+                    "articles/**.md",
+                    "articles/**/toc.yml",
+                    "toc.yml",
+                    "*.md"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "images/**"
+                ]
+            }
+        ],
+        "overwrite": [
+            {
+                "files": [
+                    "apidoc/**.md"
+                ],
+                "exclude": [
+                    "obj/**",
+                    "_site/**"
+                ]
+            }
+        ],
+        "dest": "_site",
+        "globalMetadataFiles": [],
+        "fileMetadataFiles": [],
+        "template": [
+            "default",
+            "templates/darkfx"
+        ],
+        "postProcessors": [],
+        "markdownEngineName": "markdig",
+        "noLangKeyword": false,
+        "keepFileLink": false,
+        "cleanupCacheHistory": false,
+        "disableGitFeatures": false
+    }
+}

@@ -4,6 +4,23 @@ using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 
+/// <summary>
+/// A STARK-friendly elliptic curve used in the ECDSA signature scheme.
+///
+/// A STARK curve is a STARK-friendly elliptic curve used is defined as follows:
+/// y2 ≡ x3 + α⋅x + β (mod p).
+///
+/// Where:
+/// α = 1
+/// β= 3141592653589793238462643383279502884197169399375105820974944592307816406665
+/// p= 3618502788666131213697322783095070105623107215331596699973092056135872020481
+///
+/// And the generator point used in the ECDSA scheme is:
+/// G = (
+///     874739451078007766457464989774322083649278607533249481151382481072868806602,
+///     152666792071518830868575557812948353041420400780739481342941381225525861407
+/// ).
+/// </summary>
 public class StarkCurve
 {
     /* Curve parameters*/
@@ -20,6 +37,9 @@ public class StarkCurve
     private readonly ECCurve curve;
     private readonly ECPoint pointG;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="StarkCurve"/> class.
+    /// </summary>
     public StarkCurve()
     {
         var dummy = new FpCurve(P, A, B, N, H);

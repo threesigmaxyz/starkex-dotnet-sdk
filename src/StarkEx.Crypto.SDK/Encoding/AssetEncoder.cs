@@ -20,6 +20,19 @@ public static class AssetEncoder
     private static readonly BigInteger MintableAndBitMask = new("0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 16);
     private static readonly BigInteger MintableOrBitMask = new("400000000000000000000000000000000000000000000000000000000000000", 16);
 
+    /// <summary>
+    /// Gets the asset ID for the specified asset type.
+    /// </summary>
+    /// <param name="assetType">The type of the asset.</param>
+    /// <param name="mintingBlob">The minting blob for mintable assets. This parameter should be specified
+    /// only for <see cref="AssetType.MintableErc721"/> and <see cref="AssetType.MintableErc20"/> assets.</param>
+    /// <param name="address">The address of the contract holding the asset. This parameter should be specified
+    /// only for ERC-20, ERC-721, and ERC-1155 assets.</param>
+    /// <param name="tokenId">The token ID of the ERC-721 or ERC-1155 asset. This parameter should be specified
+    /// only for ERC-721 and ERC-1155 assets.</param>
+    /// <param name="quantum">The quantum value for the asset. This parameter should be specified
+    /// only for ETH and ERC-20 assets.</param>
+    /// <returns>The asset ID for the specified asset type.</returns>
     public static string GetAssetId(
         AssetType assetType,
         string mintingBlob = null,
@@ -41,6 +54,14 @@ public static class AssetEncoder
         };
     }
 
+    /// <summary>
+    /// Gets the asset type for the specified parameters.
+    /// </summary>
+    /// <param name="assetType">The type of the asset.</param>
+    /// <param name="quantum">The quantum value for the asset.</param>
+    /// <param name="address">The address of the contract holding the asset. This parameter should
+    /// be specified only for ERC-20, ERC-721, and ERC-1155 assets.</param>
+    /// <returns>The asset type for the specified parameters.</returns>
     public static string GetAssetType(AssetType assetType, BigInteger quantum, string address = null)
     {
         Guards.NotNull(quantum);
@@ -57,6 +78,13 @@ public static class AssetEncoder
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
     }
 
+    /// <summary>
+    /// Gets the asset info for the specified asset type and address.
+    /// </summary>
+    /// <param name="assetType">The type of the asset.</param>
+    /// <param name="address">The address of the contract holding the asset. This parameter should
+    /// be specified only for ERC-20, ERC-721, and ERC-1155 assets.</param>
+    /// <returns>The asset info for the specified asset type and address.</returns>
     public static BigInteger GetAssetInfo(AssetType assetType, string address = null)
     {
         return assetType switch

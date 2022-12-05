@@ -7,15 +7,21 @@ using StarkEx.Crypto.SDK.Extensions;
 using StarkEx.Crypto.SDK.Guards;
 using StarkEx.Crypto.SDK.Models;
 
+/// <inheritdoc />
 public class SpotTradingMessageHasher : ISpotTradingMessageHasher
 {
     private readonly IPedersenHash pedersenHash;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="SpotTradingMessageHasher"/> class.
+    /// </summary>
+    /// <param name="pedersenHash">The <see cref="IPedersenHash"/> instance to use for performing cryptographic hashes.</param>
     public SpotTradingMessageHasher(IPedersenHash pedersenHash)
     {
         this.pedersenHash = pedersenHash;
     }
 
+    /// <inheritdoc />
     public BigInteger EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel encodeLimitOrderWithFeesModel)
     {
         Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithFeesModel.AssetIdSold);
@@ -49,6 +55,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
+    /// <inheritdoc />
     public BigInteger EncodeTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)
     {
         Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.AssetIdSold);
@@ -81,6 +88,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
+    /// <inheritdoc />
     public BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)
     {
         Guards.NotNull(encodeTransferWithFeesModel.Fact);
@@ -95,6 +103,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return EncodeConditionalTransferWithFees(encodeTransferWithFeesModel, condition.ToByteArray().ToHex());
     }
 
+    /// <inheritdoc />
     public BigInteger EncodeConditionalTransferWithFees(
         EncodeTransferWithFeesModel encodeTransferWithFeesModel,
         string condition)
@@ -132,6 +141,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return pedersenHash.CreateHash(fourthInnerHash, fifthWeight);
     }
 
+    /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     public BigInteger DeprecatedHashLimitOrder(
         string assetIdSold,
@@ -159,6 +169,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 
+    /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     public BigInteger DeprecatedHashTransferOrder(
         string assetIdSold,
@@ -183,6 +194,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
     }
 
+    /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
     public BigInteger DeprecatedHashConditionalTransfer(
         string assetIdSold,

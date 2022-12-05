@@ -6,8 +6,17 @@ using StarkEx.Client.SDK.Clients.Spot;
 using StarkEx.Client.SDK.Interfaces.Perpetual;
 using StarkEx.Client.SDK.Interfaces.Spot;
 
+/// <summary>
+/// Provides extension methods for configuring the StarkEx API client in a .NET application.
+/// </summary>
 public static class ServiceExtensions
 {
+    /// <summary>
+    /// Registers the StarkEx API clients in the specified Microsoft Dependency Injection container.
+    /// This method should be called from the `ConfigureServices` method in the startup class of your application.
+    /// </summary>
+    /// <param name="services">The Microsoft Dependency Injection container to configure.</param>
+    /// <returns>The configured Microsoft Dependency Injection container.</returns>
     public static IServiceCollection AddStarkEx(this IServiceCollection services)
     {
         // Spot Clients
