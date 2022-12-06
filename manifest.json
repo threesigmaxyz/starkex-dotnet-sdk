@@ -4,3822 +4,24 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.BaseClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.BaseClient.html",
-          "hash": "PAqyWDYE0g/N7TeX//w6kg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.html",
-          "hash": "+m5skIOVzVUM0EiEMvfjWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.html",
-          "hash": "qIULs//ahO9kvxqdGgGdiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.html",
-          "hash": "2mddwZ+DGX1QT8OBFlZ7lw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.html",
-          "hash": "AT1W+cMWZeRjk0UIKNzdsw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Perpetual.html",
-          "hash": "7kfOBkC2F0k7Z8R7sqI1Tg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.html",
-          "hash": "8tV8AaNHIS3Xc63tL16AHg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotClient.html",
-          "hash": "qpbVqvYyVHubOGB9hxzNRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.html",
-          "hash": "te67KIdsmfXW/CLnaf5RpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html",
-          "hash": "99TypDTsHCzCwHk+y/eTMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.Spot.html",
-          "hash": "D23qD7782q4QzgYl9G0LrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Clients.html",
-          "hash": "n6WSJKokJoY35Hipg0vKvQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.html",
-          "hash": "o7ijdLCYQAWrJKFBIlQzdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.html",
-          "hash": "FIH5wj2rZhRAEpG3iBShVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Perpetual.html",
-          "hash": "LPkycIXU+0u8ibQNGvJsRQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.html",
-          "hash": "xZGi38SgI/KHRoss15h2RQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.html",
-          "hash": "8SraC1jgL6tC72tHjw9u6w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.html",
-          "hash": "fSWJRt2Xc4x/rmgRSrBkxw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Enums.Spot.html",
-          "hash": "NdKlb1nUG2022SrfnYdFrw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Exceptions.StarkExErrorException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Exceptions.StarkExErrorException.html",
-          "hash": "iKtBTC7ozjOERsD01MTpAQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Exceptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Exceptions.html",
-          "hash": "20dxQt+O8DVtGwnBLZQWEg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.ServiceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.ServiceExtensions.html",
-          "hash": "Md09nRgJum+kCYktKIIOng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.html",
-          "hash": "8cL6D48jJfKNnfUeq9jCkA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Extensions.html",
-          "hash": "X4uEpY90PDKy8QkY3GvIKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.html",
-          "hash": "Mj/QP4J9KG0Mq6D/YtkHMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.html",
-          "hash": "Ds0+LS/+6ae0WrxqGEDBHA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.html",
-          "hash": "GsN015wUZvDEyUWmBMvjnA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.html",
-          "hash": "QWTzBU2jH1QM9B/EEMjKcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Perpetual.html",
-          "hash": "tKIHKGo5Goi3XSyoXqOqGA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.html",
-          "hash": "ea/oH1JppJBMI73s2Q5cqw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.html",
-          "hash": "yrobsVT0A8GsHpkkgAg/xA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.html",
-          "hash": "ouA4pwxltGN1094/k5tS3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html",
-          "hash": "Kh6PQM2jr2p46sRMi9/87A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Interfaces.Spot.html",
-          "hash": "F45YH0hj/kOuzh7vPB3Eww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.html",
-          "hash": "7I/zTn9BcHj2WV9UiStVdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.html",
-          "hash": "dA2Agk9NElAS5UGQ/+ZpIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.html",
-          "hash": "2JW9CPQhRiv6y9TARWOleQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.html",
-          "hash": "JrD/RZ2Y4LiwtKmIOanJAg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.html",
-          "hash": "cWJpTkRJQ7E0FDEQl6a6xw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.html",
-          "hash": "MqhbUTlihKxkI9gePRda6w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.html",
-          "hash": "lPv+fo/asCe1qk4ekOwrrg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.JSON.Converter.html",
-          "hash": "FSUkqA+IQpIFGCEhLUogbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.html",
-          "hash": "h8bJlVHDOAyf7MI+PIGa6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.html",
-          "hash": "CyST3wFCoN6HATjsXeLjiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.html",
-          "hash": "I7SG2Hu2mH2YI6y+cgyquQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.html",
-          "hash": "vHrHKLMsJXeutO4Jtg6Wzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.html",
-          "hash": "itbKCW15NCGSuszgHeGB3g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.html",
-          "hash": "+G2JU6JwIFtDtQlG5SeJIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.html",
-          "hash": "4g1rwkP8dWFH4sjzbidl+Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.html",
-          "hash": "pvxg68Lj7d+qoqNpJNzrLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.html",
-          "hash": "iHl+227JgvQgvYv1Onwd/A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.html",
-          "hash": "ktfhPNkyY5xR1ZDCxNkMJw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.html",
-          "hash": "XlWBqe4rrpn3vMWY1OrTXA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.html",
-          "hash": "N6iH5WRDFQ1cj0nSKOy7PA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.html",
-          "hash": "X7XK5mGRcBc2T6FViFl9Kg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.html",
-          "hash": "UnUtdD+09s4+SyO7DfLiQQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.html",
-          "hash": "VpF0Yu3YqqVGwfk6EjdRXQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.html",
-          "hash": "IvHdAa1Sto1VErsXRZKeyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.html",
-          "hash": "SaxbHlrRJas0jS6D0SqSUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.html",
-          "hash": "1fDDb/4E8ou/mfE9nDmx8Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.html",
-          "hash": "ZoFv9HleNVGHt1CMw0gqHA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.html",
-          "hash": "2SY4UXi2F0J6w2WDbYabBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.html",
-          "hash": "0xK6kGThMKSSpOn3KVWRtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.RequestModels.html",
-          "hash": "EU3flTuvffp+80Inn2B5iw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.html",
-          "hash": "TGLsWZMvoXiBnLF+WG5fIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.html",
-          "hash": "xeqRsFdO2G8A115kBRhaww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.html",
-          "hash": "OuPzmP24a/u61GQqONK4UA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.html",
-          "hash": "0gk35f8T8nkxyyGlISn2lQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.html",
-          "hash": "7qXNbYQDxh5umkW/vdAdwQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.html",
-          "hash": "lHytRvaBQzfQqGujgD3AUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.html",
-          "hash": "k+4SBFPNSwOZWi7jgUdePg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.html",
-          "hash": "sJs/eVbtGTk4NnCYkkn0DA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.html",
-          "hash": "EnwZ2SXPEAtRXKExmuU5Rw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.html",
-          "hash": "Mw+IQIw4RZYY4EQ3ca05og=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.html",
-          "hash": "rf1qjx2jAv8Oom5y6490iQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.html",
-          "hash": "WauQm8Fw7efvFtPz2ouOww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.html",
-          "hash": "HsrqbmzDa08z/v2YzeOYpg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.html",
-          "hash": "wwVNdjnq6BCyHTwb5WVOgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.html",
-          "hash": "mjgA8FXQSSTBT+8XgFtXQA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.html",
-          "hash": "HGQiS5KiilvADw+hEc7cOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.html",
-          "hash": "JxXrOimqBtfEkqqq4GspxQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.html",
-          "hash": "RsCjxTeFPU5FMFR+MfC56A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.html",
-          "hash": "fW/HQUYH+QHDNJmX+A/0Zg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.html",
-          "hash": "ZqWCCp8W+4Bn3+Q7RVK7iw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.html",
-          "hash": "/TU++8mxGXNdUrgCeW/RPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.html",
-          "hash": "LYjj7vEguRcOSkqfw8TOsA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.html",
-          "hash": "nSgGIuT3diIiS5wq2i5X8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.html",
-          "hash": "ZB/lo/iijB16WPsRE6N/IA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.html",
-          "hash": "wf8V+Oj87OL+LGbfaPoiHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.html",
-          "hash": "FR9q8pqWW6xbsQAqR/oKiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.html",
-          "hash": "hI7bBQIWH4ATQ7VMGzdVBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.html",
-          "hash": "Uqx7HkB2bfhH+Epx3wovPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.html",
-          "hash": "GEVy6VuhaFGh57KLiuzIqw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.html",
-          "hash": "OflmondPj4bEAXRPxxHE9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.html",
-          "hash": "qd87AelIx0ryLlOvOPzfcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.html",
-          "hash": "u3mZ58WEXBNv76Xzx2/FmA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.html",
-          "hash": "onRl+elRL7z+PLrgrtn9iw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.html",
-          "hash": "oHy51rR3YMXac32Y7WSWtg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.html",
-          "hash": "lpDRdZW6EppUGht9rpKqtQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.html",
-          "hash": "vJPjXlCiQa9mS9yzwLvBjw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.html",
-          "hash": "+/JIl9DU+YW4phezE3+jMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html",
-          "hash": "E0gHmoZVXyEz1dJcNpm5pQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html",
-          "hash": "1SXKTYFHjZlL4uQaxWJOOg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html",
-          "hash": "RJFWFbPjLTtK9YjYLAMoSw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html",
-          "hash": "W2UhTLnoq0H2uqC+cEXriA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html",
-          "hash": "jECE+LNco9W/uro2qW5uQw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html",
-          "hash": "ilEmk103UA7Pb+C22BKMyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html",
-          "hash": "CXXhXoWYivU0nef55O6Qcg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html",
-          "hash": "Sq8Zc7Bsnrz5aPHMGhaVfw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html",
-          "hash": "JtFB9+CZqjZPjca1Dwit5w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.RequestModels.html",
-          "hash": "8PHt2w2pMKsHhhP6OPQZ8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.html",
-          "hash": "ae+1/i+Zzzgg59/kcPiawQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.ResponseModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.ResponseModels.html",
-          "hash": "Qvt2qcaeZvZj82ceHW/6aw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.html",
-          "hash": "5QiYELTO2Lv2K8QHfbZKyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.html",
-          "hash": "5Ksar2280k0D7WZYgaQ2Mg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.html",
-          "hash": "1rlCSTbjAkXnzox/L9t1/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.html",
-          "hash": "cjBfV1vlkvD+qCKCix59Ew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.html",
-          "hash": "FhPVQb0SDZFs8YYhGTgohA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.html",
-          "hash": "buUL9zRnhUTjSf96gLqHCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.html",
-          "hash": "nBMifwTJapuMk8Rvlo0XMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html",
-          "hash": "zggfT0B+JYqwdmKXQ1MyJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.html",
-          "hash": "BfwTobHAQPpVmtH4DlMurQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.html",
-          "hash": "xQrrgQJQQOuqy+sNeO4wWw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.html",
-          "hash": "UbfnEZpv1rWCKsl73HAYqA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.html",
-          "hash": "o7LGQ4tuqqddSP7eI2SrhQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.html",
-          "hash": "nF9eQbCjcVV9Sh4yRKbGCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Models.Spot.TransactionModels.html",
-          "hash": "yAt1PdKYNEHoJgBNPhDqHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Settings.StarkExApiSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Settings.StarkExApiSettings.html",
-          "hash": "mQk1yiJFx8RymB0SdboFWw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/perp/StarkEx.Client.SDK.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/StarkEx.Client.SDK.Settings.html",
-          "hash": "UZOk7FF8eUHxmgzlJ1wVOQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/client/perp/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/perp/toc.html",
-          "hash": "aT/KXJ4UacaRlg9xrytJ2A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.BaseClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.BaseClient.html",
-          "hash": "Yci0ie/Ew8nTJJP05sHatg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.html",
-          "hash": "2hF29DrGJsd4+KE6csUdJw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.html",
-          "hash": "IL4RQkbIPEZqBd49hKkXMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.html",
-          "hash": "WDqK4TveILwi7lm5wl7B1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.html",
-          "hash": "vi1IBD+JzY3GaegCRxx6aw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Perpetual.html",
-          "hash": "+5KMEMGIxij2Ye8s8lW/Cw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.html",
-          "hash": "T06CUYUabT/9kvUlCjaD6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotClient.html",
-          "hash": "Er94LtcbxQQXkapmCHWesQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.html",
-          "hash": "sSmzm3FSxTOzAkMRT5Ki6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html",
-          "hash": "F1sy2K/Y2XpC0ucwRzbHZA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.Spot.html",
-          "hash": "kTV8urgg8kWMzc90KlUt2g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Clients.html",
-          "hash": "jtlSwkc3Ro7c0mRMm3o53g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.html",
-          "hash": "+qqVHa/yHD44NsPWDJ7kvw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.html",
-          "hash": "KLKxwq3WWxKF2lbcf9cYiQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Perpetual.html",
-          "hash": "4x0Evqq6tUfaezsAlVm1AA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.html",
-          "hash": "S3MKkfKgFvBaGVJ59Zod4w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.html",
-          "hash": "VBDiuvaWHZM8ywfkcmwn4A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.html",
-          "hash": "CZtjUOisYhY4GL2ASV1agA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Enums.Spot.html",
-          "hash": "wfxKDlzelkOdDDmNHCRjtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Exceptions.StarkExErrorException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Exceptions.StarkExErrorException.html",
-          "hash": "URH3977HTl+abrJFkUGGhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Exceptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Exceptions.html",
-          "hash": "svo5+SFtYWuxLMl+BEDBsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.ServiceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.ServiceExtensions.html",
-          "hash": "IbkfMGFgxbdFTzdi6+hsrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.html",
-          "hash": "BhchlPuIYX/hU8sE9RDf7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Extensions.html",
-          "hash": "nqNrLCivnM72yNFulr1dhg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.html",
-          "hash": "jIFxXK9lbynC6b7N+9ydoA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.html",
-          "hash": "XAonyORM+68bgSqh1MAWPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.html",
-          "hash": "RXjhetUCxERmuBMGwzjRzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.html",
-          "hash": "0JWhpBRsbe+F+AOFNPUXLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Perpetual.html",
-          "hash": "IEnu9o735gPiMqnx51MSfg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.html",
-          "hash": "/b3Ys2ebBxUWdtuAwWAyWA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.html",
-          "hash": "YSQNgKYCsim5g0cN4HN9PQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.html",
-          "hash": "Q9iFYi631sYEz09/yGuxEA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html",
-          "hash": "lyh4Zf9wyuhKVvB+lGsNeg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Interfaces.Spot.html",
-          "hash": "clQUQIMX6sZA58qKF5gJ6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.html",
-          "hash": "6H1/SLAKzyx0vs00ta6PGw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.html",
-          "hash": "dTIy3HmeimVChWh4Y2mdGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.html",
-          "hash": "TQ/iU5dd9k051deUqmw7jg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.html",
-          "hash": "s7BmU5ls7lAVGqAOohJbUg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.html",
-          "hash": "tqmAumj+zeucTHOkbSY9wA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.html",
-          "hash": "Q8/xJ2fgHE2AOp72+Hxjuw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.html",
-          "hash": "Web53QQHb1e/K2o0AYrdjw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.JSON.Converter.html",
-          "hash": "zcFv2OXt6ORbD6X5vePWPA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.html",
-          "hash": "eZPQphjR68s7klpsuaaDrw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.html",
-          "hash": "reQJDc78GUI9FFG+f1Gfdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.html",
-          "hash": "UMUxQNsnBtDHAXjhnjf2Nw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.html",
-          "hash": "d1eN+bdC08Sa86lu6i887A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.html",
-          "hash": "uGgMMi7v7mEmz6hp6cd0hg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.html",
-          "hash": "XtJ7Md/795yq5gsThmg6aQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.html",
-          "hash": "2ZHnWOc5aE28zyYiAHjJHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.html",
-          "hash": "EF5DVd8ZfQgxyD0QOQYs+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.html",
-          "hash": "btzCdLtXu8E/rLtuxYyiGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.html",
-          "hash": "+YOi9lOXyqdtJD/6nY/+AA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.html",
-          "hash": "AlsOL28/mfeEma2PniXuqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.html",
-          "hash": "6gWvSv3P1rfFhyyH+krJeQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.html",
-          "hash": "XJQXdmvYkfyTk9XhYXXxYA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.html",
-          "hash": "p39uZwu/b8UP3VBpYoLnyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.html",
-          "hash": "5LVsxZwH1il9MukDrsq24A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.html",
-          "hash": "HQf4NTTsuXCJWNtuaS9iFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.html",
-          "hash": "SiVLtq28WlpAt49FpsYUBQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.html",
-          "hash": "9G3kIMLNA7uMHw9tGRoYNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.html",
-          "hash": "/SSis8vKEyNKvCConhM4kQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.html",
-          "hash": "X0LJXQ/XDJoVk0r6nyEA8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.html",
-          "hash": "sOkXzW0z9zzPRau2n+Tz9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.RequestModels.html",
-          "hash": "skI2S7cIs//r4OA7hrKyYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.html",
-          "hash": "n8fZDMvCfiWgvLqSOdoLPQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.html",
-          "hash": "v0C5XMk/TSS0X9edewNqJw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.html",
-          "hash": "yJyOng63C0IzagG79zyJPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.html",
-          "hash": "7hLx4PF5T9ohu9xeuQPbdQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.html",
-          "hash": "z7EeOXGuUVeZtnAd++c0ww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.html",
-          "hash": "5gLp4jLOozGTPUe9rZQ56w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.html",
-          "hash": "YikBSw77hMjqNqeeNYRuSA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.html",
-          "hash": "mpaN6Jfinv3tjo9fsHez6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.html",
-          "hash": "iMkbfyOZQo/13/syuZ55YQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.html",
-          "hash": "K7Yj38Y9k4nC0w64mi8QQg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.html",
-          "hash": "1uL4jsmHKpeHAH3DMj+ftg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.html",
-          "hash": "fukB4SuWhz1+/g4MxgX2GQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.html",
-          "hash": "9fO94UzTV5tN/wrGBI5AZQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.html",
-          "hash": "ij9ADuxpSd5bdJp68sr1pQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.html",
-          "hash": "F7ThJq3ogCs2LTKHL4OhFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.html",
-          "hash": "GwIfmQKNA7tqIaooV8DWEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.html",
-          "hash": "n6gQSb3Aek42Sd5ybHNG9Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.html",
-          "hash": "cqNEKfr9aNZwSRJi5I726g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.html",
-          "hash": "zU45yA8kj0G8O6CmWgpu9w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.html",
-          "hash": "2tnCaVOsVV961cS4WsbvnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.html",
-          "hash": "qEIXjlZ8XB8FxsQGjYZkoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.html",
-          "hash": "t2FfVkpA2QLgsJ8YmrCpow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.html",
-          "hash": "S+VHb7Iz0upNsnCcs884xg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.html",
-          "hash": "Fwdv+oZGGH1aylHVi1pYUw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.html",
-          "hash": "nJnEK86yHMa15dhEYlHyxA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.html",
-          "hash": "1nOjksUnfgGAlH7BdHl7Uw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.html",
-          "hash": "BTob6mi60Oeu6bS7k87KLw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.html",
-          "hash": "gecQbBoVEBswy7yZnQBGcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.html",
-          "hash": "RKOUW28GgCMNSfoGspcNdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.html",
-          "hash": "TiX5aGvlPGN1Amak71fOMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.html",
-          "hash": "iFNcjdcJWmzeFBJyIXPadg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.html",
-          "hash": "ns3bPcMWPo+9LTtHyJqoYA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.html",
-          "hash": "av7V0wgVHwjc04XhX+tLeA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.html",
-          "hash": "awCgLOe8KfaB8LaRml/KYg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.html",
-          "hash": "MaH7Igt4DnuO45oSI2sz9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.html",
-          "hash": "VPhPQHx8qJAv4/zG6ydWfw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.html",
-          "hash": "VsftxvuJxRFfNi8MolEeRg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html",
-          "hash": "uaMiXqAwdtHoG68ro0x/sQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html",
-          "hash": "R6TM6gAnsZQvzJU7AEIU3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html",
-          "hash": "i5DKnlTjyRDSEGMg7PF+5Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html",
-          "hash": "6AviZXvsW9P225Xmcra9Vw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html",
-          "hash": "TBj+xPTIM2CWIRfQZ0lYVA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html",
-          "hash": "GtuvIwooLj8cABDy2gf4xQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html",
-          "hash": "SJyM6zkhJVDv6diU4jAtFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html",
-          "hash": "3NQuqSGWWCVFd0o61cOK8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html",
-          "hash": "2OPg6RvybA2o0QJt8u64bQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.RequestModels.html",
-          "hash": "P/fYQ5Jjp1XXg2t0qcXR1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.html",
-          "hash": "8UPmPBVop2DGtdIMDOAhFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.ResponseModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.ResponseModels.html",
-          "hash": "LKRshdNEMd/SObRc4BeXpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.html",
-          "hash": "zxXlOTo1BCP+SBKQy27TgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.html",
-          "hash": "CLxQCE5SU6Xm2NRTmNFdNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.html",
-          "hash": "kA2W3FnLbW4m0DIlvRSXDA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.html",
-          "hash": "sdl/gVifE7DHsTtSxwoYFw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.html",
-          "hash": "gS83HkDTs2ibReSjnClvdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.html",
-          "hash": "ad8JxNg8R7/kDxcWVCzdIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.html",
-          "hash": "KwScIR5jVMMVrcfLICgOaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html",
-          "hash": "VgHOWzonTjYUWyEQ7Uo27w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.html",
-          "hash": "9h8d6h0APTuhx49XLXr+UA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.html",
-          "hash": "1Spn2UlF2ll8mn3qXJExhQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.html",
-          "hash": "g4J0P26oBNCazgJhCLCVLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.html",
-          "hash": "zBBvHGNqUl8WqXolPgrfFQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.html",
-          "hash": "xXGh4CSstEt4FjNkeZxr8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Models.Spot.TransactionModels.html",
-          "hash": "IrhNdUx1AJ7RecIVw78+zA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Settings.StarkExApiSettings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Settings.StarkExApiSettings.html",
-          "hash": "V8E6Qkacs6Xs0o0ymRd5jQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "ManagedReference",
-      "source_relative_path": "api/client/spot/StarkEx.Client.SDK.Settings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/StarkEx.Client.SDK.Settings.html",
-          "hash": "ldaD2nZ8DDZqaqHt0A1m6g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/client/spot/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/client/spot/toc.html",
-          "hash": "LUfyTyZ1xAKqoJ6Tk9Ra9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Constants.EllipticCurveConstantPoints.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Constants.EllipticCurveConstantPoints.html",
-          "hash": "bBYAUHYhMPo9/VKAGxFz8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Constants.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Constants.html",
-          "hash": "j83DKP6qkf0VseXa+QTaGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html",
-          "hash": "ks1VNBnHagw6wqKSivrwLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Encoding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Encoding.html",
-          "hash": "AMNs36eVgf1GT1LrhNDk4g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.AssetType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.AssetType.html",
-          "hash": "VJUIL1wtMnRybHmfYCILbQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.OrderType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.OrderType.html",
-          "hash": "0MiIb4v6Q6h+XoZFRgMIog=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Enums.html",
-          "hash": "5b6GNWirBJC31YFPu+Wo8g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.OrderTypeExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.OrderTypeExtensions.html",
-          "hash": "1P9wWHIe4gbeXHsIuq6lpQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.ServiceExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.ServiceExtensions.html",
-          "hash": "dbRrxa7CuSy6c3bUbk/A4g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Extensions.html",
-          "hash": "qhoa46R3sC4btwNYuhhhqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Guards.Guards.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Guards.Guards.html",
-          "hash": "OZMfstzl5MsPRoo0QHywZQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Guards.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Guards.html",
-          "hash": "HsBWz121the7lWWmsnGzww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.IPedersenHash.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.IPedersenHash.html",
-          "hash": "9Pf3IrOkQ7/ZTtAZPWR7KQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html",
-          "hash": "RPkbvivJ8hGZnAESnBZXMw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html",
-          "hash": "KcmNjFr2Xs0KAB3WDu1pOw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html",
-          "hash": "RHO7S8Kdhxlwv1zURPjG8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Hashing.html",
-          "hash": "vDOn1DbIOB1POQj3EhLRwg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html",
-          "hash": "woVg0cY0HHAYH0kdK/VwFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html",
-          "hash": "89jKcfRI9aARyn8ipTTPww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Models.html",
-          "hash": "TSge67IzXqDhZdG4zTRVwQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html",
-          "hash": "PJO1/3eaoW/EsnyyWsFbGA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html",
-          "hash": "AhvHhJ8Q+RGNvnMtHNOwnA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html",
-          "hash": "LN7rSv34zezzOX+7365G4A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/StarkEx.Crypto.SDK.Signing.html",
-          "hash": "AgVxjWO7Wn5+obmDfMgBYw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/crypto/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/crypto/toc.html",
-          "hash": "F5EWbsuzc7favctPFqnzhQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/examples.md",
       "output": {
         ".html": {
           "relative_path": "articles/examples.html",
-          "hash": "9Wym1pzWKNUOGzmdqnFg/A=="
+          "hash": "Kzs8Q+79pjH5Gwsbubjsqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/installation.html",
+          "hash": "djrv4+ZB5i+MxQyUd9sDLw=="
         }
       },
       "is_incremental": false,
@@ -3831,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "R/03H8rfBtOfA0kE7/UJRw=="
+          "hash": "S37/7E33Xn7Ktuk0X8dnvQ=="
         }
       },
       "is_incremental": false,
@@ -3843,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "rNlTehQ/hvRYwzYmXRKsrw=="
+          "hash": "81wjy6Al05lg/p4ERez6/Q=="
         }
       },
       "is_incremental": false,
@@ -3855,7 +57,1867 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "9fbiMrOdaIILiL+SGO2clw=="
+          "hash": "ubCVcJT2S+OQTukag2PNuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.BaseClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.BaseClient.html",
+          "hash": "KTdZX79Io0sZpmd0G7/fYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualAvailabilityGatewayClient.html",
+          "hash": "l4mvXL7AOUd9siCXruyyZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualClient.html",
+          "hash": "90mPayf/Roh+tvT8QFZUcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualFeederGatewayClient.html",
+          "hash": "uYBIEus095CH5p32urngwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.PerpetualGatewayClient.html",
+          "hash": "5EI8GD5M19b3hLFZQ5anGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Perpetual.html",
+          "hash": "0CxD/aW7XceMdCatnvP/mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotAvailabilityGatewayClient.html",
+          "hash": "NM4BURS1/BKAeCWKQvYTqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotClient.html",
+          "hash": "wpgAE8WE++Z1HYT43PY8eQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotFeederGatewayClient.html",
+          "hash": "ul1I95ggf8n6uL4lqpVtRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html",
+          "hash": "lKcLK7Y32+wvWI32zEExGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.Spot.html",
+          "hash": "gZBAKCfNL9SXrnlilVckYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Clients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Clients.html",
+          "hash": "xEtg0qQNilv7b19q880NUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.PerpetualApiCodes.html",
+          "hash": "7aeVHre47EiAhQ9xBZ4rRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.PerpetualOrderRequestType.html",
+          "hash": "LpZ+tjeFQ27qIZrEzG8p1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Perpetual.html",
+          "hash": "CZRCGT6eVJpm4gFfUwKZgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.FeederGatewayResponseMessages.html",
+          "hash": "HWkrg+tBLT9daY3Zb8z/Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.SpotApiCodes.html",
+          "hash": "KKQE73x5Z6bETFU3HD/u5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.SpotOrderRequestType.html",
+          "hash": "/JahTwhS1XODDPrOADRsTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Enums.Spot.html",
+          "hash": "jrBC4liLAcYII85avW1gzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Exceptions.StarkExErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Exceptions.StarkExErrorException.html",
+          "hash": "w2iz/P76fkmdpoBYF+VYdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Exceptions.html",
+          "hash": "ORxkWxVGNxuTAGJc4MWzhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.ServiceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.ServiceExtensions.html",
+          "hash": "zB/a6uSKfQdRqDGcU1xXeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.ValidateHttpRequestExtensions.html",
+          "hash": "nFeK5Hn2Rm+X5r158C9ilw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Extensions.html",
+          "hash": "q1HRtHPJhKplH3ywNRZGqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualAvailabilityGatewayClient.html",
+          "hash": "SYT5IPwUW3PMR8xDVz5DFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualClient.html",
+          "hash": "P02cksvUE594ZaB2cUgsyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualFeederGatewayClient.html",
+          "hash": "v+aqgrDjjjfX1HUMHcr/Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.IPerpetualGatewayClient.html",
+          "hash": "pXycWw1ZO8IvofMylyGrXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Perpetual.html",
+          "hash": "S+Nuzc40Lw1mB1hISnF7+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotAvailabilityGatewayClient.html",
+          "hash": "7iSakBpCMowCtLYPhxGrrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotClient.html",
+          "hash": "fppk3kKtMMDrNAAzWDaoxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotFeederGatewayClient.html",
+          "hash": "rBGltkyNaAP6oXt208G7zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html",
+          "hash": "xeYszkpliBMURiNHvsCeQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Interfaces.Spot.html",
+          "hash": "4guRR7sJ8pnS5BoexMy/rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BatchEnclosingIdConverter.html",
+          "hash": "5ps8b/m94erKpTCPMmrQ6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BatchIdsConverter.html",
+          "hash": "NTtucLOaVIEOSdKs9J9mNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BigIntegerAsTextConverter.html",
+          "hash": "PtTmhX8RDlBGdYsyW+p1YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.BigIntegerConverter.html",
+          "hash": "kw7K1ZFxAJTFenokobvkVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.DictionaryStringBigIntegerAsTextConverter.html",
+          "hash": "ERu4YWC1XsXDaclTMSTKqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.PerpetualTransactionModelConverter.html",
+          "hash": "7lynmR49NnT/CjnhP+h97Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.SpotTransactionModelConverter.html",
+          "hash": "r1a2b7GqSW0uqZG+lrJowQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.JSON.Converter.html",
+          "hash": "vUO6hwCvirryWXwY0Df0BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.CommitteeSignatureModel.html",
+          "hash": "aK4F8qEaajxAbVxsbGjaDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.OrderStateModel.html",
+          "hash": "3AqaQXuVFCv0qNbm0D8NYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PerpetualBatchModel.html",
+          "hash": "F1r81xE20d/bUge/Zz82XA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionAssetModel.html",
+          "hash": "fjKwx+DltX7guXemVJ65Lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.PositionStateModel.html",
+          "hash": "DApE8hddY5WbY/J+PornvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.StateUpdateModel.html",
+          "hash": "MLuqOnyTKRzY2TKOkI5kAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.AvailabilityModels.html",
+          "hash": "z0bYR2V5B+3cU0+XyZwvIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.BaseRequestModel.html",
+          "hash": "08k7UGQePOXr8PidutF5Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ConditionalTransferRequestModel.html",
+          "hash": "j2zmciwrTc8Fkyu1XXQNfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DeleverageRequestModel.html",
+          "hash": "xSclKti9HC//Yq+sdnFaAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.DepositRequestModel.html",
+          "hash": "UjoKY0ETxzeKTPlcS2Sifw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedTradeRequestModel.html",
+          "hash": "Xa1JKqhWGLTfoSbJSVaSAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.ForcedWithdrawalRequestModel.html",
+          "hash": "2ECHS8TNFeIT7ve4LiHd0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.FundingTickRequestModel.html",
+          "hash": "aeSh8rhexK53x2f7347Ryw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.LiquidateRequestModel.html",
+          "hash": "Z47lp+NUN+AJZN3I76l7ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.MultiTransactionRequestModel.html",
+          "hash": "XMP4JCRrCLxewsknLKhReA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.OraclePricesTickRequestModel.html",
+          "hash": "zS06Hqs2i01e/hiCkFkCFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TradeRequestModel.html",
+          "hash": "oyHuA7L01siytxvSea6uDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.TransferRequestModel.html",
+          "hash": "NMyYpZqcVyVH+XCGLjENbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalRequestModel.html",
+          "hash": "V0IZmPSLL0r/LTHoBtAcpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.WithdrawalToAddressRequestModel.html",
+          "hash": "+fsNI+2kR9fiJmsW0cgz9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.RequestModels.html",
+          "hash": "cvnou58baJEwp7zKoLpwuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.BatchInfoResponseModel.html",
+          "hash": "ce3Vkc3mEyoTY/6qD0dSbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionInfoModel.html",
+          "hash": "t/Vm5TPf+vGdM0IBJ8ZXmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.TransactionResponseModel.html",
+          "hash": "rH2r6a6RQkmwj/z5qA7zRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.ResponseModels.html",
+          "hash": "fyvYi4wuWK8uJHFBQyjDCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.AssetOraclePriceModel.html",
+          "hash": "P6223SvZchb66NUxKXoEPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.html",
+          "hash": "L6d1z6NqUiXQQb12jEYU2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DeleverageModel.html",
+          "hash": "ZMHw0fvL3ly+GLxSo9XqLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.DepositModel.html",
+          "hash": "6WPFxw8UFYjJleX+mzF2WA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.html",
+          "hash": "uQPlqftorHgsiIE6b+0W0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedWithdrawalModel.html",
+          "hash": "MTYgcibXlk3iCLgshOWP9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingIndicesStateModel.html",
+          "hash": "1nHIBF+bBou1YiYi8ofGKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.FundingTickModel.html",
+          "hash": "H2zSNXoIB3HXXurCiTuLHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.LiquidateModel.html",
+          "hash": "zZ2wYt0msJz/hDd3XRcXlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.MultiTransactionModel.html",
+          "hash": "l2rgPjkflMJa0yq8TSyHtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OraclePricesTickModel.html",
+          "hash": "WRiBDD9GE7AfCGPPJArJHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.html",
+          "hash": "kGZy+VojZZtxHo05jZMnjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.SignedOraclePrice.html",
+          "hash": "ELGEQFFs4HL8a8mAV66TOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TimestampedSignatureModel.html",
+          "hash": "HUhNnPFQrcCct5nGW30BFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TradeModel.html",
+          "hash": "FPxoGld+8DnYCUW65AZmNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransactionModel.html",
+          "hash": "vxjMuAUdXgdtoSEIf1B8cQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.html",
+          "hash": "OQkFFCu+g9VaS9I9ZwfO6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.html",
+          "hash": "shuOiJ8bejkU9vjFouMeZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.html",
+          "hash": "nGlG9LU10+sjQ1+ojBBgtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.html",
+          "hash": "EuNGdW087jGjnccUci67lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.BatchModel.html",
+          "hash": "F1bKOLYPsagEWZrBNgILbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.CommitteeSignatureModel.html",
+          "hash": "J+v+ke2syAVLknRf2vbIFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.OrderStateModel.html",
+          "hash": "DmNAh9w2Z2kz3y6DjWXJ+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.StateUpdateModel.html",
+          "hash": "ApQtnKh2uBX+4mutcEzJBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.VaultStateModel.html",
+          "hash": "Ml6V4GRkbD+qo0qlgyAs1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.AvailabilityGateway.html",
+          "hash": "jyWCntIbGRj4VxEpgcdSrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchEnclosingIdResponseModel.html",
+          "hash": "AVzWVzd/EyG/aW+rFiHk5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchIdsResponseModel.html",
+          "hash": "JAGZw/VFvY6CbpxXVxKWig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoResponseModel.html",
+          "hash": "+BtXpBkz0ft0jnHfU+hEVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.BatchInfoV2ResponseModel.html",
+          "hash": "RPrLv+9HDvJB0iT/ZASvJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.RootModel.html",
+          "hash": "ju6hSRjhN1FAwNywg5nghg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.TransactionInfoModel.html",
+          "hash": "lYW1vAMmtcB7AnjUXLI7LA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.FeederGatewayModels.html",
+          "hash": "PuiBfLo1f/9aBHX02ke5ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html",
+          "hash": "GzUwu/PVy4VUp3a4jcnk/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html",
+          "hash": "IbuX1D/sStFLPPDYtyE9jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html",
+          "hash": "NLS4ngtxupTy7VNcdr0AoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html",
+          "hash": "exf8vMmtctZjInseVoeduQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html",
+          "hash": "o1uWfxP+6hDgHPcNRMHOWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html",
+          "hash": "lRcAio+aeuPzTvmvNjIssg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html",
+          "hash": "k6rAU+vMwusb/A4/boGQ8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html",
+          "hash": "n9NcSS6CaTtO5vh+Pt2d2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html",
+          "hash": "b9qCiPVH0TAjy5up1m2KLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.html",
+          "hash": "fMo+mYgjWowP15kiPSAaBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.ResponseModels.ResponseModel.html",
+          "hash": "uZ69Uhc68ZXAkhULaG9Khw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.ResponseModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.ResponseModels.html",
+          "hash": "XjRlNMe2G+4gGzm0fAPTfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.DepositModel.html",
+          "hash": "+nWDdjU0DXagDh665yGvnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FalseFullWithdrawalModel.html",
+          "hash": "UwXtAuzcmLl7k3OQgRqFiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoExchangeModel.html",
+          "hash": "HYVpA9iLhNIUO0zf4JS4uQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FeeInfoModel.html",
+          "hash": "rDsQ9r9VnWz9AvWiu3xjrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.FullWithdrawalModel.html",
+          "hash": "+mNeDpBM5E2gWLj/bE8vhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.MintModel.html",
+          "hash": "FSjqvuwvj7NbHyrd52efSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.MultiTransactionModel.html",
+          "hash": "cIv5zJykfZEOm7jx1ddp2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html",
+          "hash": "5WV50qzU6I5tszTibTw1xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementInfoModel.html",
+          "hash": "R/PtOzr9Z+cFJaUzFSsm4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.SettlementModel.html",
+          "hash": "kTy4sG//+qLNlA7wNl4mRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransactionModel.html",
+          "hash": "ObydCIp4wu5KmRdg6AUqCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.html",
+          "hash": "qXni5XyrcRKKHjuu/1cVaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.WithdrawalModel.html",
+          "hash": "LVQrX0awpFhHgrq+VHg8Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.html",
+          "hash": "WPl2/OjPcwnkq/KFBYi/bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Settings.StarkExApiSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Settings.StarkExApiSettings.html",
+          "hash": "eD+enF9/TU1PyjNS3fV7Gw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/client/StarkEx.Client.SDK.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/StarkEx.Client.SDK.Settings.html",
+          "hash": "27+AiYZk8DPqndf7nmGK2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdk/client/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/client/toc.html",
+          "hash": "aT/KXJ4UacaRlg9xrytJ2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Constants.EllipticCurveConstantPoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Constants.EllipticCurveConstantPoints.html",
+          "hash": "0iFFEFVANYo2V6Y3awIgFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Constants.html",
+          "hash": "ReMnR+hRq7URVaxjpuA63A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html",
+          "hash": "eHSMMhxhaCUl3xGzZPnVDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Encoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Encoding.html",
+          "hash": "AMNs36eVgf1GT1LrhNDk4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.AssetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.AssetType.html",
+          "hash": "2DiqRUwybOoFCf48dMUCuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.OrderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.OrderType.html",
+          "hash": "ESAZUI4karxr8wOVwjpNiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.html",
+          "hash": "2EhUGvr4AgxYoQ3YWo22+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.OrderTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.OrderTypeExtensions.html",
+          "hash": "iNpPRbwlaOuKOsYFWdMzDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.ServiceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.ServiceExtensions.html",
+          "hash": "JyfzSKdynBiE8iyTcWymEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Extensions.html",
+          "hash": "uGzbpeRVwFL3DAjOKDHf3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Guards.Guards.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Guards.Guards.html",
+          "hash": "gMfSt7U8c5SZVoSGS25bEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Guards.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Guards.html",
+          "hash": "HsBWz121the7lWWmsnGzww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.IPedersenHash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.IPedersenHash.html",
+          "hash": "vZWszbGABK3u4mfioUs6Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html",
+          "hash": "OBpouKwbQy5KaQDTdn6oUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html",
+          "hash": "ljbcJTQcH97RAeDFSrwyUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html",
+          "hash": "wRUaTrJm0rIymGf0xn1YoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.html",
+          "hash": "8AYX7BXW8qRG2vnORR4q9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html",
+          "hash": "qi3BkeTm+oWzDkpplVKrhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html",
+          "hash": "rSBJPifRI/porbQ+Ryif7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.html",
+          "hash": "YZ60gV5y6w5zEb2mOVlsJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html",
+          "hash": "On3VBfK60y8zeJ60W0W7DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html",
+          "hash": "7wwQGbn/SWCVt7p9Qt4/uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html",
+          "hash": "pupVB0YOwccCS/sBtoWw7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.html",
+          "hash": "7qtlH6+Ur99Ls3G6a3oj3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdk/crypto/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/toc.html",
+          "hash": "F5EWbsuzc7favctPFqnzhQ=="
         }
       },
       "is_incremental": false,
@@ -3867,7 +1929,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "R0QVG1bhGDP21Ygi8XO0pw=="
+          "hash": "z70mhbdOq83u3XaRsgQ5Gg=="
         }
       },
       "is_incremental": false,
@@ -3888,13 +1950,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 282,
+          "total_file_count": 153,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

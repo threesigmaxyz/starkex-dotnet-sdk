@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Installation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Installation ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="installation">Installation</h1>
+
+<h2 id="api-client-sdk">API Client SDK</h2>
+<p>To install the <code>StarkEx.Client.SDK package</code>, follow these steps:</p>
+<ol>
+<li><p>Make sure you have <a href="https://www.nuget.org/">NuGet</a> installed on your system.</p>
+</li>
+<li><p>Open a command prompt or terminal and navigate to the directory where you want to install the package.</p>
+</li>
+<li><p>Run the following command to install the <code>StarkEx.Client.SDK</code> package in version <code>0.1.0</code>:</p>
+<pre><code class="lang-shell">nuget install StarkEx.Client.SDK -Version 0.1.0
+</code></pre>
+</li>
+<li><p>The package should now be installed in the directory you specified. You can verify this by checking for the presence of a packages directory, which should contain a <code>StarkEx.Client.SDK.0.1.0</code> directory.</p>
+</li>
+<li><p>To use the package in your project, add a reference to it in your project's <code>.csproj</code> file:</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+    &lt;PackageReference Include=&quot;StarkEx.Client.SDK&quot; Version=&quot;0.1.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+</li>
+<li><p>Save the changes to the <code>.csproj</code> file and rebuild your project to include the reference to the <code>StarkEx.Client.SDK</code> package.
+You should now be able to use the classes and methods provided by the <code>StarkEx.Client.SDK</code> package in your code.</p>
+</li>
+</ol>
+<h2 id="crypto-sdk">Crypto SDK</h2>
+<p>To install the <code>StarkEx.Crypto.SDK package</code>, follow these steps:</p>
+<ol>
+<li><p>Make sure you have <a href="https://www.nuget.org/">NuGet</a> installed on your system.</p>
+</li>
+<li><p>Open a command prompt or terminal and navigate to the directory where you want to install the package.</p>
+</li>
+<li><p>Run the following command to install the <code>StarkEx.Crypto.SDK</code> package in version <code>0.1.0</code>:</p>
+<pre><code class="lang-shell">nuget install StarkEx.Crypto.SDK -Version 0.1.0
+</code></pre>
+</li>
+<li><p>The package should now be installed in the directory you specified. You can verify this by checking for the presence of a packages directory, which should contain a <code>StarkEx.Crypto.SDK.0.1.0</code> directory.</p>
+</li>
+<li><p>To use the package in your project, add a reference to it in your project's <code>.csproj</code> file:</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+    &lt;PackageReference Include=&quot;StarkEx.Crypto.SDK&quot; Version=&quot;0.1.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+</li>
+<li><p>Save the changes to the <code>.csproj</code> file and rebuild your project to include the reference to the <code>StarkEx.Crypto.SDK</code> package.
+You should now be able to use the classes and methods provided by the <code>StarkEx.Crypto.SDK</code> package in your code.</p>
+</li>
+</ol>
+<p>If you encounter any issues during the installation process, please consult the package's documentation or seek support from the package maintainers.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/92c5b01b066f3c6664d881711fac603c7e9d5e43/docs/articles/installation.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
