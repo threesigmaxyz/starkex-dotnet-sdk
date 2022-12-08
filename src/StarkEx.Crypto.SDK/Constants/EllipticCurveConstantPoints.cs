@@ -1,8 +1,16 @@
 ﻿namespace StarkEx.Crypto.SDK.Constants;
 
+/// <summary>
+/// Static class containing constant points for elliptic curve calculations.
+///
+/// The constant points are taken from the following resource:
+/// https://github.com/starkware-libs/starkex-resources/blob/master/crypto/starkware/crypto/signature/constant_points.json
+/// </summary>
 public static class EllipticCurveConstantPoints
 {
-    // Taken from https://github.com/starkware-libs/starkex-resources/blob/master/crypto/starkware/crypto/signature/constant_points.json
+    /// <summary>
+    /// Hexadecimal constant points.
+    /// </summary>
     public static readonly IEnumerable<Tuple<string, string>> HexConstantPoints = new[]
     {
         new Tuple<string, string>("49ee3eba8c1600700ee1b87eb599f16716b0b1022947733551fde4050ca6804", "3ca0cfe4b3bc6ddf346d49d06ea0ed34e621062c0e056c1d0405d266e10268a"),

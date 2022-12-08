@@ -2,6 +2,9 @@
 
 using StarkEx.Commons.SDK.Models;
 
+/// <summary>
+/// An interface for generating and verifying signatures on a STARK-friendly curve.
+/// </summary>
 public interface IStarkExSigner
 {
     /// <summary>
@@ -15,7 +18,7 @@ public interface IStarkExSigner
     SignatureModel SignMessage(string messageHash, string privateKey);
 
     /// <summary>
-    ///     Verifies a StarkEx signature.
+    ///     Verifies a STARK signature.
     /// </summary>
     /// <param name="messageHash">Hash encoding of a StarkEx message.</param>
     /// <param name="publicKey">Public key derived from the private key used to sign the messageHash.</param>

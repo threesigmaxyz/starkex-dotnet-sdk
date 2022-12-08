@@ -1,4 +1,4 @@
-﻿name: Pull request workflow
+﻿name: CI
 
 on:
     push:

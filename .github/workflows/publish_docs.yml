@@ -1,0 +1,25 @@
+﻿name: Publish Docs
+
+on:
+    push:
+        branches:
+            - 'main'
+        
+jobs:
+    build-docs:
+        name: Build Docs
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Build Documentation
+              uses: nikeee/docfx-action@v1.0.0
+              with:
+                  args: docs/docfx.json
+                
+            - name: Publish Documentation on GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: docs/_site

@@ -2,12 +2,32 @@
 
 using Org.BouncyCastle.Math;
 
+/// <summary>
+/// A model representing a limit order that includes fees.
+/// </summary>
 public class EncodeLimitOrderWithFeesModel
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="EncodeLimitOrderWithFeesModel"/> class.
+    /// </summary>
     public EncodeLimitOrderWithFeesModel()
     {
     }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="EncodeLimitOrderWithFeesModel"/> class.
+    /// </summary>
+    /// <param name="assetIdSold">The id of the Asset sold.</param>
+    /// <param name="assetIdBought">The id of the Asset bought.</param>
+    /// <param name="assetIdUsedForFees">The id of the Asset used to pay for fees.</param>
+    /// <param name="quantizedAmountSold">The quantized amount of the asset sold.</param>
+    /// <param name="quantizedAmountBought">The quantized amount of the asset bought.</param>
+    /// <param name="quantizedAmountUsedForFees">The quantized amount of the asset used to pay for fees.</param>
+    /// <param name="nonce">The nonce used.</param>
+    /// <param name="vaultIdUsedForFees">The Id of the vault used for fees.</param>
+    /// <param name="vaultIdUsedForSelling">The Id of the vault used for selling.</param>
+    /// <param name="vaultIdUsedForBuying">The Id of the vault used for buying.</param>
+    /// <param name="expirationTimestamp">The expiration timestamp of the order.</param>
     public EncodeLimitOrderWithFeesModel(
         string assetIdSold,
         string assetIdBought,
