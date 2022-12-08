@@ -12,6 +12,8 @@ using Org.BouncyCastle.Math;
 /// where a_low is the low 248 bits of a, a_high is the high 4 bits of a (and similarly for b), P0, P1, P2, P3, and P4 are
 /// constant points on the elliptic curve derived from the decimal digits of the mathematical constant π, and Px denotes
 /// the x-coordinate of an elliptic-curve point P.
+///
+/// Official documentation <see href="https://docs.starkware.co/starkex/crypto/pedersen-hash-function.html">here</see>.
 /// </summary>
 public interface IPedersenHash
 {

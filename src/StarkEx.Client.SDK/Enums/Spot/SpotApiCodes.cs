@@ -6,6 +6,7 @@ using System.Text.Json.Serialization;
 /// <summary>
 /// Enum of API codes for the StarkEx Spot API.
 /// Uses a JSON string enum converter to serialize and deserialize the values as strings.
+/// Official documentation <see href="https://starkware.co/starkex-restapi-v4/error_codes.html">here</see>.
 /// </summary>
 [JsonConverter(typeof(JsonStringEnumMemberConverter))]
 public enum SpotApiCodes
@@ -55,7 +56,6 @@ public enum SpotApiCodes
     /// <summary>
     /// The transactions list in the multi-transaction request was empty.
     /// </summary>
-
     [EnumMember(Value = "EMPTY_TRANSACTIONS_LIST_IN_MULTI_TRANSACTION")]
     EmptyTransactionsListInMultiTransaction = 7,
 

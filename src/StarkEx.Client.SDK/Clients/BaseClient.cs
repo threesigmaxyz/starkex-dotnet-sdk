@@ -11,9 +11,6 @@ using StarkEx.Client.SDK.Settings;
 [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "Fields are used on a child class")]
 public abstract class BaseClient
 {
-    /// <summary>
-    /// Represents the base class for all StarkEx API clients.
-    /// </summary>
     protected readonly JsonSerializerOptions requestSerializerOptions = new()
     {
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,

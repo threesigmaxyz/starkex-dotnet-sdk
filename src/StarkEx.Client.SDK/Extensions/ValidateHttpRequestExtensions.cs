@@ -10,7 +10,7 @@ public static class ValidateHttpRequestExtensions
 {
     /// <summary>
     /// Validates the specified HTTP response to ensure that it has a successful status code.
-    /// If the status code is not successful, an exception is thrown.
+    /// If the status code is not in the 2XX range, an exception is thrown.
     /// </summary>
     /// <param name="response">The HTTP response to validate.</param>
     /// <param name="cancellationToken">The token to monitor for cancellation requests.</param>

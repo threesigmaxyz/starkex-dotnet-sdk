@@ -6,6 +6,7 @@ using System.Text.Json.Serialization;
 /// <summary>
 /// Enum of API codes for the StarkEx Perpetual API.
 /// Uses a JSON string enum converter to serialize and deserialize the values as strings.
+/// Official documentation <see href="https://starkware.co/starkex-perpetual-api-v2/">here</see>.
 /// </summary>
 [JsonConverter(typeof(JsonStringEnumMemberConverter))]
 public enum PerpetualApiCodes

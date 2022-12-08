@@ -20,6 +20,8 @@ using Org.BouncyCastle.Math.EC;
 ///     874739451078007766457464989774322083649278607533249481151382481072868806602,
 ///     152666792071518830868575557812948353041420400780739481342941381225525861407
 /// ).
+///
+/// Official documentation <see href="https://docs.starkware.co/starkex/crypto/stark-curve.html">here</see>.
 /// </summary>
 public class StarkCurve
 {
