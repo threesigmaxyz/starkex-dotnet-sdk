@@ -1,7 +1,7 @@
 # StarkEX .NET SDK [![Github Actions][gha-badge]][gha] [![Docs][docs-badge]][docs] [![License: MIT][license-badge]][license]
 
 [gha]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions
-[gha-badge]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions/workflows/main.yml/badge.svg
+[gha-badge]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions/workflows/ci.yml/badge.svg
 [docs]: https://threesigmaxyz.github.io/starkex-dotnet-sdk/articles/intro.html
 [docs-badge]: https://img.shields.io/badge/Docs-DocFx-orange
 [license]: https://opensource.org/licenses/MIT
