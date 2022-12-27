@@ -1,7 +1,6 @@
 ﻿namespace StarkEx.Client.SDK.Models.Spot.TransactionModels;
 
 #nullable enable
-
 using System.Numerics;
 using System.Text.Json.Serialization;
 using StarkEx.Client.SDK.Enums.Spot;
