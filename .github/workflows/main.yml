@@ -1,6 +1,9 @@
-﻿name: Pull request workflow
+﻿name: Main branch workflow
 
-on: pull_request
+on:
+  push:
+    branches:
+      - 'main'
 
 jobs:
   build:
@@ -26,14 +29,11 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
-      - name: Test
-        run: dotnet test --no-restore
-
       - name: Tag version
         id: sdk-version
         uses: paulhatch/semantic-version@v4.0.2
         with:
-          format: "${major}.${minor}.${patch}-preview.${increment}.${GITHUB_RUN_ID}"
+          format: "${major}.${minor}.${patch}-rc.{increment}"
           major_pattern: "(MAJOR)"
           minor_pattern: "(MINOR)"
 
@@ -45,12 +45,12 @@ jobs:
         run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
 
       - name: Publish Commons SDK
-        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
       - name: Publish Crypto SDK
-        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
       - name: Publish Client SDK
-        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
-      
+        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+
       # Publish to nuget.org
       - name: Publish Commons SDK
         run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
