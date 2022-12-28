@@ -33,7 +33,7 @@ jobs:
         id: sdk-version
         uses: paulhatch/semantic-version@v4.0.2
         with:
-          format: "${major}.${minor}.${patch}-rc.{increment}"
+          format: "${major}.${minor}.${patch}-rc.${increment}"
           major_pattern: "(MAJOR)"
           minor_pattern: "(MINOR)"
 
