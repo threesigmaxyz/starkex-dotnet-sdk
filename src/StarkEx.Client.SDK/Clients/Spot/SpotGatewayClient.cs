@@ -60,10 +60,9 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
         return int.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
     }
 
-    public async Task<ResponseModel> AddTransactionAsync<T>(
-        T requestModel,
+    public async Task<ResponseModel> AddTransactionAsync(
+        RequestModel requestModel,
         CancellationToken cancellationToken)
-        where T : BaseRequestModel
     {
         ValidateRequestModel(requestModel);
 
@@ -86,7 +85,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
             await response.Content.ReadAsStreamAsync(cancellationToken), cancellationToken: cancellationToken);
     }
 
-    private static void ValidateRequestModel(BaseRequestModel requestModel)
+    private static void ValidateRequestModel(RequestModel requestModel)
     {
         if (requestModel is null)
         {
@@ -94,10 +93,9 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
         }
     }
 
-    private async Task<ResponseModel> SendRequestAsync<T>(
-        T requestModel,
+    private async Task<ResponseModel> SendRequestAsync(
+        RequestModel requestModel,
         CancellationToken cancellationToken)
-        where T : BaseRequestModel
     {
         var client = CreateClient();
 
