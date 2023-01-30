@@ -497,6 +497,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.SpotGatewayClient
   nameWithType: SpotGatewayClient.SpotGatewayClient
+- uid: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel,CancellationToken)
+  name: AddTransactionAsync(RequestModel, CancellationToken)
+  href: sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html#StarkEx_Client_SDK_Clients_Spot_SpotGatewayClient_AddTransactionAsync_StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_CancellationToken_
+  commentId: M:StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel,CancellationToken)
+  fullName: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel, CancellationToken)
+  nameWithType: SpotGatewayClient.AddTransactionAsync(RequestModel, CancellationToken)
 - uid: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync*
   name: AddTransactionAsync
   href: sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html#StarkEx_Client_SDK_Clients_Spot_SpotGatewayClient_AddTransactionAsync_
@@ -504,15 +510,6 @@ references:
   isSpec: "True"
   fullName: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync
   nameWithType: SpotGatewayClient.AddTransactionAsync
-- uid: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync``1(``0,CancellationToken)
-  name: AddTransactionAsync<T>(T, CancellationToken)
-  href: sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html#StarkEx_Client_SDK_Clients_Spot_SpotGatewayClient_AddTransactionAsync__1___0_CancellationToken_
-  commentId: M:StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync``1(``0,CancellationToken)
-  name.vb: AddTransactionAsync(Of T)(T, CancellationToken)
-  fullName: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync<T>(T, CancellationToken)
-  fullName.vb: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.AddTransactionAsync(Of T)(T, CancellationToken)
-  nameWithType: SpotGatewayClient.AddTransactionAsync<T>(T, CancellationToken)
-  nameWithType.vb: SpotGatewayClient.AddTransactionAsync(Of T)(T, CancellationToken)
 - uid: StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.GetFirstUnusedTxAsync(CancellationToken)
   name: GetFirstUnusedTxAsync(CancellationToken)
   href: sdk/client/StarkEx.Client.SDK.Clients.Spot.SpotGatewayClient.html#StarkEx_Client_SDK_Clients_Spot_SpotGatewayClient_GetFirstUnusedTxAsync_CancellationToken_
@@ -1750,6 +1747,12 @@ references:
   commentId: T:StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient
   fullName: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient
   nameWithType: ISpotGatewayClient
+- uid: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel,CancellationToken)
+  name: AddTransactionAsync(RequestModel, CancellationToken)
+  href: sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html#StarkEx_Client_SDK_Interfaces_Spot_ISpotGatewayClient_AddTransactionAsync_StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_CancellationToken_
+  commentId: M:StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel,CancellationToken)
+  fullName: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync(StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel, CancellationToken)
+  nameWithType: ISpotGatewayClient.AddTransactionAsync(RequestModel, CancellationToken)
 - uid: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync*
   name: AddTransactionAsync
   href: sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html#StarkEx_Client_SDK_Interfaces_Spot_ISpotGatewayClient_AddTransactionAsync_
@@ -1757,15 +1760,6 @@ references:
   isSpec: "True"
   fullName: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync
   nameWithType: ISpotGatewayClient.AddTransactionAsync
-- uid: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync``1(``0,CancellationToken)
-  name: AddTransactionAsync<T>(T, CancellationToken)
-  href: sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html#StarkEx_Client_SDK_Interfaces_Spot_ISpotGatewayClient_AddTransactionAsync__1___0_CancellationToken_
-  commentId: M:StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync``1(``0,CancellationToken)
-  name.vb: AddTransactionAsync(Of T)(T, CancellationToken)
-  fullName: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync<T>(T, CancellationToken)
-  fullName.vb: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.AddTransactionAsync(Of T)(T, CancellationToken)
-  nameWithType: ISpotGatewayClient.AddTransactionAsync<T>(T, CancellationToken)
-  nameWithType.vb: ISpotGatewayClient.AddTransactionAsync(Of T)(T, CancellationToken)
 - uid: StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.GetFirstUnusedTxAsync(CancellationToken)
   name: GetFirstUnusedTxAsync(CancellationToken)
   href: sdk/client/StarkEx.Client.SDK.Interfaces.Spot.ISpotGatewayClient.html#StarkEx_Client_SDK_Interfaces_Spot_ISpotGatewayClient_GetFirstUnusedTxAsync_CancellationToken_
@@ -4902,177 +4896,38 @@ references:
   commentId: N:StarkEx.Client.SDK.Models.Spot.RequestModels
   fullName: StarkEx.Client.SDK.Models.Spot.RequestModels
   nameWithType: StarkEx.Client.SDK.Models.Spot.RequestModels
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel
-  name: BaseRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel
-  nameWithType: BaseRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId
+- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel
+  name: RequestModel
+  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.html
+  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel
+  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel
+  nameWithType: RequestModel
+- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction
+  name: Transaction
+  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_Transaction
+  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction
+  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction
+  nameWithType: RequestModel.Transaction
+- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction*
+  name: Transaction
+  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_Transaction_
+  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction
+  isSpec: "True"
+  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.Transaction
+  nameWithType: RequestModel.Transaction
+- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId
   name: TransactionId
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_BaseRequestModel_TransactionId
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId
-  nameWithType: BaseRequestModel.TransactionId
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId*
+  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_TransactionId
+  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId
+  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId
+  nameWithType: RequestModel.TransactionId
+- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId*
   name: TransactionId
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_BaseRequestModel_TransactionId_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId
+  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_RequestModel_TransactionId_
+  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId
   isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.BaseRequestModel.TransactionId
-  nameWithType: BaseRequestModel.TransactionId
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel
-  name: DepositRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel
-  nameWithType: DepositRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_DepositRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction
-  nameWithType: DepositRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_DepositRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.DepositRequestModel.Transaction
-  nameWithType: DepositRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel
-  name: FalseFullWithdrawalRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel
-  nameWithType: FalseFullWithdrawalRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_FalseFullWithdrawalRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction
-  nameWithType: FalseFullWithdrawalRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_FalseFullWithdrawalRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FalseFullWithdrawalRequestModel.Transaction
-  nameWithType: FalseFullWithdrawalRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel
-  name: FullWithdrawalRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel
-  nameWithType: FullWithdrawalRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_FullWithdrawalRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction
-  nameWithType: FullWithdrawalRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_FullWithdrawalRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.FullWithdrawalRequestModel.Transaction
-  nameWithType: FullWithdrawalRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel
-  name: MintRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel
-  nameWithType: MintRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_MintRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction
-  nameWithType: MintRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_MintRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MintRequestModel.Transaction
-  nameWithType: MintRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel
-  name: MultiTransactionRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel
-  nameWithType: MultiTransactionRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_MultiTransactionRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction
-  nameWithType: MultiTransactionRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_MultiTransactionRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.MultiTransactionRequestModel.Transaction
-  nameWithType: MultiTransactionRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel
-  name: SettlementRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel
-  nameWithType: SettlementRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_SettlementRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction
-  nameWithType: SettlementRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_SettlementRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.SettlementRequestModel.Transaction
-  nameWithType: SettlementRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel
-  name: TransferRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel
-  nameWithType: TransferRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_TransferRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction
-  nameWithType: TransferRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_TransferRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.TransferRequestModel.Transaction
-  nameWithType: TransferRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel
-  name: WithdrawalRequestModel
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html
-  commentId: T:StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel
-  nameWithType: WithdrawalRequestModel
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_WithdrawalRequestModel_Transaction
-  commentId: P:StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction
-  nameWithType: WithdrawalRequestModel.Transaction
-- uid: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction*
-  name: Transaction
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.html#StarkEx_Client_SDK_Models_Spot_RequestModels_WithdrawalRequestModel_Transaction_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.WithdrawalRequestModel.Transaction
-  nameWithType: WithdrawalRequestModel.Transaction
+  fullName: StarkEx.Client.SDK.Models.Spot.RequestModels.RequestModel.TransactionId
+  nameWithType: RequestModel.TransactionId
 - uid: StarkEx.Client.SDK.Models.Spot.ResponseModels
   name: StarkEx.Client.SDK.Models.Spot.ResponseModels
   href: sdk/client/StarkEx.Client.SDK.Models.Spot.ResponseModels.html
