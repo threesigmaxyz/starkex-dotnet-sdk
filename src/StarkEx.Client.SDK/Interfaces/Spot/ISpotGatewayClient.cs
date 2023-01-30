@@ -62,10 +62,8 @@ public interface ISpotGatewayClient
     /// <summary>
     ///     Send a new transaction to StarkEx. This function handles all types of StarkEx transactions.
     /// </summary>
-    /// <typeparam name="T">Request model type.</typeparam>
     /// <param name="requestModel">Representation for a RequestModel.</param>
     /// <param name="cancellationToken">Token used for coop cancellation.</param>
     /// <returns>Transaction Response Model.</returns>
-    Task<ResponseModel> AddTransactionAsync<T>(T requestModel, CancellationToken cancellationToken)
-        where T : BaseRequestModel;
+    Task<ResponseModel> AddTransactionAsync(RequestModel requestModel, CancellationToken cancellationToken);
 }

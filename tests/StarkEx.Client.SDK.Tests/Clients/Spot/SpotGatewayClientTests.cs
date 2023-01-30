@@ -44,7 +44,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedRequestModel = SpotStarkExApiRequests.GetExpectedMintRequestModel();
-        var mintRequestModel = new MintRequestModel
+        var mintRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new MintModel
@@ -71,7 +71,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedSettlementRequestModel = SpotStarkExApiRequests.GetExpectedSettlementRequestModel();
-        var settlementRequestModel = new SettlementRequestModel
+        var settlementRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new SettlementModel
@@ -142,7 +142,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedTransferRequestModel = SpotStarkExApiRequests.GetExpectedTransferRequestModel();
-        var transferRequestModel = new TransferRequestModel
+        var transferRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new TransferModel
@@ -190,7 +190,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedDepositRequestModel = SpotStarkExApiRequests.GetExpectedDepositRequestModel();
-        var depositRequestModel = new DepositRequestModel
+        var depositRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new DepositModel
@@ -217,7 +217,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedWithdrawalRequestModel = SpotStarkExApiRequests.GetExpectedWithdrawalRequestModel();
-        var withdrawalRequestModel = new WithdrawalRequestModel
+        var withdrawalRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new WithdrawalModel
@@ -244,7 +244,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedFullWithdrawalRequestModel = SpotStarkExApiRequests.GetExpectedFullWithdrawalRequestModel();
-        var fullWithdrawalRequestModel = new FullWithdrawalRequestModel
+        var fullWithdrawalRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new FullWithdrawalModel
@@ -269,7 +269,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedFullWithdrawalRequestModel = SpotStarkExApiRequests.GetExpectedFalseFullWithdrawalRequestModel();
-        var fullWithdrawalRequestModel = new FalseFullWithdrawalRequestModel
+        var fullWithdrawalRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new FalseFullWithdrawalModel
@@ -294,7 +294,7 @@ public class SpotGatewayClientTests
         // Arrange
         MockHttpClient();
         var expectedMultiTransactionRequestModel = SpotStarkExApiRequests.GetExpectedMultiTransactionRequestModel();
-        var multiTransactionRequestModel = new MultiTransactionRequestModel
+        var multiTransactionRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new MultiTransactionModel
@@ -335,7 +335,7 @@ public class SpotGatewayClientTests
         var target = CreateService();
 
         // Act
-        var action = async () => await target.AddTransactionAsync((MintRequestModel)null!, CancellationToken.None);
+        var action = async () => await target.AddTransactionAsync(null!, CancellationToken.None);
 
         // Assert
         await action
@@ -355,7 +355,7 @@ public class SpotGatewayClientTests
         {
             Code = expectedApiCode,
         };
-        var mintRequestModel = new MintRequestModel();
+        var mintRequestModel = new RequestModel();
         var target = CreateService();
 
         // Act
@@ -372,7 +372,7 @@ public class SpotGatewayClientTests
         var expectedResponseModel = CommonStarkExApiResponses.GetExpectedStarkExErrorExceptionResponseModel();
         var expectedResponseObject = JToken.Parse(expectedResponseModel);
         MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
-        var mintRequestModel = new MintRequestModel
+        var mintRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new MintModel
@@ -403,7 +403,7 @@ public class SpotGatewayClientTests
         // Arrange
         var expectedResponseModel = "Test with different content.";
         MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
-        var mintRequestModel = new MintRequestModel
+        var mintRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new MintModel
@@ -433,7 +433,7 @@ public class SpotGatewayClientTests
         var expectedResponseModel = CommonStarkExApiResponses.GetExpectedStarkExErrorExceptionComplexProblemsResponseModel();
         var expectedResponseObject = JToken.Parse(expectedResponseModel);
         MockHttpClient(expectedResponseModel, HttpStatusCode.InternalServerError);
-        var mintRequestModel = new MintRequestModel
+        var mintRequestModel = new RequestModel
         {
             TransactionId = 1234,
             Transaction = new MintModel
