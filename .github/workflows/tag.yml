@@ -40,7 +40,7 @@ jobs:
       - name: Package
         run: dotnet pack --configuration Release  -p:Version=${{ steps.sdk-version.outputs.version }}
 
-      # Publish to github
+      # Publish to github 
       - name: Add nuget sources
         run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
 
