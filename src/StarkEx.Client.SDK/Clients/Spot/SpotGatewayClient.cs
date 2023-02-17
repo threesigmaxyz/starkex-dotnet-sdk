@@ -114,7 +114,9 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
 
     private HttpClient CreateClient()
     {
-        var client = httpClientFactory.CreateClient();
+        var client = settings.HttpSpotClientName is null ?
+            httpClientFactory.CreateClient() :
+            httpClientFactory.CreateClient(settings.HttpSpotClientName);
 
         client.BaseAddress = settings.BaseAddress;
 
