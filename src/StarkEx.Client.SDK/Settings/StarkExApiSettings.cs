@@ -15,4 +15,9 @@ public class StarkExApiSettings
     /// The default value is "v2".
     /// </summary>
     public string Version { get; set; } = "v2";
+
+    /// <summary>
+    /// Gets or sets the http client name that will be used for StarkEx Spot API.
+    /// </summary>
+    public string HttpSpotClientName { get; set; }
 }
