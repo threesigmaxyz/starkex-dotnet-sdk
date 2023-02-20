@@ -5881,6 +5881,19 @@ references:
   isSpec: "True"
   fullName: StarkEx.Client.SDK.Settings.StarkExApiSettings.BaseAddress
   nameWithType: StarkExApiSettings.BaseAddress
+- uid: StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName
+  name: HttpSpotClientName
+  href: sdk/client/StarkEx.Client.SDK.Settings.StarkExApiSettings.html#StarkEx_Client_SDK_Settings_StarkExApiSettings_HttpSpotClientName
+  commentId: P:StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName
+  fullName: StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName
+  nameWithType: StarkExApiSettings.HttpSpotClientName
+- uid: StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName*
+  name: HttpSpotClientName
+  href: sdk/client/StarkEx.Client.SDK.Settings.StarkExApiSettings.html#StarkEx_Client_SDK_Settings_StarkExApiSettings_HttpSpotClientName_
+  commentId: Overload:StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName
+  isSpec: "True"
+  fullName: StarkEx.Client.SDK.Settings.StarkExApiSettings.HttpSpotClientName
+  nameWithType: StarkExApiSettings.HttpSpotClientName
 - uid: StarkEx.Client.SDK.Settings.StarkExApiSettings.Version
   name: Version
   href: sdk/client/StarkEx.Client.SDK.Settings.StarkExApiSettings.html#StarkEx_Client_SDK_Settings_StarkExApiSettings_Version
