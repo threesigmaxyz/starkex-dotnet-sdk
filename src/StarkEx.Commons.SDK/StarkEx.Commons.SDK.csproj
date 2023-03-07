@@ -21,8 +21,4 @@
         <CodeAnalysisRuleSet>$(SolutionDir)starkex.sdk.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
-    <ItemGroup>
-        <Folder Include="Models"/>
-    </ItemGroup>
-
 </Project>
