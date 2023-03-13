@@ -1,8 +1,10 @@
 ﻿namespace StarkEx.Crypto.SDK.Signing;
 
+using Nethereum.Hex.HexConvertors.Extensions;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
+using StarkEx.Commons.SDK.Models;
 
 /// <summary>
 /// A STARK-friendly elliptic curve used in the ECDSA signature scheme.
@@ -49,6 +51,11 @@ public class StarkCurve
         configure.SetCoordinateSystem(ECCurve.COORD_AFFINE);
         curve = configure.Create();
         pointG = curve.CreatePoint(Gx, Gy);
+    }
+
+    public static BigInteger GetCurveOrder()
+    {
+        return N;
     }
 
     /// <summary>
@@ -99,6 +106,25 @@ public class StarkCurve
     public ECPoint CreatePoint(BigInteger x, BigInteger y)
     {
         return curve.CreatePoint(x, y);
+    }
+
+    /// <summary>
+    ///     Creates a Stark Account from a Stark private key.
+    /// </summary>
+    /// <param name="privateKey">Stark Private key.</param>
+    /// <returns>
+    ///     A Stark Account.
+    /// </returns>
+    public StarkAccount GetStarkKeysFromPrivateStarkKey(BigInteger privateKey)
+    {
+        var publicKey = pointG.Multiply(privateKey);
+        var publicKeyX = publicKey.XCoord.ToBigInteger();
+
+        return new StarkAccount
+        {
+            PublicKey = publicKeyX.ToString(16).EnsureHexPrefix(),
+            PrivateKey = privateKey.ToString(16).EnsureHexPrefix(),
+        };
     }
 
     private static byte[] PadArray(byte[] arr, int size)

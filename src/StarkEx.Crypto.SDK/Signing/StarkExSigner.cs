@@ -1,5 +1,6 @@
 ﻿namespace StarkEx.Crypto.SDK.Signing;
 
+using System.Security.Cryptography;
 using Nethereum.Hex.HexConvertors.Extensions;
 using Org.BouncyCastle.Crypto.Digests;
 using Org.BouncyCastle.Crypto.Signers;
@@ -9,7 +10,10 @@ using StarkEx.Commons.SDK.Models;
 
 /// <summary>
 /// An implementation of the <see cref="IStarkExSigner"/> interface that provides methods
-/// for generating and verifying signatures on a STARK-friendly curve.
+/// for generating and verifying signatures on a STARK-friendly curve based on StarkWare's own implementation.
+/// <para>
+///     <a href="https://github.com/starkware-libs/starkware-crypto-utils/blob/dev/src/js/key_derivation.js" />
+/// </para>
 /// </summary>
 public class StarkExSigner : IStarkExSigner
 {
@@ -58,6 +62,47 @@ public class StarkExSigner : IStarkExSigner
             new BigInteger(signature.S.RemoveHexPrefix(), 16));
     }
 
+    /// <inheritdoc />
+    public string GetPrivateStarkKeyFromEthSignature(SignatureModel ethSignature)
+    {
+        var r = ethSignature.R.RemoveHexPrefix();
+
+        if (ethSignature.R.RemoveHexPrefix().Length != 64)
+        {
+            throw new ArgumentException("Invalid R in Eth signature");
+        }
+
+        return GrindKey(r, StarkCurve.GetCurveOrder());
+    }
+
+    /// <inheritdoc />
+    public string GetPublicStarkKeyFromPrivateKey(string starkPrivateKey)
+    {
+        var privateKeyFixed = starkPrivateKey.RemoveHexPrefix();
+
+        if (privateKeyFixed.Length > 63)
+        {
+            throw new ArgumentException("Invalid starkPrivateKey");
+        }
+
+        var starkAccount = starkCurve.GetStarkKeysFromPrivateStarkKey(new BigInteger(privateKeyFixed, 16));
+
+        return starkAccount.PublicKey;
+    }
+
+    /// <inheritdoc />
+    public StarkAccount GetStarkAccountFromEthSignature(SignatureModel ethSignature)
+    {
+        var privateKey = GetPrivateStarkKeyFromEthSignature(ethSignature);
+        var publicKey = GetPublicStarkKeyFromPrivateKey(privateKey);
+
+        return new StarkAccount
+        {
+            PublicKey = publicKey,
+            PrivateKey = privateKey,
+        };
+    }
+
     /// <summary>
     /// Converts a BigInteger value to a byte array.
     /// </summary>
@@ -90,5 +135,64 @@ public class StarkExSigner : IStarkExSigner
             63 => messageHash.ShiftLeft(4),
             _ => throw new ArgumentException($"Invalid message hash with length {hashHex.Length}", nameof(messageHash)),
         };
+    }
+
+    private static int CalculateByteLength(int length, int byteSize = 8)
+    {
+        var remainder = length % byteSize;
+        return remainder > 0 ?
+            (((length - remainder) / byteSize) * byteSize) + byteSize :
+            length;
+    }
+
+    private static string GrindKey(string keySeed, BigInteger keyValLimit)
+    {
+        var sha256EcMaxDigest = new BigInteger("2").Pow(256);
+        var maxAllowedVal = sha256EcMaxDigest.Subtract(sha256EcMaxDigest.Mod(keyValLimit));
+
+        var i = 0;
+        var key = HashKeyWithIndex(keySeed, i);
+        i++;
+
+        // Make sure the produced key is divided by the Stark EC order, and falls within the range
+        // [0, maxAllowedVal).
+        while (key.CompareTo(maxAllowedVal) != -1)
+        {
+            key = HashKeyWithIndex(keySeed, i);
+            i++;
+        }
+
+        return key.Mod(keyValLimit).ToString(16);
+    }
+
+    private static BigInteger HashKeyWithIndex(string key, int index)
+    {
+        var sha256 = SHA256.Create();
+        var hex = key.RemoveHexPrefix() + SanitizeBytes(index.ToString("X"), 2);
+        var hexBuffer = hex.HexToByteArray();
+        var hash = sha256.ComputeHash(hexBuffer);
+
+        return new BigInteger(hash.ToHex(), 16);
+    }
+
+    private static string SanitizeBytes(string str, int byteSize = 8, char padding = '0')
+    {
+        return PadString(str, CalculateByteLength(str.Length, byteSize), true, padding);
+    }
+
+    private static string PadString(string str, int length, bool left, char padding = '0')
+    {
+        var diff = length - str.Length;
+        var result = str;
+
+        if (diff <= 0)
+        {
+            return result;
+        }
+
+        var pad = new string(padding, diff);
+        result = left ? pad + str : str + pad;
+
+        return result;
     }
 }
