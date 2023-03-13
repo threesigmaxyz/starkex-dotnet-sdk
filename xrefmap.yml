@@ -6790,6 +6790,45 @@ references:
   commentId: T:StarkEx.Crypto.SDK.Signing.IStarkExSigner
   fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner
   nameWithType: IStarkExSigner
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  name: GetPrivateStarkKeyFromEthSignature(SignatureModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPrivateStarkKeyFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_
+  commentId: M:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  nameWithType: IStarkExSigner.GetPrivateStarkKeyFromEthSignature(SignatureModel)
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature*
+  name: GetPrivateStarkKeyFromEthSignature
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPrivateStarkKeyFromEthSignature_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature
+  nameWithType: IStarkExSigner.GetPrivateStarkKeyFromEthSignature
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  name: GetPublicStarkKeyFromPrivateKey(String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPublicStarkKeyFromPrivateKey_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  nameWithType: IStarkExSigner.GetPublicStarkKeyFromPrivateKey(String)
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey*
+  name: GetPublicStarkKeyFromPrivateKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPublicStarkKeyFromPrivateKey_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey
+  nameWithType: IStarkExSigner.GetPublicStarkKeyFromPrivateKey
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  name: GetStarkAccountFromEthSignature(SignatureModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetStarkAccountFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_
+  commentId: M:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  nameWithType: IStarkExSigner.GetStarkAccountFromEthSignature(SignatureModel)
+- uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature*
+  name: GetStarkAccountFromEthSignature
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetStarkAccountFromEthSignature_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature
+  nameWithType: IStarkExSigner.GetStarkAccountFromEthSignature
 - uid: StarkEx.Crypto.SDK.Signing.IStarkExSigner.SignMessage(System.String,System.String)
   name: SignMessage(String, String)
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.IStarkExSigner.html#StarkEx_Crypto_SDK_Signing_IStarkExSigner_SignMessage_System_String_System_String_
@@ -6874,6 +6913,32 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams
   nameWithType: StarkCurve.CreatePublicKeyParams
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
+  name: GetCurveOrder()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetCurveOrder
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder()
+  nameWithType: StarkCurve.GetCurveOrder()
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder*
+  name: GetCurveOrder
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetCurveOrder_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
+  nameWithType: StarkCurve.GetCurveOrder
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey(BigInteger)
+  name: GetStarkKeysFromPrivateStarkKey(BigInteger)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetStarkKeysFromPrivateStarkKey_BigInteger_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey(BigInteger)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey(BigInteger)
+  nameWithType: StarkCurve.GetStarkKeysFromPrivateStarkKey(BigInteger)
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey*
+  name: GetStarkKeysFromPrivateStarkKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetStarkKeysFromPrivateStarkKey_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey
+  nameWithType: StarkCurve.GetStarkKeysFromPrivateStarkKey
 - uid: StarkEx.Crypto.SDK.Signing.StarkExSigner
   name: StarkExSigner
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html
@@ -6893,6 +6958,45 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.StarkExSigner
   nameWithType: StarkExSigner.StarkExSigner
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  name: GetPrivateStarkKeyFromEthSignature(SignatureModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetPrivateStarkKeyFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  nameWithType: StarkExSigner.GetPrivateStarkKeyFromEthSignature(SignatureModel)
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature*
+  name: GetPrivateStarkKeyFromEthSignature
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetPrivateStarkKeyFromEthSignature_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPrivateStarkKeyFromEthSignature
+  nameWithType: StarkExSigner.GetPrivateStarkKeyFromEthSignature
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  name: GetPublicStarkKeyFromPrivateKey(String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetPublicStarkKeyFromPrivateKey_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)
+  nameWithType: StarkExSigner.GetPublicStarkKeyFromPrivateKey(String)
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey*
+  name: GetPublicStarkKeyFromPrivateKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetPublicStarkKeyFromPrivateKey_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetPublicStarkKeyFromPrivateKey
+  nameWithType: StarkExSigner.GetPublicStarkKeyFromPrivateKey
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  name: GetStarkAccountFromEthSignature(SignatureModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetStarkAccountFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)
+  nameWithType: StarkExSigner.GetStarkAccountFromEthSignature(SignatureModel)
+- uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature*
+  name: GetStarkAccountFromEthSignature
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_GetStarkAccountFromEthSignature_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.GetStarkAccountFromEthSignature
+  nameWithType: StarkExSigner.GetStarkAccountFromEthSignature
 - uid: StarkEx.Crypto.SDK.Signing.StarkExSigner.SignMessage(System.String,System.String)
   name: SignMessage(String, String)
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html#StarkEx_Crypto_SDK_Signing_StarkExSigner_SignMessage_System_String_System_String_

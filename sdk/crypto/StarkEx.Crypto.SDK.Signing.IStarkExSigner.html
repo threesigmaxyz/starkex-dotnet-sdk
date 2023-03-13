@@ -85,6 +85,156 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPrivateStarkKeyFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Signing/IStarkExSigner.cs/#L38">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPrivateStarkKeyFromEthSignature_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPrivateStarkKeyFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPrivateStarkKeyFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)">GetPrivateStarkKeyFromEthSignature(SignatureModel)</h4>
+  <div class="markdown level1 summary"><p>Generates a private Stark Key from an Ethereum signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetPrivateStarkKeyFromEthSignature(SignatureModel ethSignature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StarkEx.Commons.SDK.Models.SignatureModel</span></td>
+        <td><span class="parametername">ethSignature</span></td>
+        <td><p>Computed signature from an Ethereum account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Private Stark key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPublicStarkKeyFromPrivateKey_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Signing/IStarkExSigner.cs/#L47">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPublicStarkKeyFromPrivateKey_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetPublicStarkKeyFromPrivateKey_System_String_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetPublicStarkKeyFromPrivateKey(System.String)">GetPublicStarkKeyFromPrivateKey(String)</h4>
+  <div class="markdown level1 summary"><p>Generates a public Stark Key from a private Stark Key</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetPublicStarkKeyFromPrivateKey(string starkPrivateKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">starkPrivateKey</span></td>
+        <td><p>Private Stark Key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Public Stark key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetStarkAccountFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Signing/IStarkExSigner.cs/#L56">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetStarkAccountFromEthSignature_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Signing_IStarkExSigner_GetStarkAccountFromEthSignature_StarkEx_Commons_SDK_Models_SignatureModel_" data-uid="StarkEx.Crypto.SDK.Signing.IStarkExSigner.GetStarkAccountFromEthSignature(StarkEx.Commons.SDK.Models.SignatureModel)">GetStarkAccountFromEthSignature(SignatureModel)</h4>
+  <div class="markdown level1 summary"><p>Generates a Stark Account from an Ethereum signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">StarkAccount GetStarkAccountFromEthSignature(SignatureModel ethSignature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StarkEx.Commons.SDK.Models.SignatureModel</span></td>
+        <td><span class="parametername">ethSignature</span></td>
+        <td><p>Computed signature from an Ethereum account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StarkEx.Commons.SDK.Models.StarkAccount</span></td>
+        <td><p>Stark Account</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Signing_IStarkExSigner_SignMessage_System_String_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Signing.IStarkExSigner.SignMessage(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
