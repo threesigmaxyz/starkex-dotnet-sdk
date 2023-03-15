@@ -81,6 +81,11 @@ public class StarkExSignerTests
         "0400499f65ae2f71d5298d2d88823b2e5e19596a71aac1984710479e406a00243904745865467631492cf6ecc433a3cf4ecc580d698097d6b738ad8f3da7c4d66c",
         "b6bee8010f96a723f6de06b5fa06e820418712439c93850dd4e9bde43ddf",
         "1a3d2bc954ed77e22986f507d68d18115fa543d1901f5b4620db98e2f6efd80")]
+    [InlineData(
+        "1f8fc8e490b7cf3f3637d75644bdcef3e05452a9465cbbcbce93d17c96a8eee",
+        "199bc7025a07fb37fac57a9202d1e7092cd9a7d4c37741289ae5aee2fc619f2",
+        "25fd6008ca573de199dc5ddef3970d7a3861c5ba7b23e455c78e3f84e467aa",
+        "5298f5f963270de0087befd26dd8dd4658e8b5b52eb36c326dcc90eb2cd7298")]
     public void VerifySignature_InputsAreValid_SignatureIsValidated(
         string messageHash,
         string publicKey,

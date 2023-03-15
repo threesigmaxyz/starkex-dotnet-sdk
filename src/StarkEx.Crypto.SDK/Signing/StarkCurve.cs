@@ -5,6 +5,7 @@ using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Math.EC;
 using StarkEx.Commons.SDK.Models;
+using StarkEx.Crypto.SDK.Constants;
 
 /// <summary>
 /// A STARK-friendly elliptic curve used in the ECDSA signature scheme.
@@ -28,7 +29,7 @@ using StarkEx.Commons.SDK.Models;
 public class StarkCurve
 {
     /* Curve parameters*/
-    private static readonly BigInteger P = new("3618502788666131213697322783095070105623107215331596699973092056135872020481");
+    public static readonly BigInteger P = new("3618502788666131213697322783095070105623107215331596699973092056135872020481");
     private static readonly BigInteger A = BigInteger.One;
     private static readonly BigInteger B = new("3141592653589793238462643383279502884197169399375105820974944592307816406665");
     private static readonly BigInteger N = new("3618502788666131213697322783095070105526743751716087489154079457884512865583");
@@ -53,19 +54,44 @@ public class StarkCurve
         pointG = curve.CreatePoint(Gx, Gy);
     }
 
+    /// <summary>
+    /// Gets the STARK curve order.
+    /// </summary>
+    /// <returns>The STARK curve order.</returns>
     public static BigInteger GetCurveOrder()
     {
         return N;
     }
 
     /// <summary>
-    ///     Creates PublicKeys parameters.
+    /// Gets the STARK curve generator point.
     /// </summary>
-    /// <param name="publicKey">Public key.</param>
-    /// <returns>
-    ///     Public key parameters with respect to G.
-    /// </returns>
-    public ECPublicKeyParameters CreatePublicKeyParams(BigInteger publicKey)
+    /// <returns>The STARK curve generator point.</returns>
+    public ECPoint GetGenerator()
+    {
+        return pointG;
+    }
+
+    /// <summary>
+    /// Gets the elliptic curve point at the specified index.
+    /// </summary>f
+    /// <param name="index">The index of the point to retrieve.</param>
+    /// <returns>The elliptic curve point at the specified index as an <see cref="ECPoint"/> object.</returns>
+    public ECPoint GetEcPoint(int index)
+    {
+        var hexConstantPoint = EllipticCurveConstantPoints.HexConstantPoints.ElementAt(index);
+        var pointX = new BigInteger(hexConstantPoint.Item1.RemoveHexPrefix(), 16);
+        var pointY = new BigInteger(hexConstantPoint.Item2.RemoveHexPrefix(), 16);
+
+        return CreatePoint(pointX, pointY);
+    }
+
+    /// <summary>
+    /// Converts the specified public key to a STARK curve point.
+    /// </summary>
+    /// <param name="publicKey">The public key to convert to a STARK curve point.</param>
+    /// <returns>The STARK curve point corresponding to the public key.</returns>
+    public ECPoint GetEcPoint(BigInteger publicKey)
     {
         var encodedKey = publicKey.ToByteArray();
         var coordLength = (curve.FieldSize + 7) / 8;
@@ -78,9 +104,7 @@ public class StarkCurve
             encodedKey = encodedKey.Prepend((byte)0x02).ToArray();
         }
 
-        return new ECPublicKeyParameters(
-            curve.DecodePoint(encodedKey),
-            new ECDomainParameters(curve, curve.CreatePoint(GetGx(), GetGy()), N));
+        return curve.DecodePoint(encodedKey);
     }
 
     /// <summary>
