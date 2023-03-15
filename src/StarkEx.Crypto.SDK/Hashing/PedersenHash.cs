@@ -12,7 +12,7 @@ public class PedersenHash : IPedersenHash
     /// <summary>
     /// The prime number used in the calculation of the Pedersen hash.
     /// </summary>
-    private static readonly BigInteger Prime = new("800000000000011000000000000000000000000000000000000000000000001", 16);
+    public static readonly BigInteger Prime = new("800000000000011000000000000000000000000000000000000000000000001", 16);
 
     /// <summary>
     /// The point used as the base for calculating the Pedersen hash.
