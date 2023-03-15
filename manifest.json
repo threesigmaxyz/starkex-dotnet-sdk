@@ -1701,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html",
-          "hash": "xtEEkM+aQ2zXVkzw98DBDw=="
+          "hash": "+vUgLwcKthWZ7dSDp3pz7w=="
         }
       },
       "is_incremental": false,
@@ -1785,7 +1785,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html",
-          "hash": "0jCYn7s1xOXac35OHnxySQ=="
+          "hash": "gwHRQQ1Rxw9pm/3rgYAsSA=="
         }
       },
       "is_incremental": false,
@@ -1797,7 +1797,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html",
-          "hash": "z9dr6G2ESXZd0dMLCAVG2g=="
+          "hash": "sb978GQd7z95ooFwvfMfNA=="
         }
       },
       "is_incremental": false,
@@ -1816,12 +1816,36 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html",
+          "hash": "VUt+UUJ2+oFgiALI9rSCmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Utils.html",
+          "hash": "a3UbXXkqrNGTaxTgEb8kgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "sdk/crypto/toc.yml",
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/toc.html",
-          "hash": "F5EWbsuzc7favctPFqnzhQ=="
+          "hash": "ss6duWFgKwFa3Ey9LjJRTg=="
         }
       },
       "is_incremental": false,
@@ -1860,7 +1884,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 145,
+          "total_file_count": 147,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

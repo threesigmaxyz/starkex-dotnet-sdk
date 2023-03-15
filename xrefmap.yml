@@ -6285,6 +6285,12 @@ references:
   commentId: T:StarkEx.Crypto.SDK.Hashing.PedersenHash
   fullName: StarkEx.Crypto.SDK.Hashing.PedersenHash
   nameWithType: PedersenHash
+- uid: StarkEx.Crypto.SDK.Hashing.PedersenHash.
+  name: ''
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html#StarkEx_Crypto_SDK_Hashing_PedersenHash_
+  commentId: F:StarkEx.Crypto.SDK.Hashing.PedersenHash.
+  fullName: StarkEx.Crypto.SDK.Hashing.PedersenHash.
+  nameWithType: PedersenHash.
 - uid: StarkEx.Crypto.SDK.Hashing.PedersenHash.#ctor(StarkEx.Crypto.SDK.Signing.StarkCurve)
   name: PedersenHash(StarkCurve)
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html#StarkEx_Crypto_SDK_Hashing_PedersenHash__ctor_StarkEx_Crypto_SDK_Signing_StarkCurve_
@@ -6314,6 +6320,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.PedersenHash.CreateHash
   nameWithType: PedersenHash.CreateHash
+- uid: StarkEx.Crypto.SDK.Hashing.PedersenHash.Prime
+  name: Prime
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html#StarkEx_Crypto_SDK_Hashing_PedersenHash_Prime
+  commentId: F:StarkEx.Crypto.SDK.Hashing.PedersenHash.Prime
+  fullName: StarkEx.Crypto.SDK.Hashing.PedersenHash.Prime
+  nameWithType: PedersenHash.Prime
 - uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher
   name: SpotTradingMessageHasher
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html
@@ -6900,19 +6912,6 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePrivateKeyParams
   nameWithType: StarkCurve.CreatePrivateKeyParams
-- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams(BigInteger)
-  name: CreatePublicKeyParams(BigInteger)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_CreatePublicKeyParams_BigInteger_
-  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams(BigInteger)
-  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams(BigInteger)
-  nameWithType: StarkCurve.CreatePublicKeyParams(BigInteger)
-- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams*
-  name: CreatePublicKeyParams
-  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_CreatePublicKeyParams_
-  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams
-  isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.CreatePublicKeyParams
-  nameWithType: StarkCurve.CreatePublicKeyParams
 - uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
   name: GetCurveOrder()
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetCurveOrder
@@ -6926,6 +6925,38 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetCurveOrder
   nameWithType: StarkCurve.GetCurveOrder
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(BigInteger)
+  name: GetEcPoint(BigInteger)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetEcPoint_BigInteger_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(BigInteger)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(BigInteger)
+  nameWithType: StarkCurve.GetEcPoint(BigInteger)
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(System.Int32)
+  name: GetEcPoint(Int32)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetEcPoint_System_Int32_
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(System.Int32)
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint(System.Int32)
+  nameWithType: StarkCurve.GetEcPoint(Int32)
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint*
+  name: GetEcPoint
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetEcPoint_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetEcPoint
+  nameWithType: StarkCurve.GetEcPoint
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator
+  name: GetGenerator()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetGenerator
+  commentId: M:StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator()
+  nameWithType: StarkCurve.GetGenerator()
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator*
+  name: GetGenerator
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetGenerator_
+  commentId: Overload:StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetGenerator
+  nameWithType: StarkCurve.GetGenerator
 - uid: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey(BigInteger)
   name: GetStarkKeysFromPrivateStarkKey(BigInteger)
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_GetStarkKeysFromPrivateStarkKey_BigInteger_
@@ -6939,6 +6970,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.GetStarkKeysFromPrivateStarkKey
   nameWithType: StarkCurve.GetStarkKeysFromPrivateStarkKey
+- uid: StarkEx.Crypto.SDK.Signing.StarkCurve.P
+  name: P
+  href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkCurve.html#StarkEx_Crypto_SDK_Signing_StarkCurve_P
+  commentId: F:StarkEx.Crypto.SDK.Signing.StarkCurve.P
+  fullName: StarkEx.Crypto.SDK.Signing.StarkCurve.P
+  nameWithType: StarkCurve.P
 - uid: StarkEx.Crypto.SDK.Signing.StarkExSigner
   name: StarkExSigner
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.StarkExSigner.html
@@ -7023,3 +7060,41 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Signing.StarkExSigner.VerifySignature
   nameWithType: StarkExSigner.VerifySignature
+- uid: StarkEx.Crypto.SDK.Utils
+  name: StarkEx.Crypto.SDK.Utils
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.html
+  commentId: N:StarkEx.Crypto.SDK.Utils
+  fullName: StarkEx.Crypto.SDK.Utils
+  nameWithType: StarkEx.Crypto.SDK.Utils
+- uid: StarkEx.Crypto.SDK.Utils.MathUtils
+  name: MathUtils
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html
+  commentId: T:StarkEx.Crypto.SDK.Utils.MathUtils
+  fullName: StarkEx.Crypto.SDK.Utils.MathUtils
+  nameWithType: MathUtils
+- uid: StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex(BigInteger,BigInteger)
+  name: Igcdex(BigInteger, BigInteger)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html#StarkEx_Crypto_SDK_Utils_MathUtils_Igcdex_BigInteger_BigInteger_
+  commentId: M:StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex(BigInteger,BigInteger)
+  fullName: StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex(BigInteger, BigInteger)
+  nameWithType: MathUtils.Igcdex(BigInteger, BigInteger)
+- uid: StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex*
+  name: Igcdex
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html#StarkEx_Crypto_SDK_Utils_MathUtils_Igcdex_
+  commentId: Overload:StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Utils.MathUtils.Igcdex
+  nameWithType: MathUtils.Igcdex
+- uid: StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir(BigInteger,ECPoint,ECPoint)
+  name: MimicEcMultiplicationAir(BigInteger, ECPoint, ECPoint)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html#StarkEx_Crypto_SDK_Utils_MathUtils_MimicEcMultiplicationAir_BigInteger_ECPoint_ECPoint_
+  commentId: M:StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir(BigInteger,ECPoint,ECPoint)
+  fullName: StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir(BigInteger, ECPoint, ECPoint)
+  nameWithType: MathUtils.MimicEcMultiplicationAir(BigInteger, ECPoint, ECPoint)
+- uid: StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir*
+  name: MimicEcMultiplicationAir
+  href: sdk/crypto/StarkEx.Crypto.SDK.Utils.MathUtils.html#StarkEx_Crypto_SDK_Utils_MathUtils_MimicEcMultiplicationAir_
+  commentId: Overload:StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Utils.MathUtils.MimicEcMultiplicationAir
+  nameWithType: MathUtils.MimicEcMultiplicationAir
