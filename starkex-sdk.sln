@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarkEx.Client.SDK.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarkEx.Commons.SDK", "src\StarkEx.Commons.SDK\StarkEx.Commons.SDK.csproj", "{647D6AB9-4E74-44B1-92C8-46ED1786F969}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarkEx.Crypto.SDK.DifferentialTests", "tests\StarkEx.Crypto.SDK.DifferentialTests\StarkEx.Crypto.SDK.DifferentialTests.csproj", "{36A8B8F7-626A-49A0-B878-CF39283EC1EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{647D6AB9-4E74-44B1-92C8-46ED1786F969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647D6AB9-4E74-44B1-92C8-46ED1786F969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647D6AB9-4E74-44B1-92C8-46ED1786F969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A8B8F7-626A-49A0-B878-CF39283EC1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A8B8F7-626A-49A0-B878-CF39283EC1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A8B8F7-626A-49A0-B878-CF39283EC1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A8B8F7-626A-49A0-B878-CF39283EC1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

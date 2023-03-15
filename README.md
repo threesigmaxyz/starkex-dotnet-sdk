@@ -47,8 +47,27 @@ dotnet add PROJECT package StarkEx.Client.SDK --version 0.1.0
 We provide a full testing suit for the SDKs that can be run via:
 
 ```bash
-dotnet test StarkEx.Crypto.SDK.Tests
-dotnet test StarkEx.Client.SDK.Tests
+dotnet test tests/StarkEx.Crypto.SDK.Tests
+dotnet test tests/StarkEx.Client.SDK.Tests
+```
+
+## Differential Testing
+Additionaly, we provide a differential testing campaign for the `StarkEx.Crypto.SDK` against Starkware's reference [Python implementation](https://github.com/starkware-libs/starkex-resources/blob/master/crypto/starkware/crypto/signature/signature.py).
+
+### Setup
+Before running the tests you must install the following dependencies:
+- [Python](https://www.python.org/)
+- [Pip](https://pip.pypa.io/en/stable/)
+
+Afterwards install the required Python libraries via:
+```bash
+pip install -r tests/StarkEx.Crypto.SDK.DifferentialTests/Python/requirements.txt
+```
+
+### Run
+You can execute the differential tests using:
+```bash
+dotnet test tests/StarkEx.Crypto.SDK.DifferentialTests
 ```
 
 ## Contribute
