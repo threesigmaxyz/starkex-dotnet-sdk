@@ -12,6 +12,7 @@ public class MathUtilsDifferentialTests
 {
     [Theory]
     [Repeat(10)]
+    #pragma warning disable xUnit1026
     public void MimicEcMultiplicationAir_DifferentialTesting_ResultsMatch(int runId)
     {
         // Generate random inputs.
@@ -23,7 +24,6 @@ public class MathUtilsDifferentialTests
         var shiftPoint = starkCurve.GetEcPoint(0);
 
         // Run C# implementation.
-        var target = CreateStarkExSigner();
         var result = MathUtils.MimicEcMultiplicationAir(value, point, shiftPoint);
 
         // Run Python implementation.
@@ -32,9 +32,5 @@ public class MathUtilsDifferentialTests
         // Compare results.
         result.Should().Be(controlResult);
     }
-
-    private static IStarkExSigner CreateStarkExSigner()
-    {
-        return new StarkExSigner(new StarkCurve());
-    }
+    #pragma warning restore
 }

@@ -8,7 +8,7 @@ using Org.BouncyCastle.Math.EC;
 using StarkEx.Commons.SDK.Models;
 using StarkEx.Crypto.SDK.Signing;
 
-public class PythonHelpers
+public static class PythonHelpers
 {
     private const string PythonExecutable = "python";
     private const string Filepath = "Python/signature.py";

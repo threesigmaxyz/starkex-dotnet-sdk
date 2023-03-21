@@ -6,7 +6,7 @@ using Org.BouncyCastle.Security;
 /// <summary>
 /// A collection of helper methods for generating random values.
 /// </summary>
-public class RandomHelpers
+public static class RandomHelpers
 {
     /// <summary>
     /// Generates a random <see cref="BigInteger"/> with the specified bit length.

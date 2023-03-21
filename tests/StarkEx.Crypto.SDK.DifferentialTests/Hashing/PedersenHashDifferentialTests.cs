@@ -13,6 +13,7 @@ public class PedersenHashDifferentialTests
 {
     [Theory]
     [Repeat(10)]
+    #pragma warning disable xUnit1026
     public void CreateHash_InputsAreValid_ResultsMatch(int runId)
     {
         // Generate random inputs.
@@ -29,8 +30,9 @@ public class PedersenHashDifferentialTests
         // Compare results.
         result.Should().Be(controlResult);
     }
+    #pragma warning restore xUnit1026
 
-    private IPedersenHash CreatePedersenHash()
+    private static IPedersenHash CreatePedersenHash()
     {
         return new PedersenHash(new StarkCurve());
     }

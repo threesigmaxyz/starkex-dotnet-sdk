@@ -11,6 +11,7 @@ public class StarkExSignerDifferentialTests
 {
     [Theory]
     [Repeat(10)]
+    #pragma warning disable xUnit1026
     public void SignMessage_InputsAreValid_ResultsMatch(int runId)
     {
         // Generate random inputs.
@@ -28,9 +29,11 @@ public class StarkExSignerDifferentialTests
         result.R.Should().Be(controlResult.R);
         result.S.Should().Be(controlResult.S);
     }
+    #pragma warning restore xUnit1026
 
     [Theory]
     [Repeat(10)]
+    #pragma warning disable xUnit1026
     public void VerifySignature_DifferentialTesting_ResultsMatch(int runId)
     {
         // Generate random inputs.
@@ -52,6 +55,7 @@ public class StarkExSignerDifferentialTests
         result.Should().BeTrue();
         controlResult.Should().BeTrue();
     }
+    #pragma warning restore xUnit1026
 
     private static IStarkExSigner CreateStarkExSigner()
     {
