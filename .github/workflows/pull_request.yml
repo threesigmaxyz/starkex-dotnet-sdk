@@ -27,8 +27,22 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test --no-restore
-
+        run: |
+          dotnet test tests/StarkEx.Crypto.SDK.Tests --no-restore
+          dotnet test tests/StarkEx.Client.SDK.Tests --no-restore
+        
+      - name: Setup differential test (install python)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          
+      - name: Setup differential test (install dependencies) 
+        run: pip install -r tests/StarkEx.Crypto.SDK.DifferentialTests/Python/requirements.txt
+        
+      - name: Differential Test
+        run: dotnet test tests/StarkEx.Crypto.SDK.DifferentialTests --no-restore
+      
       - name: Tag version
         id: sdk-version
         uses: paulhatch/semantic-version@v4.0.2
