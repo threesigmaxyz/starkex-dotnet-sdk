@@ -34,8 +34,7 @@ public class WithdrawalToAddressModel : TransactionModel
     ///     Gets or sets unique nonce issued by the caller.
     /// </summary>
     [JsonPropertyName("nonce")]
-    [JsonConverter(typeof(BigIntegerAsTextConverter))]
-    public BigInteger Nonce { get; set; }
+    public uint Nonce { get; set; }
 
     /// <summary>
     ///     Gets or sets the position ID to withdraw from.

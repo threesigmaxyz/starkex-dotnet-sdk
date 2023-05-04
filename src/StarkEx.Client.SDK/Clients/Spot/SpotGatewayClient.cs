@@ -26,7 +26,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
     {
         var client = CreateClient();
 
-        var endpoint = $"/{settings.Version}/gateway/testing/get_first_unused_tx_id";
+        var endpoint = $"/gateway/{settings.Version}/testing/get_first_unused_tx_id";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
         await response.ValidateSuccessStatusCode(cancellationToken);
@@ -39,7 +39,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
     {
         var client = CreateClient();
 
-        var endpoint = $"/{settings.Version}/gateway/testing/get_stark_dex_address";
+        var endpoint = $"/gateway/{settings.Version}/testing/get_stark_dex_address";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
         await response.ValidateSuccessStatusCode(cancellationToken);
@@ -52,7 +52,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
     {
         var client = CreateClient();
 
-        var endpoint = $"/{settings.Version}/gateway/get_time_spent_by_oldest_unaccepted_tx_in_system";
+        var endpoint = $"/gateway/{settings.Version}/get_time_spent_by_oldest_unaccepted_tx_in_system";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
         await response.ValidateSuccessStatusCode(cancellationToken);
@@ -76,7 +76,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
     {
         var client = CreateClient();
 
-        var endpoint = $"/{settings.Version}/gateway/get_transaction?tx_id={txId}";
+        var endpoint = $"/gateway/{settings.Version}/get_transaction?tx_id={txId}";
         var response = await client.GetAsync(endpoint, cancellationToken);
 
         await response.ValidateSuccessStatusCode(cancellationToken);
@@ -104,7 +104,7 @@ public class SpotGatewayClient : BaseClient, ISpotGatewayClient
             Encoding.UTF8,
             MediaTypeNames.Application.Json);
 
-        var response = await client.PostAsync($"/{settings.Version}/gateway/add_transaction", jsonBody, cancellationToken);
+        var response = await client.PostAsync($"/gateway/{settings.Version}/add_transaction", jsonBody, cancellationToken);
 
         await response.ValidateSuccessStatusCode(cancellationToken);
 

@@ -30,7 +30,7 @@ public class SpotGatewayClientIntegrationTests
     public async Task GetFirstUnusedTxAsync_HappyPath_Success()
     {
         // Arrange
-        const int expectedFirstUnusedTx = 1144; // playground value as of 2022-12-07
+        const int expectedFirstUnusedTx = 78; // playground value as of 2023-05-10
         var target = CreateService();
 
         // Act
@@ -44,7 +44,7 @@ public class SpotGatewayClientIntegrationTests
     public async Task GetStarkDexAddress_HappyPath_Success()
     {
         // Arrange
-        const string expectedStarkDexAddress = "\"0x5731aEa1809BE0454907423083fb879079FB69dF\"";
+        const string expectedStarkDexAddress = "\"0x921cb8950942F8d4870f3d2EAa922A098B27f582\"";
         var target = CreateService();
 
         // Act
