@@ -554,7 +554,7 @@ public class SpotGatewayClientTests
                 "SendAsync",
                 Times.Exactly(1),
                 ItExpr.Is<HttpRequestMessage>(x =>
-                    x.RequestUri!.AbsolutePath.Equals($"/{settings.Version}/gateway/add_transaction") &&
+                    x.RequestUri!.AbsolutePath.Equals($"/gateway/{settings.Version}/add_transaction") &&
                     x.Content!.ReadAsStringAsync().Result.RemoveNewLineCharsAndSpacesAndTrim()
                         .Equals(expectedRequestModel.RemoveNewLineCharsAndSpacesAndTrim())),
                 ItExpr.IsAny<CancellationToken>());

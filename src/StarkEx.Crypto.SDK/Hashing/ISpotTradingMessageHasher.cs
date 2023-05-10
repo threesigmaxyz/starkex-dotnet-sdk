@@ -59,7 +59,7 @@ public interface ISpotTradingMessageHasher
         string assetIdBought,
         BigInteger quantizedAmountSold,
         BigInteger quantizedAmountBought,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp);
@@ -80,7 +80,7 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string receiverStarkKey,
         BigInteger quantizedAmountSold,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp);
@@ -102,7 +102,7 @@ public interface ISpotTradingMessageHasher
         string assetIdSold,
         string receiverStarkKey,
         BigInteger quantizedAmountSold,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp,

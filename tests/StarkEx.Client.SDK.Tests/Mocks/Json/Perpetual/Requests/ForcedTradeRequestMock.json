@@ -5,7 +5,7 @@
         "collateral_asset_id": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
         "is_party_a_buying_synthetic": false,
         "is_valid": false,
-        "nonce": "1284389859",
+        "nonce": 1284389859,
         "position_id_party_a": "9276979549170356654",
         "position_id_party_b": "18112525187809919137",
         "public_key_party_a": "0x3db6c6e82fab496fa87fbeed99848903a92a7ba339dbcda84663f3baa2a666a",

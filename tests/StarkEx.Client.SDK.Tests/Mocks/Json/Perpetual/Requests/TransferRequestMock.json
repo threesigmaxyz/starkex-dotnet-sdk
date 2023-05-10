@@ -3,7 +3,7 @@
         "amount": "7758176404715800194",
         "asset_id": "0x57d05d11b570fd197b55746070ee051c731ee109b07255eab3c9cf8b6c579d",
         "expiration_timestamp": "2404381470",
-        "nonce": "2195908194",
+        "nonce": 2195908194,
         "receiver_position_id": "6091063652223914538",
         "receiver_public_key": "0x259f432e6f4590b9a164106cf6a659eb4862b21fb97d43588561712e8e5216b",
         "sender_position_id": "9309829342914403545",

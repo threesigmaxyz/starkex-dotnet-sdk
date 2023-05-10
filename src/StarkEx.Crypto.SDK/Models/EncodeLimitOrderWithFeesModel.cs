@@ -35,7 +35,7 @@ public class EncodeLimitOrderWithFeesModel
         BigInteger quantizedAmountSold,
         BigInteger quantizedAmountBought,
         BigInteger quantizedAmountUsedForFees,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedForFees,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
@@ -87,7 +87,7 @@ public class EncodeLimitOrderWithFeesModel
     /// <summary>
     /// Gets or sets the nonce used.
     /// </summary>
-    public int Nonce { get; set; }
+    public uint Nonce { get; set; }
 
     /// <summary>
     /// Gets or sets the Id of the vault used for fees.

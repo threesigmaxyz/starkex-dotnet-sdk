@@ -5,7 +5,7 @@
         "expiration_timestamp": "2404381470",
         "fact": "6461646162616461626164616461626164616261646164616261646162616461",
         "fact_registry_address": "0x599f9eC17474c2E25C9859ee34A6A02fE9738083",
-        "nonce": "2195908194",
+        "nonce": 2195908194,
         "receiver_position_id": "6091063652223914538",
         "receiver_public_key": "0x259f432e6f4590b9a164106cf6a659eb4862b21fb97d43588561712e8e5216b",
         "sender_position_id": "9309829342914403545",

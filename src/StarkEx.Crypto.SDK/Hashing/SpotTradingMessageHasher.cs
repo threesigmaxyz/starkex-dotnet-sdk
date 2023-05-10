@@ -148,7 +148,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         string assetIdBought,
         BigInteger quantizedAmountSold,
         BigInteger quantizedAmountBought,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp)
@@ -175,7 +175,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         string assetIdSold,
         string receiverStarkKey,
         BigInteger quantizedAmountSold,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp)
@@ -200,7 +200,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         string assetIdSold,
         string receiverStarkKey,
         BigInteger quantizedAmountSold,
-        int nonce,
+        uint nonce,
         BigInteger vaultIdUsedOfReceiver,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp,
@@ -228,7 +228,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger paramC,
         BigInteger paramD,
         BigInteger paramE,
-        int paramF,
+        uint paramF,
         long paramG)
     {
         return BigInteger.Zero
@@ -245,7 +245,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger paramB,
         BigInteger paramC,
         BigInteger paramD,
-        int paramE)
+        uint paramE)
     {
         return BigInteger.Zero
             .ShiftLeft(27).Add(BigInteger.Zero)
