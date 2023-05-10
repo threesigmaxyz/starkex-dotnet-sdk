@@ -6195,12 +6195,12 @@ references:
   commentId: T:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher
   fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher
   nameWithType: ISpotTradingMessageHasher
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String)
-  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64, System.String)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64, String)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
+  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String)
+  nameWithType: ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
 - uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer*
   name: DeprecatedHashConditionalTransfer
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashConditionalTransfer_
@@ -6208,12 +6208,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer
   nameWithType: ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: ISpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
 - uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder*
   name: DeprecatedHashLimitOrder
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashLimitOrder_
@@ -6221,12 +6221,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder
   nameWithType: ISpotTradingMessageHasher.DeprecatedHashLimitOrder
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashTransferOrder(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: ISpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
 - uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder*
   name: DeprecatedHashTransferOrder
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashTransferOrder_
@@ -6345,12 +6345,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.SpotTradingMessageHasher
   nameWithType: SpotTradingMessageHasher.SpotTradingMessageHasher
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String)
-  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64, System.String)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64, String)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
+  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String)
+  nameWithType: SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
 - uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer*
   name: DeprecatedHashConditionalTransfer
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_
@@ -6358,12 +6358,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer
   nameWithType: SpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: SpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
 - uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder*
   name: DeprecatedHashLimitOrder
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_
@@ -6371,12 +6371,12 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder
   nameWithType: SpotTradingMessageHasher.DeprecatedHashLimitOrder
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashTransferOrder(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, Int32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: SpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
 - uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder*
   name: DeprecatedHashTransferOrder
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_
@@ -6447,12 +6447,12 @@ references:
   commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor
   fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel()
   nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel()
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,BigInteger,System.Int64)
-  name: EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_Int32_BigInteger_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.Int32, BigInteger, BigInteger, BigInteger, System.Int64)
-  nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
+  name: EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, BigInteger, System.Int64)
+  nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
 - uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor*
   name: EncodeLimitOrderWithFeesModel
   href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor_
@@ -6615,18 +6615,18 @@ references:
   commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor
   fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel()
   nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel()
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64)
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String,System.String)
-  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64, String, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_Int32_BigInteger_BigInteger_System_Int64_System_String_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.Int32,BigInteger,BigInteger,System.Int64,System.String,System.String)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.Int32, BigInteger, BigInteger, System.Int64, System.String, System.String)
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, Int32, BigInteger, BigInteger, Int64, String, String)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
+  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String, System.String)
+  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
 - uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor*
   name: EncodeTransferWithFeesModel
   href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_
