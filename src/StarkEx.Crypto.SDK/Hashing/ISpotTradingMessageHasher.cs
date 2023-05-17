@@ -10,101 +10,70 @@ using StarkEx.Crypto.SDK.Models;
 public interface ISpotTradingMessageHasher
 {
     /// <summary>
-    /// Encodes a limit order with fees using the specified <see cref="EncodeLimitOrderWithFeesModel"/> object.
+    /// Encodes a limit order with fees using the specified <see cref="EncodeLimitOrderModel"/> object.
     /// </summary>
-    /// <param name="encodeLimitOrderWithFeesModel">The <see cref="EncodeLimitOrderWithFeesModel"/> object containing the values to use for encoding.</param>
+    /// <param name="encodeLimitOrderModel">The <see cref="EncodeLimitOrderModel"/> object containing the values to use for encoding.</param>
     /// <returns>An integer representing the encoded message.</returns>
-    BigInteger EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel encodeLimitOrderWithFeesModel);
+    BigInteger EncodeLimitOrder(EncodeLimitOrderModel encodeLimitOrderModel);
 
     /// <summary>
-    /// Encodes a transfer with fees using the specified <see cref="EncodeTransferWithFeesModel"/> object.
+    /// Encodes a transfer with fees using the specified <see cref="EncodeTransferModel"/> object.
     /// </summary>
-    /// <param name="encodeTransferWithFeesModel">The <see cref="EncodeTransferWithFeesModel"/> object containing the values to use for encoding.</param>
+    /// <param name="encodeTransferModel">The <see cref="EncodeTransferModel"/> object containing the values to use for encoding.</param>
     /// <returns>An integer representing the encoded message.</returns>
-    BigInteger EncodeTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel);
+    BigInteger EncodeTransfer(EncodeTransferModel encodeTransferModel);
 
     /// <summary>
-    /// Encodes a conditional transfer with fees using the specified <see cref="EncodeTransferWithFeesModel"/> and condition values.
+    /// Encodes a conditional transfer with fees using the specified <see cref="EncodeTransferModel"/> and condition values.
     /// The condition value is calculated using the fact and fact registry address provided in the model object.
     /// </summary>
-    /// <param name="encodeTransferWithFeesModel">The <see cref="EncodeTransferWithFeesModel"/> object containing the values to use for encoding.</param>
+    /// <param name="encodeTransferModel">The <see cref="EncodeTransferModel"/> object containing the values to use for encoding.</param>
     /// <returns>An integer representing the encoded message.</returns>
-    BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel);
+    BigInteger EncodeConditionalTransfer(EncodeTransferModel encodeTransferModel);
 
     /// <summary>
-    /// Encodes a conditional transfer with fees using the specified <see cref="EncodeTransferWithFeesModel"/> and condition values.
+    /// Encodes a conditional transfer with fees using the specified <see cref="EncodeTransferModel"/> and condition values.
     /// </summary>
-    /// <param name="encodeTransferWithFeesModel">The <see cref="EncodeTransferWithFeesModel"/> object containing the values to use for encoding.</param>
+    /// <param name="encodeTransferModel">The <see cref="EncodeTransferModel"/> object containing the values to use for encoding.</param>
     /// <param name="condition">The condition value to use.</param>
     /// <returns>An integer representing the encoded message.</returns>
-    public BigInteger EncodeConditionalTransferWithFees(
-         EncodeTransferWithFeesModel encodeTransferWithFeesModel,
+    public BigInteger EncodeConditionalTransfer(
+         EncodeTransferModel encodeTransferModel,
          string condition);
 
     /// <summary>
-    /// Encodes a deprecated hash limit order using the specified values.
+    /// Encodes a conditional transfer without fees using the specified <see cref="EncodeTransferWithoutFeesModel"/> and condition values.
     /// </summary>
-    /// <param name="assetIdSold">The ID of the asset that is being sold.</param>
-    /// <param name="assetIdBought">The ID of the asset that is being bought.</param>
-    /// <param name="quantizedAmountSold">The quantized amount of the asset that is being sold.</param>
-    /// <param name="quantizedAmountBought">The quantized amount of the asset that is being bought.</param>
-    /// <param name="nonce">The nonce value.</param>
-    /// <param name="vaultIdUsedForSelling">The ID of the vault from which the asset is being sold.</param>
-    /// <param name="vaultIdUsedForBuying">The ID of the vault from which the asset is being bought.</param>
-    /// <param name="expirationTimestamp">The expiration timestamp of the order.</param>
+    /// <param name="encodeTransferWithoutFeesModel">The <see cref="EncodeTransferWithoutFeesModel"/> object containing the values to use for encoding.</param>
+    /// <param name="condition">The condition value to use.</param>
     /// <returns>An integer representing the encoded message.</returns>
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    BigInteger DeprecatedHashLimitOrder(
-        string assetIdSold,
-        string assetIdBought,
-        BigInteger quantizedAmountSold,
-        BigInteger quantizedAmountBought,
-        uint nonce,
-        BigInteger vaultIdUsedForSelling,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp);
-
-    /// <summary>
-    /// Encodes a deprecated hash transfer order using the specified values.
-    /// </summary>
-    /// <param name="assetIdSold">The ID of the asset that is being sold.</param>
-    /// <param name="receiverStarkKey">The Stark key of the receiver.</param>
-    /// <param name="quantizedAmountSold">The quantized amount of the asset that is being sold.</param>
-    /// <param name="nonce">The nonce value.</param>
-    /// <param name="vaultIdUsedOfReceiver">The ID of the vault from which the asset is being received.</param>
-    /// <param name="vaultIdUsedForBuying">The ID of the vault that is being used to buy the asset.</param>
-    /// <param name="expirationTimestamp">The expiration timestamp of the order.</param>
-    /// <returns>An integer representing the encoded message.</returns>
-    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    BigInteger DeprecatedHashTransferOrder(
-        string assetIdSold,
-        string receiverStarkKey,
-        BigInteger quantizedAmountSold,
-        uint nonce,
-        BigInteger vaultIdUsedOfReceiver,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp);
-
-    /// <summary>
-    /// Encodes a deprecated hash conditional transfer using the specified values.
-    /// </summary>
-    /// <param name="assetIdSold">The ID of the asset that is being sold.</param>
-    /// <param name="receiverStarkKey">The Stark key of the receiver.</param>
-    /// <param name="quantizedAmountSold">The quantized amount of the asset that is being sold.</param>
-    /// <param name="nonce">The nonce value.</param>
-    /// <param name="vaultIdUsedOfReceiver">The ID of the vault from which the asset is being received.</param>
-    /// <param name="vaultIdUsedForBuying">The ID of the vault that is being used to buy the asset.</param>
-    /// <param name="expirationTimestamp">The expiration timestamp of the order.</param>
-    /// <param name="condition">The condition of the transfer.</param>
-    /// <returns>An integer representing the encoded message.</returns>
-    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    BigInteger DeprecatedHashConditionalTransfer(
-        string assetIdSold,
-        string receiverStarkKey,
-        BigInteger quantizedAmountSold,
-        uint nonce,
-        BigInteger vaultIdUsedOfReceiver,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp,
+    public BigInteger EncodeConditionalTransferWithoutFees(
+        EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel,
         string condition);
+
+    /// <summary>
+    /// Encodes a conditional transfer without fees using the specified <see cref="EncodeTransferWithoutFeesModel"/> and condition values.
+    /// The condition value is calculated using the fact and fact registry address provided in the model object.
+    /// </summary>
+    /// <param name="encodeTransferWithoutFeesModel">The <see cref="EncodeTransferWithoutFeesModel"/> object containing the values to use for encoding.</param>
+    /// <returns>An integer representing the encoded message.</returns>
+    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
+    BigInteger EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel);
+
+    /// <summary>
+    /// Encodes a transfer without fees using the specified <see cref="EncodeTransferWithoutFeesModel"/> object.
+    /// </summary>
+    /// <param name="encodeTransferWithoutFeesModel">The <see cref="EncodeTransferWithoutFeesModel"/> object containing the values to use for encoding.</param>
+    /// <returns>An integer representing the encoded message.</returns>
+    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
+    BigInteger EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel);
+
+    /// <summary>
+    /// Encodes a limit order without fees using the specified <see cref="EncodeLimitOrderWithoutFeesModel"/> object.
+    /// </summary>
+    /// <param name="encodeLimitOrderWithoutFeesModel">The <see cref="EncodeLimitOrderWithoutFeesModel"/> object containing the values to use for encoding.</param>
+    /// <returns>An integer representing the encoded message.</returns>
+    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
+    BigInteger EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel encodeLimitOrderWithoutFeesModel);
 }

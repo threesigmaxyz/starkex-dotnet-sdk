@@ -5,17 +5,17 @@ using Org.BouncyCastle.Math;
 /// <summary>
 /// A model representing a limit order that includes fees.
 /// </summary>
-public class EncodeLimitOrderWithFeesModel
+public class EncodeLimitOrderModel
 {
     /// <summary>
-    /// Initializes a new instance of the <see cref="EncodeLimitOrderWithFeesModel"/> class.
+    /// Initializes a new instance of the <see cref="EncodeLimitOrderModel"/> class.
     /// </summary>
-    public EncodeLimitOrderWithFeesModel()
+    public EncodeLimitOrderModel()
     {
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="EncodeLimitOrderWithFeesModel"/> class.
+    /// Initializes a new instance of the <see cref="EncodeLimitOrderModel"/> class.
     /// </summary>
     /// <param name="assetIdSold">The id of the Asset sold.</param>
     /// <param name="assetIdBought">The id of the Asset bought.</param>
@@ -28,7 +28,7 @@ public class EncodeLimitOrderWithFeesModel
     /// <param name="vaultIdUsedForSelling">The Id of the vault used for selling.</param>
     /// <param name="vaultIdUsedForBuying">The Id of the vault used for buying.</param>
     /// <param name="expirationTimestamp">The expiration timestamp of the order.</param>
-    public EncodeLimitOrderWithFeesModel(
+    public EncodeLimitOrderModel(
         string assetIdSold,
         string assetIdBought,
         string assetIdUsedForFees,
