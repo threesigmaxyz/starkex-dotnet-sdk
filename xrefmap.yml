@@ -6195,90 +6195,96 @@ references:
   commentId: T:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher
   fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher
   nameWithType: ISpotTradingMessageHasher
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
-  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer*
-  name: DeprecatedHashConditionalTransfer
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashConditionalTransfer_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  name: EncodeConditionalTransfer(EncodeTransferModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransfer(EncodeTransferModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel,System.String)
+  name: EncodeConditionalTransfer(EncodeTransferModel, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel, System.String)
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransfer(EncodeTransferModel, String)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer*
+  name: EncodeConditionalTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder*
-  name: DeprecatedHashLimitOrder
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashLimitOrder_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransfer
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  name: EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel,System.String)
+  name: EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel, System.String)
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel, String)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees*
+  name: EncodeConditionalTransferWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashLimitOrder
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashLimitOrder
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder*
-  name: DeprecatedHashTransferOrder
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_DeprecatedHashTransferOrder_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
+  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  name: EncodeLimitOrder(EncodeLimitOrderModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrder_StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrder(EncodeLimitOrderModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder*
+  name: EncodeLimitOrder
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrder_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.DeprecatedHashTransferOrder
-  nameWithType: ISpotTradingMessageHasher.DeprecatedHashTransferOrder
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  name: EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel,System.String)
-  name: EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel, System.String)
-  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel, String)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees*
-  name: EncodeConditionalTransferWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeConditionalTransferWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrder
+  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrder
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  name: EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrderWithoutFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees*
+  name: EncodeLimitOrderWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrderWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeConditionalTransferWithFees
-  nameWithType: ISpotTradingMessageHasher.EncodeConditionalTransferWithFees
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  name: EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrderWithFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees*
-  name: EncodeLimitOrderWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeLimitOrderWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees
+  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrderWithoutFees
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  name: EncodeTransfer(EncodeTransferModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeTransfer(EncodeTransferModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer*
+  name: EncodeTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeLimitOrderWithFees
-  nameWithType: ISpotTradingMessageHasher.EncodeLimitOrderWithFees
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  name: EncodeTransferWithFees(EncodeTransferWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  nameWithType: ISpotTradingMessageHasher.EncodeTransferWithFees(EncodeTransferWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees*
-  name: EncodeTransferWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransferWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransfer
+  nameWithType: ISpotTradingMessageHasher.EncodeTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  name: EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  nameWithType: ISpotTradingMessageHasher.EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees*
+  name: EncodeTransferWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_ISpotTradingMessageHasher_EncodeTransferWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithFees
-  nameWithType: ISpotTradingMessageHasher.EncodeTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.EncodeTransferWithoutFees
+  nameWithType: ISpotTradingMessageHasher.EncodeTransferWithoutFees
 - uid: StarkEx.Crypto.SDK.Hashing.PedersenHash
   name: PedersenHash
   href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.PedersenHash.html
@@ -6345,451 +6351,734 @@ references:
   isSpec: "True"
   fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.SpotTradingMessageHasher
   nameWithType: SpotTradingMessageHasher.SpotTradingMessageHasher
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
-  name: DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer*
-  name: DeprecatedHashConditionalTransfer
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  name: EncodeConditionalTransfer(EncodeTransferModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransfer(EncodeTransferModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel,System.String)
+  name: EncodeConditionalTransfer(EncodeTransferModel, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel, System.String)
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransfer(EncodeTransferModel, String)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer*
+  name: EncodeConditionalTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashConditionalTransfer
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder*
-  name: DeprecatedHashLimitOrder
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  name: EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel,System.String)
+  name: EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel,System.String)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel, System.String)
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel, String)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees*
+  name: EncodeConditionalTransferWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashLimitOrder
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  name: DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String, System.String, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder*
-  name: DeprecatedHashTransferOrder
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
+  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  name: EncodeLimitOrder(EncodeLimitOrderModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrder_StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)
+  nameWithType: SpotTradingMessageHasher.EncodeLimitOrder(EncodeLimitOrderModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder*
+  name: EncodeLimitOrder
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrder_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder
-  nameWithType: SpotTradingMessageHasher.DeprecatedHashTransferOrder
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  name: EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel,System.String)
-  name: EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel,System.String)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel, System.String)
-  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel, String)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees*
-  name: EncodeConditionalTransferWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder
+  nameWithType: SpotTradingMessageHasher.EncodeLimitOrder
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  name: EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithoutFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)
+  nameWithType: SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees*
+  name: EncodeLimitOrderWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees
-  nameWithType: SpotTradingMessageHasher.EncodeConditionalTransferWithFees
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  name: EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)
-  nameWithType: SpotTradingMessageHasher.EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees*
-  name: EncodeLimitOrderWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees
+  nameWithType: SpotTradingMessageHasher.EncodeLimitOrderWithoutFees
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  name: EncodeTransfer(EncodeTransferModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)
+  nameWithType: SpotTradingMessageHasher.EncodeTransfer(EncodeTransferModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer*
+  name: EncodeTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees
-  nameWithType: SpotTradingMessageHasher.EncodeLimitOrderWithFees
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  name: EncodeTransferWithFees(EncodeTransferWithFeesModel)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_
-  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)
-  nameWithType: SpotTradingMessageHasher.EncodeTransferWithFees(EncodeTransferWithFeesModel)
-- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees*
-  name: EncodeTransferWithFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer
+  nameWithType: SpotTradingMessageHasher.EncodeTransfer
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  name: EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_
+  commentId: M:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)
+  nameWithType: SpotTradingMessageHasher.EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel)
+- uid: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees*
+  name: EncodeTransferWithoutFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html#StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithoutFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees
-  nameWithType: SpotTradingMessageHasher.EncodeTransferWithFees
+  fullName: StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees
+  nameWithType: SpotTradingMessageHasher.EncodeTransferWithoutFees
 - uid: StarkEx.Crypto.SDK.Models
   name: StarkEx.Crypto.SDK.Models
   href: sdk/crypto/StarkEx.Crypto.SDK.Models.html
   commentId: N:StarkEx.Crypto.SDK.Models
   fullName: StarkEx.Crypto.SDK.Models
   nameWithType: StarkEx.Crypto.SDK.Models
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel
-  name: EncodeLimitOrderWithFeesModel
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html
-  commentId: T:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel
-  nameWithType: EncodeLimitOrderWithFeesModel
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor
-  name: EncodeLimitOrderWithFeesModel()
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel()
-  nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel()
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
-  name: EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, BigInteger, System.Int64)
-  nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor*
-  name: EncodeLimitOrderWithFeesModel
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel__ctor_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.#ctor
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel
+  name: EncodeLimitOrderModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html
+  commentId: T:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel
+  nameWithType: EncodeLimitOrderModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor
+  name: EncodeLimitOrderModel()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel__ctor
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.EncodeLimitOrderModel()
+  nameWithType: EncodeLimitOrderModel.EncodeLimitOrderModel()
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
+  name: EncodeLimitOrderModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.EncodeLimitOrderModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, BigInteger, System.Int64)
+  nameWithType: EncodeLimitOrderModel.EncodeLimitOrderModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor*
+  name: EncodeLimitOrderModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel__ctor_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.#ctor
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel
-  nameWithType: EncodeLimitOrderWithFeesModel.EncodeLimitOrderWithFeesModel
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.EncodeLimitOrderModel
+  nameWithType: EncodeLimitOrderModel.EncodeLimitOrderModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought
   name: AssetIdBought
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdBought
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdBought
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdBought
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought
+  nameWithType: EncodeLimitOrderModel.AssetIdBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought*
   name: AssetIdBought
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdBought_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdBought_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdBought
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdBought
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdBought
+  nameWithType: EncodeLimitOrderModel.AssetIdBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold
   name: AssetIdSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdSold
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold
+  nameWithType: EncodeLimitOrderModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold*
   name: AssetIdSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdSold_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdSold
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdSold
+  nameWithType: EncodeLimitOrderModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees
   name: AssetIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdUsedForFees
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdUsedForFees
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees
+  nameWithType: EncodeLimitOrderModel.AssetIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees*
   name: AssetIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_AssetIdUsedForFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_AssetIdUsedForFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.AssetIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.AssetIdUsedForFees
+  nameWithType: EncodeLimitOrderModel.AssetIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp
   name: ExpirationTimestamp
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_ExpirationTimestamp
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp
-  nameWithType: EncodeLimitOrderWithFeesModel.ExpirationTimestamp
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_ExpirationTimestamp
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp
+  nameWithType: EncodeLimitOrderModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp*
   name: ExpirationTimestamp
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_ExpirationTimestamp_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_ExpirationTimestamp_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.ExpirationTimestamp
-  nameWithType: EncodeLimitOrderWithFeesModel.ExpirationTimestamp
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.ExpirationTimestamp
+  nameWithType: EncodeLimitOrderModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce
   name: Nonce
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_Nonce
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce
-  nameWithType: EncodeLimitOrderWithFeesModel.Nonce
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_Nonce
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce
+  nameWithType: EncodeLimitOrderModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce*
   name: Nonce
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_Nonce_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_Nonce_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.Nonce
-  nameWithType: EncodeLimitOrderWithFeesModel.Nonce
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.Nonce
+  nameWithType: EncodeLimitOrderModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought
   name: QuantizedAmountBought
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountBought
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountBought
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountBought
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought*
   name: QuantizedAmountBought
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountBought_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountBought_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountBought
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountBought
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountBought
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold
   name: QuantizedAmountSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountSold
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold*
   name: QuantizedAmountSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountSold_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountSold
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountSold
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees
   name: QuantizedAmountUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountUsedForFees
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountUsedForFees
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees*
   name: QuantizedAmountUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_QuantizedAmountUsedForFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_QuantizedAmountUsedForFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.QuantizedAmountUsedForFees
+  nameWithType: EncodeLimitOrderModel.QuantizedAmountUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying
   name: VaultIdUsedForBuying
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForBuying
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForBuying
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForBuying
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying*
   name: VaultIdUsedForBuying
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForBuying_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForBuying_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForBuying
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForBuying
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForBuying
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees
   name: VaultIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForFees
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForFees
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees*
   name: VaultIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForFees
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling
   name: VaultIdUsedForSelling
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForSelling
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
-- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForSelling
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForSelling
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling*
   name: VaultIdUsedForSelling
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_VaultIdUsedForSelling_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_VaultIdUsedForSelling_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
-  nameWithType: EncodeLimitOrderWithFeesModel.VaultIdUsedForSelling
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel
-  name: EncodeTransferWithFeesModel
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html
-  commentId: T:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel
-  nameWithType: EncodeTransferWithFeesModel
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor
-  name: EncodeTransferWithFeesModel()
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel()
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel()
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
-  name: EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_System_String_
-  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String, System.String)
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor*
-  name: EncodeTransferWithFeesModel
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel__ctor_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.#ctor
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.VaultIdUsedForSelling
+  nameWithType: EncodeLimitOrderModel.VaultIdUsedForSelling
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel
+  name: EncodeLimitOrderWithoutFeesModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html
+  commentId: T:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel
+  nameWithType: EncodeLimitOrderWithoutFeesModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor
+  name: EncodeLimitOrderWithoutFeesModel()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel__ctor
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel()
+  nameWithType: EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel()
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: EncodeLimitOrderWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel__ctor_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor*
+  name: EncodeLimitOrderWithoutFeesModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel__ctor_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.#ctor
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.EncodeTransferWithFeesModel
-  nameWithType: EncodeTransferWithFeesModel.EncodeTransferWithFeesModel
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel
+  nameWithType: EncodeLimitOrderWithoutFeesModel.EncodeLimitOrderWithoutFeesModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought
+  name: AssetIdBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_AssetIdBought
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought
+  nameWithType: EncodeLimitOrderWithoutFeesModel.AssetIdBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought*
+  name: AssetIdBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_AssetIdBought_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdBought
+  nameWithType: EncodeLimitOrderWithoutFeesModel.AssetIdBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold
   name: AssetIdSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_AssetIdSold
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold
-  nameWithType: EncodeTransferWithFeesModel.AssetIdSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_AssetIdSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold
+  nameWithType: EncodeLimitOrderWithoutFeesModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold*
   name: AssetIdSold
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_AssetIdSold_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_AssetIdSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdSold
-  nameWithType: EncodeTransferWithFeesModel.AssetIdSold
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees
-  name: AssetIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_AssetIdUsedForFees
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees
-  nameWithType: EncodeTransferWithFeesModel.AssetIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees*
-  name: AssetIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_AssetIdUsedForFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees
-  isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.AssetIdUsedForFees
-  nameWithType: EncodeTransferWithFeesModel.AssetIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.AssetIdSold
+  nameWithType: EncodeLimitOrderWithoutFeesModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
   name: ExpirationTimestamp
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_ExpirationTimestamp
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp
-  nameWithType: EncodeTransferWithFeesModel.ExpirationTimestamp
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_ExpirationTimestamp
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
+  nameWithType: EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp*
   name: ExpirationTimestamp
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_ExpirationTimestamp_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_ExpirationTimestamp_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ExpirationTimestamp
-  nameWithType: EncodeTransferWithFeesModel.ExpirationTimestamp
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact
-  name: Fact
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_Fact
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact
-  nameWithType: EncodeTransferWithFeesModel.Fact
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact*
-  name: Fact
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_Fact_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact
-  isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Fact
-  nameWithType: EncodeTransferWithFeesModel.Fact
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress
-  name: FactRegistryAddress
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_FactRegistryAddress
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress
-  nameWithType: EncodeTransferWithFeesModel.FactRegistryAddress
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress*
-  name: FactRegistryAddress
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_FactRegistryAddress_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress
-  isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.FactRegistryAddress
-  nameWithType: EncodeTransferWithFeesModel.FactRegistryAddress
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
+  nameWithType: EncodeLimitOrderWithoutFeesModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce
   name: Nonce
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_Nonce
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce
-  nameWithType: EncodeTransferWithFeesModel.Nonce
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_Nonce
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce
+  nameWithType: EncodeLimitOrderWithoutFeesModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce*
   name: Nonce
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_Nonce_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_Nonce_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.Nonce
-  nameWithType: EncodeTransferWithFeesModel.Nonce
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.Nonce
+  nameWithType: EncodeLimitOrderWithoutFeesModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+  name: QuantizedAmountBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_QuantizedAmountBought
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+  nameWithType: EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought*
+  name: QuantizedAmountBought
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_QuantizedAmountBought_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+  nameWithType: EncodeLimitOrderWithoutFeesModel.QuantizedAmountBought
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+  name: QuantizedAmountSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_QuantizedAmountSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+  nameWithType: EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold*
+  name: QuantizedAmountSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_QuantizedAmountSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+  nameWithType: EncodeLimitOrderWithoutFeesModel.QuantizedAmountSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+  name: VaultIdUsedForBuying
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_VaultIdUsedForBuying
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+  nameWithType: EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying*
+  name: VaultIdUsedForBuying
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_VaultIdUsedForBuying_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+  nameWithType: EncodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+  name: VaultIdUsedForSelling
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_VaultIdUsedForSelling
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+  nameWithType: EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+- uid: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling*
+  name: VaultIdUsedForSelling
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_VaultIdUsedForSelling_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+  nameWithType: EncodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel
+  name: EncodeTransferModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html
+  commentId: T:StarkEx.Crypto.SDK.Models.EncodeTransferModel
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel
+  nameWithType: EncodeTransferModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor
+  name: EncodeTransferModel()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel__ctor
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.EncodeTransferModel()
+  nameWithType: EncodeTransferModel.EncodeTransferModel()
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  name: EncodeTransferModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.EncodeTransferModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64)
+  nameWithType: EncodeTransferModel.EncodeTransferModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
+  name: EncodeTransferModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel__ctor_System_String_System_String_System_String_BigInteger_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor(System.String,System.String,System.String,BigInteger,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String,System.String)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.EncodeTransferModel(System.String, System.String, System.String, BigInteger, BigInteger, BigInteger, System.UInt32, BigInteger, BigInteger, System.Int64, System.String, System.String)
+  nameWithType: EncodeTransferModel.EncodeTransferModel(String, String, String, BigInteger, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64, String, String)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor*
+  name: EncodeTransferModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel__ctor_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.#ctor
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.EncodeTransferModel
+  nameWithType: EncodeTransferModel.EncodeTransferModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold
+  name: AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_AssetIdSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold
+  nameWithType: EncodeTransferModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold*
+  name: AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_AssetIdSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdSold
+  nameWithType: EncodeTransferModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees
+  name: AssetIdUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_AssetIdUsedForFees
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees
+  nameWithType: EncodeTransferModel.AssetIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees*
+  name: AssetIdUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_AssetIdUsedForFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.AssetIdUsedForFees
+  nameWithType: EncodeTransferModel.AssetIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp
+  name: ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_ExpirationTimestamp
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp
+  nameWithType: EncodeTransferModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp*
+  name: ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_ExpirationTimestamp_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ExpirationTimestamp
+  nameWithType: EncodeTransferModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact
+  name: Fact
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_Fact
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact
+  nameWithType: EncodeTransferModel.Fact
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact*
+  name: Fact
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_Fact_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Fact
+  nameWithType: EncodeTransferModel.Fact
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress
+  name: FactRegistryAddress
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_FactRegistryAddress
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress
+  nameWithType: EncodeTransferModel.FactRegistryAddress
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress*
+  name: FactRegistryAddress
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_FactRegistryAddress_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.FactRegistryAddress
+  nameWithType: EncodeTransferModel.FactRegistryAddress
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce
+  name: Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_Nonce
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce
+  nameWithType: EncodeTransferModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce*
+  name: Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_Nonce_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.Nonce
+  nameWithType: EncodeTransferModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee
   name: QuantizedAmountToLimitMaxFee
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_QuantizedAmountToLimitMaxFee
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
-  nameWithType: EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_QuantizedAmountToLimitMaxFee
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee
+  nameWithType: EncodeTransferModel.QuantizedAmountToLimitMaxFee
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee*
   name: QuantizedAmountToLimitMaxFee
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_QuantizedAmountToLimitMaxFee_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_QuantizedAmountToLimitMaxFee_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
-  nameWithType: EncodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToLimitMaxFee
+  nameWithType: EncodeTransferModel.QuantizedAmountToLimitMaxFee
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer
   name: QuantizedAmountToTransfer
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_QuantizedAmountToTransfer
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer
-  nameWithType: EncodeTransferWithFeesModel.QuantizedAmountToTransfer
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_QuantizedAmountToTransfer
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer
+  nameWithType: EncodeTransferModel.QuantizedAmountToTransfer
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer*
   name: QuantizedAmountToTransfer
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_QuantizedAmountToTransfer_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_QuantizedAmountToTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.QuantizedAmountToTransfer
-  nameWithType: EncodeTransferWithFeesModel.QuantizedAmountToTransfer
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.QuantizedAmountToTransfer
+  nameWithType: EncodeTransferModel.QuantizedAmountToTransfer
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey
   name: ReceiverStarkKey
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_ReceiverStarkKey
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey
-  nameWithType: EncodeTransferWithFeesModel.ReceiverStarkKey
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_ReceiverStarkKey
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey
+  nameWithType: EncodeTransferModel.ReceiverStarkKey
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey*
   name: ReceiverStarkKey
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_ReceiverStarkKey_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_ReceiverStarkKey_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.ReceiverStarkKey
-  nameWithType: EncodeTransferWithFeesModel.ReceiverStarkKey
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.ReceiverStarkKey
+  nameWithType: EncodeTransferModel.ReceiverStarkKey
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver
   name: VaultIdFromReceiver
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdFromReceiver
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver
-  nameWithType: EncodeTransferWithFeesModel.VaultIdFromReceiver
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdFromReceiver
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver
+  nameWithType: EncodeTransferModel.VaultIdFromReceiver
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver*
   name: VaultIdFromReceiver
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdFromReceiver_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdFromReceiver_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromReceiver
-  nameWithType: EncodeTransferWithFeesModel.VaultIdFromReceiver
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromReceiver
+  nameWithType: EncodeTransferModel.VaultIdFromReceiver
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender
   name: VaultIdFromSender
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdFromSender
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender
-  nameWithType: EncodeTransferWithFeesModel.VaultIdFromSender
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdFromSender
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender
+  nameWithType: EncodeTransferModel.VaultIdFromSender
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender*
   name: VaultIdFromSender
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdFromSender_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdFromSender_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdFromSender
-  nameWithType: EncodeTransferWithFeesModel.VaultIdFromSender
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdFromSender
+  nameWithType: EncodeTransferModel.VaultIdFromSender
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees
   name: VaultIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdUsedForFees
-  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees
-  nameWithType: EncodeTransferWithFeesModel.VaultIdUsedForFees
-- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees*
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdUsedForFees
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees
+  nameWithType: EncodeTransferModel.VaultIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees*
   name: VaultIdUsedForFees
-  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_VaultIdUsedForFees_
-  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferModel_VaultIdUsedForFees_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees
   isSpec: "True"
-  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.VaultIdUsedForFees
-  nameWithType: EncodeTransferWithFeesModel.VaultIdUsedForFees
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferModel.VaultIdUsedForFees
+  nameWithType: EncodeTransferModel.VaultIdUsedForFees
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel
+  name: EncodeTransferWithoutFeesModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html
+  commentId: T:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel
+  nameWithType: EncodeTransferWithoutFeesModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor
+  name: EncodeTransferWithoutFeesModel()
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel__ctor
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel()
+  nameWithType: EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel()
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,System.Int64)
+  name: EncodeTransferWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, Int64)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel__ctor_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_System_Int64_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,System.Int64)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, System.Int64)
+  nameWithType: EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, Int64)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,System.Int64,System.String,System.String)
+  name: EncodeTransferWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, Int64, String, String)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel__ctor_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_System_Int64_System_String_System_String_
+  commentId: M:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,System.Int64,System.String,System.String)
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel(System.String, System.String, BigInteger, BigInteger, System.UInt32, BigInteger, System.Int64, System.String, System.String)
+  nameWithType: EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel(String, String, BigInteger, BigInteger, UInt32, BigInteger, Int64, String, String)
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor*
+  name: EncodeTransferWithoutFeesModel
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel__ctor_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.#ctor
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel
+  nameWithType: EncodeTransferWithoutFeesModel.EncodeTransferWithoutFeesModel
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold
+  name: AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_AssetIdSold
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold
+  nameWithType: EncodeTransferWithoutFeesModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold*
+  name: AssetIdSold
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_AssetIdSold_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.AssetIdSold
+  nameWithType: EncodeTransferWithoutFeesModel.AssetIdSold
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp
+  name: ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_ExpirationTimestamp
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp
+  nameWithType: EncodeTransferWithoutFeesModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp*
+  name: ExpirationTimestamp
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_ExpirationTimestamp_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ExpirationTimestamp
+  nameWithType: EncodeTransferWithoutFeesModel.ExpirationTimestamp
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact
+  name: Fact
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_Fact
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact
+  nameWithType: EncodeTransferWithoutFeesModel.Fact
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact*
+  name: Fact
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_Fact_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Fact
+  nameWithType: EncodeTransferWithoutFeesModel.Fact
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress
+  name: FactRegistryAddress
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_FactRegistryAddress
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress
+  nameWithType: EncodeTransferWithoutFeesModel.FactRegistryAddress
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress*
+  name: FactRegistryAddress
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_FactRegistryAddress_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.FactRegistryAddress
+  nameWithType: EncodeTransferWithoutFeesModel.FactRegistryAddress
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce
+  name: Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_Nonce
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce
+  nameWithType: EncodeTransferWithoutFeesModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce*
+  name: Nonce
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_Nonce_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.Nonce
+  nameWithType: EncodeTransferWithoutFeesModel.Nonce
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+  name: QuantizedAmountToTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_QuantizedAmountToTransfer
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+  nameWithType: EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer*
+  name: QuantizedAmountToTransfer
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_QuantizedAmountToTransfer_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+  nameWithType: EncodeTransferWithoutFeesModel.QuantizedAmountToTransfer
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey
+  name: ReceiverStarkKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_ReceiverStarkKey
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey
+  nameWithType: EncodeTransferWithoutFeesModel.ReceiverStarkKey
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey*
+  name: ReceiverStarkKey
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_ReceiverStarkKey_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.ReceiverStarkKey
+  nameWithType: EncodeTransferWithoutFeesModel.ReceiverStarkKey
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+  name: VaultIdFromReceiver
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_VaultIdFromReceiver
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+  nameWithType: EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver*
+  name: VaultIdFromReceiver
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_VaultIdFromReceiver_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+  nameWithType: EncodeTransferWithoutFeesModel.VaultIdFromReceiver
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender
+  name: VaultIdFromSender
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_VaultIdFromSender
+  commentId: P:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender
+  nameWithType: EncodeTransferWithoutFeesModel.VaultIdFromSender
+- uid: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender*
+  name: VaultIdFromSender
+  href: sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html#StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_VaultIdFromSender_
+  commentId: Overload:StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender
+  isSpec: "True"
+  fullName: StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.VaultIdFromSender
+  nameWithType: EncodeTransferWithoutFeesModel.VaultIdFromSender
 - uid: StarkEx.Crypto.SDK.Signing
   name: StarkEx.Crypto.SDK.Signing
   href: sdk/crypto/StarkEx.Crypto.SDK.Signing.html

@@ -131,290 +131,20 @@ It relies on the <a class="xref" href="StarkEx.Crypto.SDK.Hashing.IPedersenHash.
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String%2CSystem.String%2CBigInteger%2CSystem.UInt32%2CBigInteger%2CBigInteger%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L198">View Source</a>
-  </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashConditionalTransfer_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_System_String_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashConditionalTransfer(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64,System.String)">DeprecatedHashConditionalTransfer(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64, String)</h4>
-  <div class="markdown level1 summary"><p>Encodes a deprecated hash conditional transfer using the specified values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger DeprecatedHashConditionalTransfer(string assetIdSold, string receiverStarkKey, BigInteger quantizedAmountSold, uint nonce, BigInteger vaultIdUsedOfReceiver, BigInteger vaultIdUsedForBuying, long expirationTimestamp, string condition)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">assetIdSold</span></td>
-        <td><p>The ID of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">receiverStarkKey</span></td>
-        <td><p>The Stark key of the receiver.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">quantizedAmountSold</span></td>
-        <td><p>The quantized amount of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">nonce</span></td>
-        <td><p>The nonce value.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedOfReceiver</span></td>
-        <td><p>The ID of the vault from which the asset is being received.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedForBuying</span></td>
-        <td><p>The ID of the vault that is being used to buy the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">expirationTimestamp</span></td>
-        <td><p>The expiration timestamp of the order.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">condition</span></td>
-        <td><p>The condition of the transfer.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><p>An integer representing the encoded message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String%2CSystem.String%2CBigInteger%2CBigInteger%2CSystem.UInt32%2CBigInteger%2CBigInteger%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L145">View Source</a>
-  </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashLimitOrder_System_String_System_String_BigInteger_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashLimitOrder(System.String,System.String,BigInteger,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)">DeprecatedHashLimitOrder(String, String, BigInteger, BigInteger, UInt32, BigInteger, BigInteger, Int64)</h4>
-  <div class="markdown level1 summary"><p>Encodes a deprecated hash limit order using the specified values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger DeprecatedHashLimitOrder(string assetIdSold, string assetIdBought, BigInteger quantizedAmountSold, BigInteger quantizedAmountBought, uint nonce, BigInteger vaultIdUsedForSelling, BigInteger vaultIdUsedForBuying, long expirationTimestamp)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">assetIdSold</span></td>
-        <td><p>The ID of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">assetIdBought</span></td>
-        <td><p>The ID of the asset that is being bought.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">quantizedAmountSold</span></td>
-        <td><p>The quantized amount of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">quantizedAmountBought</span></td>
-        <td><p>The quantized amount of the asset that is being bought.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">nonce</span></td>
-        <td><p>The nonce value.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedForSelling</span></td>
-        <td><p>The ID of the vault from which the asset is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedForBuying</span></td>
-        <td><p>The ID of the vault from which the asset is being bought.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">expirationTimestamp</span></td>
-        <td><p>The expiration timestamp of the order.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><p>An integer representing the encoded message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String%2CSystem.String%2CBigInteger%2CSystem.UInt32%2CBigInteger%2CBigInteger%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L173">View Source</a>
-  </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_DeprecatedHashTransferOrder_System_String_System_String_BigInteger_System_UInt32_BigInteger_BigInteger_System_Int64_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.DeprecatedHashTransferOrder(System.String,System.String,BigInteger,System.UInt32,BigInteger,BigInteger,System.Int64)">DeprecatedHashTransferOrder(String, String, BigInteger, UInt32, BigInteger, BigInteger, Int64)</h4>
-  <div class="markdown level1 summary"><p>Encodes a deprecated hash transfer order using the specified values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger DeprecatedHashTransferOrder(string assetIdSold, string receiverStarkKey, BigInteger quantizedAmountSold, uint nonce, BigInteger vaultIdUsedOfReceiver, BigInteger vaultIdUsedForBuying, long expirationTimestamp)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">assetIdSold</span></td>
-        <td><p>The ID of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">receiverStarkKey</span></td>
-        <td><p>The Stark key of the receiver.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">quantizedAmountSold</span></td>
-        <td><p>The quantized amount of the asset that is being sold.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">nonce</span></td>
-        <td><p>The nonce value.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedOfReceiver</span></td>
-        <td><p>The ID of the vault from which the asset is being received.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><span class="parametername">vaultIdUsedForBuying</span></td>
-        <td><p>The ID of the vault that is being used to buy the asset.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">expirationTimestamp</span></td>
-        <td><p>The expiration timestamp of the order.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">BigInteger</span></td>
-        <td><p>An integer representing the encoded message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L92">View Source</a>
   </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)">EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel)</h4>
-  <div class="markdown level1 summary"><p>Encodes a conditional transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> and condition values.
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)">EncodeConditionalTransfer(EncodeTransferModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a conditional transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> and condition values.
 The condition value is calculated using the fact and fact registry address provided in the model object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransfer(EncodeTransferModel encodeTransferModel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -427,9 +157,9 @@ The condition value is calculated using the fact and fact registry address provi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a></td>
-        <td><span class="parametername">encodeTransferWithFeesModel</span></td>
-        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> object containing the values to use for encoding.</p>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a></td>
+        <td><span class="parametername">encodeTransferModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> object containing the values to use for encoding.</p>
 </td>
       </tr>
     </tbody>
@@ -452,19 +182,19 @@ The condition value is calculated using the fact and fact registry address provi
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L107">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L111">View Source</a>
   </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_System_String_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel,System.String)">EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel, String)</h4>
-  <div class="markdown level1 summary"><p>Encodes a conditional transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> and condition values.</p>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_System_String_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel,System.String)">EncodeConditionalTransfer(EncodeTransferModel, String)</h4>
+  <div class="markdown level1 summary"><p>Encodes a conditional transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> and condition values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel, string condition)</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransfer(EncodeTransferModel encodeTransferModel, string condition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -477,9 +207,9 @@ The condition value is calculated using the fact and fact registry address provi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a></td>
-        <td><span class="parametername">encodeTransferWithFeesModel</span></td>
-        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> object containing the values to use for encoding.</p>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a></td>
+        <td><span class="parametername">encodeTransferModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> object containing the values to use for encoding.</p>
 </td>
       </tr>
       <tr>
@@ -508,19 +238,20 @@ The condition value is calculated using the fact and fact registry address provi
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L25">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L204">View Source</a>
   </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel)">EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel)</h4>
-  <div class="markdown level1 summary"><p>Encodes a limit order with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html">EncodeLimitOrderWithFeesModel</a> object.</p>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)">EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a conditional transfer without fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> and condition values.
+The condition value is calculated using the fact and fact registry address provided in the model object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel encodeLimitOrderWithFeesModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,9 +264,9 @@ The condition value is calculated using the fact and fact registry address provi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html">EncodeLimitOrderWithFeesModel</a></td>
-        <td><span class="parametername">encodeLimitOrderWithFeesModel</span></td>
-        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html">EncodeLimitOrderWithFeesModel</a> object containing the values to use for encoding.</p>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a></td>
+        <td><span class="parametername">encodeTransferWithoutFeesModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> object containing the values to use for encoding.</p>
 </td>
       </tr>
     </tbody>
@@ -558,19 +289,19 @@ The condition value is calculated using the fact and fact registry address provi
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L59">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L149">View Source</a>
   </span>
-  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel)">EncodeTransferWithFees(EncodeTransferWithFeesModel)</h4>
-  <div class="markdown level1 summary"><p>Encodes a transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> object.</p>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeConditionalTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_System_String_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeConditionalTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel,System.String)">EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel, String)</h4>
+  <div class="markdown level1 summary"><p>Encodes a conditional transfer without fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> and condition values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BigInteger EncodeTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel, string condition)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -583,9 +314,215 @@ The condition value is calculated using the fact and fact registry address provi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a></td>
-        <td><span class="parametername">encodeTransferWithFeesModel</span></td>
-        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html">EncodeTransferWithFeesModel</a> object containing the values to use for encoding.</p>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a></td>
+        <td><span class="parametername">encodeTransferWithoutFeesModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> object containing the values to use for encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">condition</span></td>
+        <td><p>The condition value to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><p>An integer representing the encoded message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrder_StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L25">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrder_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrder_StarkEx_Crypto_SDK_Models_EncodeLimitOrderModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrder(StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel)">EncodeLimitOrder(EncodeLimitOrderModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a limit order with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html">EncodeLimitOrderModel</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeLimitOrder(EncodeLimitOrderModel encodeLimitOrderModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html">EncodeLimitOrderModel</a></td>
+        <td><span class="parametername">encodeLimitOrderModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html">EncodeLimitOrderModel</a> object containing the values to use for encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><p>An integer representing the encoded message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithoutFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L180">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithoutFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeLimitOrderWithoutFees_StarkEx_Crypto_SDK_Models_EncodeLimitOrderWithoutFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeLimitOrderWithoutFees(StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel)">EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a limit order without fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html">EncodeLimitOrderWithoutFeesModel</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel encodeLimitOrderWithoutFeesModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html">EncodeLimitOrderWithoutFeesModel</a></td>
+        <td><span class="parametername">encodeLimitOrderWithoutFeesModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html">EncodeLimitOrderWithoutFeesModel</a> object containing the values to use for encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><p>An integer representing the encoded message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L59">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransfer_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransfer_StarkEx_Crypto_SDK_Models_EncodeTransferModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransfer(StarkEx.Crypto.SDK.Models.EncodeTransferModel)">EncodeTransfer(EncodeTransferModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a transfer with fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeTransfer(EncodeTransferModel encodeTransferModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a></td>
+        <td><span class="parametername">encodeTransferModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferModel.html">EncodeTransferModel</a> object containing the values to use for encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BigInteger</span></td>
+        <td><p>An integer representing the encoded message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Hashing/SpotTradingMessageHasher.cs/#L236">View Source</a>
+  </span>
+  <a id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithoutFees_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees*"></a>
+  <h4 id="StarkEx_Crypto_SDK_Hashing_SpotTradingMessageHasher_EncodeTransferWithoutFees_StarkEx_Crypto_SDK_Models_EncodeTransferWithoutFeesModel_" data-uid="StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.EncodeTransferWithoutFees(StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel)">EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel)</h4>
+  <div class="markdown level1 summary"><p>Encodes a transfer without fees using the specified <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BigInteger EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a></td>
+        <td><span class="parametername">encodeTransferWithoutFeesModel</span></td>
+        <td><p>The <a class="xref" href="StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html">EncodeTransferWithoutFeesModel</a> object containing the values to use for encoding.</p>
 </td>
       </tr>
     </tbody>

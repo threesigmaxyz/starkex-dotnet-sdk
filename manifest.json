@@ -1689,7 +1689,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.ISpotTradingMessageHasher.html",
-          "hash": "5nCzCTWEgmADSKnyJlRksQ=="
+          "hash": "7F+VKPY8w6M4UtoLzlbqcg=="
         }
       },
       "is_incremental": false,
@@ -1713,7 +1713,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Hashing.SpotTradingMessageHasher.html",
-          "hash": "Pcuhlv/AgJ6njo9M66hJag=="
+          "hash": "GIyDtDhA+BU5lwMpFtMv/w=="
         }
       },
       "is_incremental": false,
@@ -1733,11 +1733,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.yml",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithFeesModel.html",
-          "hash": "RlhOLwGf1CsvFM75Ll4fEg=="
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html",
+          "hash": "uK9pL2yTZhnvlvN1qsCrtw=="
         }
       },
       "is_incremental": false,
@@ -1745,11 +1745,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.yml",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithFeesModel.html",
-          "hash": "nTuDyLb1Fz1THOx4/BWFBA=="
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html",
+          "hash": "bbYp5gH6vhL2q8nwWBEeVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html",
+          "hash": "y8zBCx4au73/ofCXch9nJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html",
+          "hash": "djC3VvFgxAxadt/VIahaLg=="
         }
       },
       "is_incremental": false,
@@ -1761,7 +1785,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.html",
-          "hash": "YZ60gV5y6w5zEb2mOVlsJw=="
+          "hash": "7VwyNMBf4MQEL39PlX9y2A=="
         }
       },
       "is_incremental": false,
@@ -1845,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/toc.html",
-          "hash": "ss6duWFgKwFa3Ey9LjJRTg=="
+          "hash": "hHd5l+YADx5WpzfF6tGbrQ=="
         }
       },
       "is_incremental": false,
@@ -1884,7 +1908,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 147,
+          "total_file_count": 149,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
