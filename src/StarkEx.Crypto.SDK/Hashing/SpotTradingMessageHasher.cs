@@ -22,117 +22,121 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
     }
 
     /// <inheritdoc />
-    public BigInteger EncodeLimitOrderWithFees(EncodeLimitOrderWithFeesModel encodeLimitOrderWithFeesModel)
+    public BigInteger EncodeLimitOrder(EncodeLimitOrderModel encodeLimitOrderModel)
     {
-        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithFeesModel.AssetIdSold);
-        Guards.NotInvalidHex(encodeLimitOrderWithFeesModel.AssetIdSold, nameof(encodeLimitOrderWithFeesModel.AssetIdSold));
-        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithFeesModel.AssetIdBought);
-        Guards.NotInvalidHex(encodeLimitOrderWithFeesModel.AssetIdBought, nameof(encodeLimitOrderWithFeesModel.AssetIdBought));
-        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithFeesModel.AssetIdUsedForFees);
-        Guards.NotInvalidHex(encodeLimitOrderWithFeesModel.AssetIdUsedForFees, nameof(encodeLimitOrderWithFeesModel.AssetIdUsedForFees));
+        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeLimitOrderModel.AssetIdSold, nameof(encodeLimitOrderModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderModel.AssetIdBought);
+        Guards.NotInvalidHex(encodeLimitOrderModel.AssetIdBought, nameof(encodeLimitOrderModel.AssetIdBought));
+        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderModel.AssetIdUsedForFees);
+        Guards.NotInvalidHex(encodeLimitOrderModel.AssetIdUsedForFees, nameof(encodeLimitOrderModel.AssetIdUsedForFees));
 
         var fourthWeight = CalculateFourthWeight(
-            encodeLimitOrderWithFeesModel.QuantizedAmountSold,
-            encodeLimitOrderWithFeesModel.QuantizedAmountBought,
-            encodeLimitOrderWithFeesModel.QuantizedAmountUsedForFees,
-            encodeLimitOrderWithFeesModel.Nonce);
+            encodeLimitOrderModel.QuantizedAmountSold,
+            encodeLimitOrderModel.QuantizedAmountBought,
+            encodeLimitOrderModel.QuantizedAmountUsedForFees,
+            encodeLimitOrderModel.Nonce);
 
         var fifthWeight = CalculateFifthWeightForLimitOrderWithFees(
             OrderType.LimitOrderWithFees,
-            encodeLimitOrderWithFeesModel.VaultIdUsedForFees,
-            encodeLimitOrderWithFeesModel.VaultIdUsedForSelling,
-            encodeLimitOrderWithFeesModel.VaultIdUsedForBuying,
-            encodeLimitOrderWithFeesModel.ExpirationTimestamp);
+            encodeLimitOrderModel.VaultIdUsedForFees,
+            encodeLimitOrderModel.VaultIdUsedForSelling,
+            encodeLimitOrderModel.VaultIdUsedForBuying,
+            encodeLimitOrderModel.ExpirationTimestamp);
 
         var firstInnerHash = pedersenHash.CreateHash(
-            new BigInteger(encodeLimitOrderWithFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
-            new BigInteger(encodeLimitOrderWithFeesModel.AssetIdBought.RemoveHexPrefix(), 16));
+            new BigInteger(encodeLimitOrderModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeLimitOrderModel.AssetIdBought.RemoveHexPrefix(), 16));
         var secondInnerHash = pedersenHash.CreateHash(
             firstInnerHash,
-            new BigInteger(encodeLimitOrderWithFeesModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
+            new BigInteger(encodeLimitOrderModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
         var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
     /// <inheritdoc />
-    public BigInteger EncodeTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)
+    public BigInteger EncodeTransfer(EncodeTransferModel encodeTransferModel)
     {
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.AssetIdSold);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.AssetIdSold, nameof(encodeTransferWithFeesModel.AssetIdSold));
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.AssetIdUsedForFees);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.AssetIdUsedForFees, nameof(encodeTransferWithFeesModel.AssetIdUsedForFees));
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.ReceiverStarkKey);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.ReceiverStarkKey, nameof(encodeTransferWithFeesModel.ReceiverStarkKey));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdSold, nameof(encodeTransferModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdUsedForFees);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdUsedForFees, nameof(encodeTransferModel.AssetIdUsedForFees));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferModel.ReceiverStarkKey, nameof(encodeTransferModel.ReceiverStarkKey));
 
         var fourthWeight = CalculateFourthWeight(
-            encodeTransferWithFeesModel.VaultIdFromSender,
-            encodeTransferWithFeesModel.VaultIdFromReceiver,
-            encodeTransferWithFeesModel.VaultIdUsedForFees,
-            encodeTransferWithFeesModel.Nonce);
+            encodeTransferModel.VaultIdFromSender,
+            encodeTransferModel.VaultIdFromReceiver,
+            encodeTransferModel.VaultIdUsedForFees,
+            encodeTransferModel.Nonce);
 
         var fifthWeight = CalculateFifthWeightForTransferWithFees(
             OrderType.TransferWithFees,
-            encodeTransferWithFeesModel.QuantizedAmountToTransfer,
-            encodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee,
-            encodeTransferWithFeesModel.ExpirationTimestamp);
+            encodeTransferModel.QuantizedAmountToTransfer,
+            encodeTransferModel.QuantizedAmountToLimitMaxFee,
+            encodeTransferModel.ExpirationTimestamp);
 
         var firstInnerHash = pedersenHash.CreateHash(
-            new BigInteger(encodeTransferWithFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
-            new BigInteger(encodeTransferWithFeesModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
+            new BigInteger(encodeTransferModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeTransferModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
         var secondInnerHash = pedersenHash.CreateHash(
             firstInnerHash,
-            new BigInteger(encodeTransferWithFeesModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
+            new BigInteger(encodeTransferModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
         var thirdInnerHash = pedersenHash.CreateHash(secondInnerHash, fourthWeight);
 
         return pedersenHash.CreateHash(thirdInnerHash, fifthWeight);
     }
 
     /// <inheritdoc />
-    public BigInteger EncodeConditionalTransferWithFees(EncodeTransferWithFeesModel encodeTransferWithFeesModel)
+    public BigInteger EncodeConditionalTransfer(EncodeTransferModel encodeTransferModel)
     {
-        Guards.NotNull(encodeTransferWithFeesModel.Fact);
-        Guards.NotNull(encodeTransferWithFeesModel.FactRegistryAddress);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.Fact, nameof(encodeTransferWithFeesModel.Fact));
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.FactRegistryAddress, nameof(encodeTransferWithFeesModel.FactRegistryAddress));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdSold, nameof(encodeTransferModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdUsedForFees);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdUsedForFees, nameof(encodeTransferModel.AssetIdUsedForFees));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferModel.ReceiverStarkKey, nameof(encodeTransferModel.ReceiverStarkKey));
+        Guards.NotNull(encodeTransferModel.Fact);
+        Guards.NotNull(encodeTransferModel.FactRegistryAddress);
+        Guards.NotInvalidHex(encodeTransferModel.Fact, nameof(encodeTransferModel.Fact));
+        Guards.NotInvalidHex(encodeTransferModel.FactRegistryAddress, nameof(encodeTransferModel.FactRegistryAddress));
 
-        var condition = pedersenHash.CreateHash(
-            new BigInteger(encodeTransferWithFeesModel.Fact.RemoveHexPrefix(), 16),
-            new BigInteger(encodeTransferWithFeesModel.FactRegistryAddress.RemoveHexPrefix(), 16));
+        var condition = GetCondition(encodeTransferModel.Fact, encodeTransferModel.FactRegistryAddress);
 
-        return EncodeConditionalTransferWithFees(encodeTransferWithFeesModel, condition.ToByteArray().ToHex());
+        return EncodeConditionalTransfer(encodeTransferModel, condition.ToByteArray().ToHex());
     }
 
     /// <inheritdoc />
-    public BigInteger EncodeConditionalTransferWithFees(
-        EncodeTransferWithFeesModel encodeTransferWithFeesModel,
+    public BigInteger EncodeConditionalTransfer(
+        EncodeTransferModel encodeTransferModel,
         string condition)
     {
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.AssetIdSold);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.AssetIdSold, nameof(encodeTransferWithFeesModel.AssetIdSold));
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.AssetIdUsedForFees);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.AssetIdUsedForFees, nameof(encodeTransferWithFeesModel.AssetIdUsedForFees));
-        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithFeesModel.ReceiverStarkKey);
-        Guards.NotInvalidHex(encodeTransferWithFeesModel.ReceiverStarkKey, nameof(encodeTransferWithFeesModel.ReceiverStarkKey));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdSold, nameof(encodeTransferModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.AssetIdUsedForFees);
+        Guards.NotInvalidHex(encodeTransferModel.AssetIdUsedForFees, nameof(encodeTransferModel.AssetIdUsedForFees));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferModel.ReceiverStarkKey, nameof(encodeTransferModel.ReceiverStarkKey));
 
         var fourthWeight = CalculateFourthWeight(
-            encodeTransferWithFeesModel.VaultIdFromSender,
-            encodeTransferWithFeesModel.VaultIdFromReceiver,
-            encodeTransferWithFeesModel.VaultIdUsedForFees,
-            encodeTransferWithFeesModel.Nonce);
+            encodeTransferModel.VaultIdFromSender,
+            encodeTransferModel.VaultIdFromReceiver,
+            encodeTransferModel.VaultIdUsedForFees,
+            encodeTransferModel.Nonce);
 
         var fifthWeight = CalculateFifthWeightForTransferWithFees(
             OrderType.ConditionalTransferWithFees,
-            encodeTransferWithFeesModel.QuantizedAmountToTransfer,
-            encodeTransferWithFeesModel.QuantizedAmountToLimitMaxFee,
-            encodeTransferWithFeesModel.ExpirationTimestamp);
+            encodeTransferModel.QuantizedAmountToTransfer,
+            encodeTransferModel.QuantizedAmountToLimitMaxFee,
+            encodeTransferModel.ExpirationTimestamp);
 
         var firstInnerHash = pedersenHash.CreateHash(
-            new BigInteger(encodeTransferWithFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
-            new BigInteger(encodeTransferWithFeesModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
+            new BigInteger(encodeTransferModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeTransferModel.AssetIdUsedForFees.RemoveHexPrefix(), 16));
         var secondInnerHash = pedersenHash.CreateHash(
             firstInnerHash,
-            new BigInteger(encodeTransferWithFeesModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
+            new BigInteger(encodeTransferModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
         var thirdInnerHash = pedersenHash.CreateHash(
             secondInnerHash,
             new BigInteger(condition.RemoveHexPrefix(), 16));
@@ -143,102 +147,113 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
 
     /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    public BigInteger DeprecatedHashLimitOrder(
-        string assetIdSold,
-        string assetIdBought,
-        BigInteger quantizedAmountSold,
-        BigInteger quantizedAmountBought,
-        uint nonce,
-        BigInteger vaultIdUsedForSelling,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp)
+    public BigInteger EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel, string condition)
     {
-        var thirdWeight = CalculateThirdWeight(
-            OrderType.LimitOrder,
-            vaultIdUsedForSelling,
-            vaultIdUsedForBuying,
-            quantizedAmountSold,
-            quantizedAmountBought,
-            nonce,
-            expirationTimestamp / 3600);
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.AssetIdSold, nameof(encodeTransferWithoutFeesModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.ReceiverStarkKey, nameof(encodeTransferWithoutFeesModel.ReceiverStarkKey));
+        Guards.NotNull(condition);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.Fact, nameof(encodeTransferWithoutFeesModel.Fact));
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.FactRegistryAddress, nameof(encodeTransferWithoutFeesModel.FactRegistryAddress));
+
+        var packedMessage = BigInteger.Two
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromSender)
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromReceiver)
+            .ShiftLeft(63).Add(encodeTransferWithoutFeesModel.QuantizedAmountToTransfer)
+            .ShiftLeft(63).Add(BigInteger.Zero)
+            .ShiftLeft(31).Add(new BigInteger(encodeTransferWithoutFeesModel.Nonce.ToString()))
+            .ShiftLeft(22).Add(new BigInteger((encodeTransferWithoutFeesModel.ExpirationTimestamp / 3600).ToString()));
 
         var firstInnerHash = pedersenHash.CreateHash(
-            new BigInteger(assetIdSold.RemoveHexPrefix(), 16),
-            new BigInteger(assetIdBought.RemoveHexPrefix(), 16));
+            new BigInteger(encodeTransferWithoutFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeTransferWithoutFeesModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
 
-        return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
+        var secondInnerHash = pedersenHash.CreateHash(
+            firstInnerHash,
+            new BigInteger(condition.RemoveHexPrefix(), 16));
+
+        return pedersenHash.CreateHash(secondInnerHash, packedMessage);
     }
 
     /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    public BigInteger DeprecatedHashTransferOrder(
-        string assetIdSold,
-        string receiverStarkKey,
-        BigInteger quantizedAmountSold,
-        uint nonce,
-        BigInteger vaultIdUsedOfReceiver,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp)
+    public BigInteger EncodeLimitOrderWithoutFees(EncodeLimitOrderWithoutFeesModel encodeLimitOrderWithoutFeesModel)
     {
-        var thirdWeight = CalculateThirdWeight(
-            OrderType.Transfer,
-            vaultIdUsedForBuying,
-            vaultIdUsedOfReceiver,
-            quantizedAmountSold,
-            BigInteger.Zero,
-            nonce,
-            expirationTimestamp / 3600);
+        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithoutFeesModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeLimitOrderWithoutFeesModel.AssetIdSold, nameof(encodeLimitOrderWithoutFeesModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeLimitOrderWithoutFeesModel.AssetIdBought);
+        Guards.NotInvalidHex(encodeLimitOrderWithoutFeesModel.AssetIdBought, nameof(encodeLimitOrderWithoutFeesModel.AssetIdBought));
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
+        var packedMessage = BigInteger.Zero
+            .ShiftLeft(31).Add(encodeLimitOrderWithoutFeesModel.VaultIdUsedForSelling)
+            .ShiftLeft(31).Add(encodeLimitOrderWithoutFeesModel.VaultIdUsedForBuying)
+            .ShiftLeft(63).Add(encodeLimitOrderWithoutFeesModel.QuantizedAmountSold)
+            .ShiftLeft(63).Add(encodeLimitOrderWithoutFeesModel.QuantizedAmountBought)
+            .ShiftLeft(31).Add(new BigInteger(encodeLimitOrderWithoutFeesModel.Nonce.ToString()))
+            .ShiftLeft(22).Add(new BigInteger((encodeLimitOrderWithoutFeesModel.ExpirationTimestamp / 3600).ToString()));
 
-        return pedersenHash.CreateHash(firstInnerHash, thirdWeight);
+        var firstInnerHash = pedersenHash.CreateHash(
+            new BigInteger(encodeLimitOrderWithoutFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeLimitOrderWithoutFeesModel.AssetIdBought.RemoveHexPrefix(), 16));
+
+        return pedersenHash.CreateHash(firstInnerHash, packedMessage);
     }
 
     /// <inheritdoc />
     [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
-    public BigInteger DeprecatedHashConditionalTransfer(
-        string assetIdSold,
-        string receiverStarkKey,
-        BigInteger quantizedAmountSold,
-        uint nonce,
-        BigInteger vaultIdUsedOfReceiver,
-        BigInteger vaultIdUsedForBuying,
-        long expirationTimestamp,
-        string condition) // Only accepting the condition here to validate against starkware dataset
+    public BigInteger EncodeConditionalTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel)
     {
-        var thirdWeight = CalculateThirdWeight(
-            OrderType.ConditionalTransfer,
-            vaultIdUsedForBuying,
-            vaultIdUsedOfReceiver,
-            quantizedAmountSold,
-            BigInteger.Zero,
-            nonce,
-            expirationTimestamp / 3600);
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.AssetIdSold, nameof(encodeTransferWithoutFeesModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.ReceiverStarkKey, nameof(encodeTransferWithoutFeesModel.ReceiverStarkKey));
+        Guards.NotNull(encodeTransferWithoutFeesModel.Fact);
+        Guards.NotNull(encodeTransferWithoutFeesModel.FactRegistryAddress);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.Fact, nameof(encodeTransferWithoutFeesModel.Fact));
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.FactRegistryAddress, nameof(encodeTransferWithoutFeesModel.FactRegistryAddress));
 
-        var firstInnerHash = pedersenHash.CreateHash(new BigInteger(assetIdSold.RemoveHexPrefix(), 16), new BigInteger(receiverStarkKey.RemoveHexPrefix(), 16));
-        var secondInnerHash = pedersenHash.CreateHash(firstInnerHash, new BigInteger(condition.RemoveHexPrefix(), 16));
+        var packedMessage = BigInteger.One
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromSender)
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromReceiver)
+            .ShiftLeft(63).Add(encodeTransferWithoutFeesModel.QuantizedAmountToTransfer)
+            .ShiftLeft(63).Add(BigInteger.Zero)
+            .ShiftLeft(31).Add(new BigInteger(encodeTransferWithoutFeesModel.Nonce.ToString()))
+            .ShiftLeft(22).Add(new BigInteger((encodeTransferWithoutFeesModel.ExpirationTimestamp / 3600).ToString()));
 
-        return pedersenHash.CreateHash(secondInnerHash, thirdWeight);
+        var firstInnerHash = pedersenHash.CreateHash(
+            new BigInteger(encodeTransferWithoutFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeTransferWithoutFeesModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
+
+        var secondInnerHash = pedersenHash.CreateHash(
+            firstInnerHash,
+            GetCondition(encodeTransferWithoutFeesModel.Fact, encodeTransferWithoutFeesModel.FactRegistryAddress));
+
+        return pedersenHash.CreateHash(secondInnerHash, packedMessage);
     }
 
-    [Obsolete("This calculation of the third weight is marked as deprecated in starkex docs")]
-    private static BigInteger CalculateThirdWeight(
-        OrderType orderType,
-        BigInteger paramB,
-        BigInteger paramC,
-        BigInteger paramD,
-        BigInteger paramE,
-        uint paramF,
-        long paramG)
+    /// <inheritdoc />
+    [Obsolete("Implementation obsolete, only implemented to test against Starkware Dataset")]
+    public BigInteger EncodeTransferWithoutFees(EncodeTransferWithoutFeesModel encodeTransferWithoutFeesModel)
     {
-        return BigInteger.Zero
-            .ShiftLeft(4).Add(new BigInteger(orderType.ToIntegerString()))
-            .ShiftLeft(31).Add(paramB)
-            .ShiftLeft(31).Add(paramC)
-            .ShiftLeft(63).Add(paramD)
-            .ShiftLeft(63).Add(paramE)
-            .ShiftLeft(31).Add(new BigInteger(paramF.ToString()))
-            .ShiftLeft(22).Add(new BigInteger(paramG.ToString()));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.AssetIdSold);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.AssetIdSold, nameof(encodeTransferWithoutFeesModel.AssetIdSold));
+        Guards.NotNullOrEmptyOrWhitespace(encodeTransferWithoutFeesModel.ReceiverStarkKey);
+        Guards.NotInvalidHex(encodeTransferWithoutFeesModel.ReceiverStarkKey, nameof(encodeTransferWithoutFeesModel.ReceiverStarkKey));
+
+        var packedMessage = BigInteger.One
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromSender)
+            .ShiftLeft(31).Add(encodeTransferWithoutFeesModel.VaultIdFromReceiver)
+            .ShiftLeft(63).Add(encodeTransferWithoutFeesModel.QuantizedAmountToTransfer)
+            .ShiftLeft(63).Add(BigInteger.Zero)
+            .ShiftLeft(31).Add(new BigInteger(encodeTransferWithoutFeesModel.Nonce.ToString()))
+            .ShiftLeft(22).Add(new BigInteger((encodeTransferWithoutFeesModel.ExpirationTimestamp / 3600).ToString()));
+
+        var firstInnerHash = pedersenHash.CreateHash(
+            new BigInteger(encodeTransferWithoutFeesModel.AssetIdSold.RemoveHexPrefix(), 16),
+            new BigInteger(encodeTransferWithoutFeesModel.ReceiverStarkKey.RemoveHexPrefix(), 16));
+
+        return pedersenHash.CreateHash(firstInnerHash, packedMessage);
     }
 
     private static BigInteger CalculateFourthWeight(
@@ -283,5 +298,13 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
             .ShiftLeft(64).Add(paramC)
             .ShiftLeft(32).Add(new BigInteger((paramD / 3600).ToString()))
             .ShiftLeft(81).Add(BigInteger.Zero);
+    }
+
+    private BigInteger GetCondition(string fact, string factRegistryAddress)
+    {
+        var condition = pedersenHash.CreateHash(
+            new BigInteger(fact.RemoveHexPrefix(), 16),
+            new BigInteger(factRegistryAddress.RemoveHexPrefix(), 16));
+        return condition;
     }
 }
