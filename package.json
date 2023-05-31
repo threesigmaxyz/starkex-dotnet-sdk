@@ -1,6 +1,6 @@
 {
   "name": "starkex-dotnet-sdk",
-  "version": "1.0.0",
+  "version": "0.4.6",
   "description": "[gha]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions [gha-badge]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions/workflows/main.yml/badge.svg [docs]: https://threesigmaxyz.github.io/starkex-dotnet-sdk/articles/intro.html [docs-badge]: https://img.shields.io/badge/Docs-DocFx-orange [license]: https://opensource.org/licenses/MIT [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg",
   "main": "index.js",
   "directories": {
