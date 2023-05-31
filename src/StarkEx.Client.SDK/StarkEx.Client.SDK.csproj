@@ -11,6 +11,7 @@
         <AssemblyName>StarkEx.Client.SDK</AssemblyName>
         <RootNamespace>StarkEx.Client.SDK</RootNamespace>
         <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
+        <PackageProjectUrl>https://www.nuget.org/packages/StarkEx.Client.SDK</PackageProjectUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

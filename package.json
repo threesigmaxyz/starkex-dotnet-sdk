@@ -1,0 +1,26 @@
+{
+  "name": "starkex-dotnet-sdk",
+  "version": "1.0.0",
+  "description": "[gha]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions [gha-badge]: https://github.com/threesigmaxyz/starkex-dotnet-sdk/actions/workflows/main.yml/badge.svg [docs]: https://threesigmaxyz.github.io/starkex-dotnet-sdk/articles/intro.html [docs-badge]: https://img.shields.io/badge/Docs-DocFx-orange [license]: https://opensource.org/licenses/MIT [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "@semantic-release/commit-analyzer": "*",
+    "@semantic-release/release-notes-generator": "*",
+    "@semantic-release/changelog": "*",
+    "@droidsolutions-oss/semantic-release-update-file": "*",
+    "@semantic-release/npm": "*",
+    "@droidsolutions-oss/semantic-release-nuget": "*",
+    "@semantic-release/git": "*",
+    "@semantic-release/github": "*",
+    "semantic-release": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

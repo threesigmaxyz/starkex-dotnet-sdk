@@ -1,11 +1,16 @@
 ﻿name: Pull request workflow
 
-on: pull_request
+on: push
 
 jobs:
   build:
     name: Build and Publish SDKs
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     env:
       dotnet-version: '6.0'
 
@@ -20,55 +25,61 @@ jobs:
         with:
           dotnet-version: ${{ env.dotnet-version }}
 
-      - name: Install dependencies
-        run: dotnet restore
+#      - name: Install dependencies
+#        run: dotnet restore
+#
+#      - name: Build
+#        run: dotnet build --configuration Release --no-restore
 
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+#      - name: Test
+#        run: |
+#          dotnet test tests/StarkEx.Crypto.SDK.Tests --no-restore
+#          dotnet test tests/StarkEx.Client.SDK.Tests --no-restore
+#        
+#      - name: Setup differential test (install python)
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: '3.10'
+#          cache: 'pip'
+#          
+#      - name: Setup differential test (install dependencies) 
+#        run: pip install -r tests/StarkEx.Crypto.SDK.DifferentialTests/Python/requirements.txt
+#        
+#      - name: Differential Test
+#        run: dotnet test tests/StarkEx.Crypto.SDK.DifferentialTests --no-restore
 
-      - name: Test
-        run: |
-          dotnet test tests/StarkEx.Crypto.SDK.Tests --no-restore
-          dotnet test tests/StarkEx.Client.SDK.Tests --no-restore
-        
-      - name: Setup differential test (install python)
-        uses: actions/setup-python@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: '3.10'
-          cache: 'pip'
+          node-version: "lts/*"
           
-      - name: Setup differential test (install dependencies) 
-        run: pip install -r tests/StarkEx.Crypto.SDK.DifferentialTests/Python/requirements.txt
+      - name: Install dependencies
+        run: npm install
         
-      - name: Differential Test
-        run: dotnet test tests/StarkEx.Crypto.SDK.DifferentialTests --no-restore
-      
-      - name: Tag version
-        id: sdk-version
-        uses: paulhatch/semantic-version@v4.0.2
-        with:
-          format: "${major}.${minor}.${patch}-preview.${increment}.${GITHUB_RUN_ID}"
-          major_pattern: "(MAJOR)"
-          minor_pattern: "(MINOR)"
+      - name: Publish using semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_TOKEN: ${{ secrets.NUGET_API_KEY }}
+        run: npx semantic-release --no-ci
 
-      - name: Package
-        run: dotnet pack --configuration Release  -p:Version=${{ steps.sdk-version.outputs.version }}
+#      - name: Package
+#        run: dotnet pack --configuration Release  -p:Version=${{ steps.sdk-version.outputs.version }}
 
-      # Publish to github
-      - name: Add nuget sources
-        run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
-
-      - name: Publish Commons SDK
-        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
-      - name: Publish Crypto SDK
-        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
-      - name: Publish Client SDK
-        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
-      
-      # Publish to nuget.org
-      - name: Publish Commons SDK
-        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
-      - name: Publish Crypto SDK
-        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
-      - name: Publish Client SDK
-        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
+#      # Publish to github
+#      - name: Add nuget sources
+#        run: dotnet nuget add source --username USERNAME --password ${{ secrets.READ_PACKAGES_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/threesigmaxyz/index.json"
+#
+#      - name: Publish Commons SDK
+#        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+#      - name: Publish Crypto SDK
+#        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+#      - name: Publish Client SDK
+#        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+#      
+#      # Publish to nuget.org
+#      - name: Publish Commons SDK
+#        run: dotnet nuget push "src/StarkEx.Commons.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
+#      - name: Publish Crypto SDK
+#        run: dotnet nuget push "src/StarkEx.Crypto.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"
+#      - name: Publish Client SDK
+#        run: dotnet nuget push "src/StarkEx.Client.SDK/bin/Release/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "nuget.org"

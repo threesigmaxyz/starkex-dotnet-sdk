@@ -1,0 +1,11 @@
+﻿<Project>
+    <PropertyGroup>
+        <Title>StarkEx C# SDK</Title>
+        <Authors>Three Sigma</Authors>
+        <Description>Library to interact with the StarkEx API with C#</Description>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
+        <TargetFramework>net6.0</TargetFramework>
+        <VersionPrefix>0.0.0</VersionPrefix>
+    </PropertyGroup>
+</Project>
