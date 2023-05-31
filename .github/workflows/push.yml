@@ -1,9 +1,10 @@
-﻿name: Main branch workflow
+﻿name: Pull request workflow
 
 on:
   push:
     branches:
-      - 'main'
+      - '*'
+      - '!master'
 
 jobs:
   build:
@@ -32,14 +33,31 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
+      - name: Test
+        run: |
+          dotnet test tests/StarkEx.Crypto.SDK.Tests --no-restore
+          dotnet test tests/StarkEx.Client.SDK.Tests --no-restore
+
+      - name: Setup differential test (install python)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Setup differential test (install dependencies) 
+        run: pip install -r tests/StarkEx.Crypto.SDK.DifferentialTests/Python/requirements.txt
+
+      - name: Differential Test
+        run: dotnet test tests/StarkEx.Crypto.SDK.DifferentialTests --no-restore
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-
+          
       - name: Install dependencies
         run: npm install
-
+        
       - name: Publish using semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
