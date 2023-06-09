@@ -12,7 +12,7 @@
             "asset_id_synthetic": "0x2",
             "expiration_timestamp": "1430804514",
             "is_buying_synthetic": false,
-            "nonce": 3900315155,
+            "nonce": 390031515,
             "order_type": "LIMIT_ORDER_WITH_FEES",
             "position_id": "11534118754833929857",
             "public_key": "0x5db665983e23607de57d6dc068797336bfdcb954238044688bec922ca296d3e",

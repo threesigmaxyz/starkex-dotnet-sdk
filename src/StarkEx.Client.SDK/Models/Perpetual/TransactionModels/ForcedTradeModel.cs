@@ -45,7 +45,7 @@ public class ForcedTradeModel : TransactionModel
     ///     Gets or sets unique nonce issued by the caller.
     /// </summary>
     [JsonPropertyName("nonce")]
-    public uint Nonce { get; set; }
+    public int Nonce { get; set; }
 
     /// <summary>
     ///     Gets or sets the position ID of party a.

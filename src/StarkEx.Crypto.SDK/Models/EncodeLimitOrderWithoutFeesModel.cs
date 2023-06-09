@@ -30,7 +30,7 @@ public class EncodeLimitOrderWithoutFeesModel
         string assetIdBought,
         BigInteger quantizedAmountSold,
         BigInteger quantizedAmountBought,
-        uint nonce,
+        int nonce,
         BigInteger vaultIdUsedForSelling,
         BigInteger vaultIdUsedForBuying,
         long expirationTimestamp)
@@ -68,7 +68,7 @@ public class EncodeLimitOrderWithoutFeesModel
     /// <summary>
     /// Gets or sets the nonce used.
     /// </summary>
-    public uint Nonce { get; set; }
+    public int Nonce { get; set; }
 
     public BigInteger VaultIdUsedForSelling { get; set; }
 

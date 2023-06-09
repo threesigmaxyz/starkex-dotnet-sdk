@@ -2,7 +2,7 @@
     "tx": {
         "amount": "2569146471088859254",
         "expiration_timestamp": "631194409",
-        "nonce": 3433407905,
+        "nonce": 343340790,
         "position_id": "7758176404715800194",
         "public_key": "0x35989d400b783796677a03aec2a321cd7e0f8e85d9e62f595209ca9b17beefc",
         "signature": {

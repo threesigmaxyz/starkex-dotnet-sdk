@@ -260,7 +260,7 @@ public class SpotTradingMessageHasher : ISpotTradingMessageHasher
         BigInteger paramB,
         BigInteger paramC,
         BigInteger paramD,
-        uint paramE)
+        int paramE)
     {
         return BigInteger.Zero
             .ShiftLeft(27).Add(BigInteger.Zero)
