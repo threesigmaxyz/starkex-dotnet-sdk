@@ -2,9 +2,8 @@
 
 on:
   push:
-    branches:
-      - '*'
-      - '!master'
+    branches-ignore:
+      - master
 
 jobs:
   build:
