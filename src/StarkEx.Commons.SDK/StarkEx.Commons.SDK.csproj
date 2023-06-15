@@ -2,15 +2,11 @@
 
     <PropertyGroup>
         <PackageId>StarkEx.Commons.SDK</PackageId>
+        <Description>StarkEx Commons SDK</Description>
         <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
-        <Authors>ThreeSigma</Authors>
-        <Company>ThreeSigma</Company>
-        <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>disable</Nullable>
         <AssemblyName>StarkEx.Commons.SDK</AssemblyName>
         <RootNamespace>StarkEx.Commons.SDK</RootNamespace>
-        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
+        <PackageProjectUrl>https://www.nuget.org/packages/StarkEx.Commons.SDK</PackageProjectUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

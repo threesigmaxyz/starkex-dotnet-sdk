@@ -2,15 +2,11 @@
 
     <PropertyGroup>
         <PackageId>StarkEx.Client.SDK</PackageId>
+        <Description>StarkEx Client SDK</Description>
         <PackageTags>starkex;sdk;dotnet;csharp</PackageTags>
-        <Authors>ThreeSigma</Authors>
-        <Company>ThreeSigma</Company>
-        <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>disable</Nullable>
         <AssemblyName>StarkEx.Client.SDK</AssemblyName>
         <RootNamespace>StarkEx.Client.SDK</RootNamespace>
-        <RepositoryUrl>https://github.com/threesigmaxyz/starkex-dotnet-sdk</RepositoryUrl>
+        <PackageProjectUrl>https://www.nuget.org/packages/StarkEx.Client.SDK</PackageProjectUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
