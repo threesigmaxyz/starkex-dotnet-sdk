@@ -31,7 +31,7 @@ public class EncodeTransferModel
         BigInteger vaultIdFromSender,
         BigInteger vaultIdFromReceiver,
         BigInteger vaultIdUsedForFees,
-        uint nonce,
+        int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
         long expirationTimestamp)
@@ -70,7 +70,7 @@ public class EncodeTransferModel
         BigInteger vaultIdFromSender,
         BigInteger vaultIdFromReceiver,
         BigInteger vaultIdUsedForFees,
-        uint nonce,
+        int nonce,
         BigInteger quantizedAmountToTransfer,
         BigInteger quantizedAmountToLimitMaxFee,
         long expirationTimestamp,
@@ -124,7 +124,7 @@ public class EncodeTransferModel
     /// <summary>
     /// Gets or sets the nonce used.
     /// </summary>
-    public uint Nonce { get; set; }
+    public int Nonce { get; set; }
 
     /// <summary>
     /// Gets or sets the id of the Quantized amount to transfer.

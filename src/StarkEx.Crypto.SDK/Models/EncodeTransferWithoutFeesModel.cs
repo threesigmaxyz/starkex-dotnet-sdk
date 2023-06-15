@@ -26,7 +26,7 @@ public class EncodeTransferWithoutFeesModel
         string receiverStarkKey,
         BigInteger vaultIdFromSender,
         BigInteger vaultIdFromReceiver,
-        uint nonce,
+        int nonce,
         BigInteger quantizedAmountToTransfer,
         long expirationTimestamp)
     {
@@ -56,7 +56,7 @@ public class EncodeTransferWithoutFeesModel
         string receiverStarkKey,
         BigInteger vaultIdFromSender,
         BigInteger vaultIdFromReceiver,
-        uint nonce,
+        int nonce,
         BigInteger quantizedAmountToTransfer,
         long expirationTimestamp,
         string fact,
@@ -96,7 +96,7 @@ public class EncodeTransferWithoutFeesModel
     /// <summary>
     /// Gets or sets the nonce used.
     /// </summary>
-    public uint Nonce { get; set; }
+    public int Nonce { get; set; }
 
     /// <summary>
     /// Gets or sets the id of the Quantized amount to transfer.

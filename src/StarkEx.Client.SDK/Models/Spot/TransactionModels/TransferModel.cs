@@ -39,7 +39,7 @@ public class TransferModel : TransactionModel
     ///     Gets or sets the (single) nonce involved in the transfer.
     /// </summary>
     [JsonPropertyName("nonce")]
-    public uint Nonce { get; set; }
+    public int Nonce { get; set; }
 
     /// <summary>
     ///     Gets or sets the receiver’s public key.
