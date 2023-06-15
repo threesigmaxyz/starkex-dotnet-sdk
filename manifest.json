@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ConditionalTransferModel.html",
-          "hash": "CccuV8lqvmeKfyyL/l4dgw=="
+          "hash": "9DfEtX+yb9F/yaa/qFieMw=="
         }
       },
       "is_incremental": false,
@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.ForcedTradeModel.html",
-          "hash": "SG0jierQvfjMJxUDMXWo5Q=="
+          "hash": "dEnh/vRqIWEBNRJyArQhXg=="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.OrderModel.html",
-          "hash": "iG26oN3QH1waw6c2tvQ5aQ=="
+          "hash": "u0WnB7qW+gDy6hsCGr90VQ=="
         }
       },
       "is_incremental": false,
@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.TransferModel.html",
-          "hash": "Eu5bbwHIEovDW8bW+buRZQ=="
+          "hash": "3K4xUORXCiEmQ6TcBcUSdw=="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalModel.html",
-          "hash": "ThI3k/Q5WqeQGWWLeD7aoQ=="
+          "hash": "+cXCBawqzCaxxuK0ROH4qw=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Perpetual.TransactionModels.WithdrawalToAddressModel.html",
-          "hash": "XUafQy8EasUUsQA5FMgScw=="
+          "hash": "GyfVxsUxInULCUARwytm9Q=="
         }
       },
       "is_incremental": false,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html",
-          "hash": "Gb3fkN/Pee73kcT2vfS+sQ=="
+          "hash": "+cMmb0i9k9c91yJtQEs0iQ=="
         }
       },
       "is_incremental": false,
@@ -1461,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.TransferModel.html",
-          "hash": "awANqU6si7JA6RLjrWigpA=="
+          "hash": "Ix519bZT6WmCRqbz4fmeAA=="
         }
       },
       "is_incremental": false,
@@ -1737,7 +1737,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderModel.html",
-          "hash": "uK9pL2yTZhnvlvN1qsCrtw=="
+          "hash": "yRtymaaWezmkL0b/emix/A=="
         }
       },
       "is_incremental": false,
@@ -1749,7 +1749,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeLimitOrderWithoutFeesModel.html",
-          "hash": "bbYp5gH6vhL2q8nwWBEeVg=="
+          "hash": "287nRmESjUE5/zyaF01UjA=="
         }
       },
       "is_incremental": false,
@@ -1761,7 +1761,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferModel.html",
-          "hash": "y8zBCx4au73/ofCXch9nJA=="
+          "hash": "75svDYUnpH5YXK0LneDs/w=="
         }
       },
       "is_incremental": false,
@@ -1773,7 +1773,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Models.EncodeTransferWithoutFeesModel.html",
-          "hash": "djC3VvFgxAxadt/VIahaLg=="
+          "hash": "1J6FFBOcvSQBysZJ8w2guA=="
         }
       },
       "is_incremental": false,
