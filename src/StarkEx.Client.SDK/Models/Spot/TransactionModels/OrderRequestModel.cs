@@ -27,12 +27,6 @@ public class OrderRequestModel
     public BigInteger SellAmount { get; set; }
 
     /// <summary>
-    ///     Gets or sets the Ethereum address of the party.
-    /// </summary>
-    [JsonPropertyName("eth_address")]
-    public string? EthAddress { get; set; }
-
-    /// <summary>
     ///     Gets or sets the timestamp after which this request is no longer valid.
     /// </summary>
     [JsonPropertyName("expiration_timestamp")]
