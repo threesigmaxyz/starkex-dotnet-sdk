@@ -19,7 +19,6 @@
         "party_b_order": {
             "amount_buy": "30",
             "amount_sell": "40",
-            "eth_address": "0xa9eb20c9A09F5eD00BE849049a554A60CCe4fC27",
             "expiration_timestamp": 989173,
             "fee_info": {
                 "fee_limit": "7",
@@ -27,6 +26,7 @@
                 "token_id": "0x23a77118133287637ebdcd9e87a1613e443df789558867f5ba91faf7a024204"
             },
             "nonce": 577090037,
+            "public_key": "0xa9eb20c9A09F5eD00BE849049a554A60CCe4fC27",
             "token_buy": "0x11111111111111111111111111111111111111111111111111111111111111",
             "token_sell": "0x22222222222222222222222222222222222222222222222222222222222222",
             "type": "OrderL1Request",

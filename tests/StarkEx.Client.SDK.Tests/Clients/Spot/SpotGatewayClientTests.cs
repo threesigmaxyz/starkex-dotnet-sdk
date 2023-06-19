@@ -98,7 +98,7 @@ public class SpotGatewayClientTests
                 {
                     BuyAmount = 30,
                     SellAmount = 40,
-                    EthAddress = "0xa9eb20c9A09F5eD00BE849049a554A60CCe4fC27",
+                    PublicKey = "0xa9eb20c9A09F5eD00BE849049a554A60CCe4fC27",
                     ExpirationTimestamp = 989173,
                     FeeInfo = new FeeInfoModel
                     {
