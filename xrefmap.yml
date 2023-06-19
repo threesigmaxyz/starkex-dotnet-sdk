@@ -5332,19 +5332,6 @@ references:
   isSpec: "True"
   fullName: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.BuyAmount
   nameWithType: OrderRequestModel.BuyAmount
-- uid: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress
-  name: EthAddress
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html#StarkEx_Client_SDK_Models_Spot_TransactionModels_OrderRequestModel_EthAddress
-  commentId: P:StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress
-  fullName: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress
-  nameWithType: OrderRequestModel.EthAddress
-- uid: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress*
-  name: EthAddress
-  href: sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html#StarkEx_Client_SDK_Models_Spot_TransactionModels_OrderRequestModel_EthAddress_
-  commentId: Overload:StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress
-  isSpec: "True"
-  fullName: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.EthAddress
-  nameWithType: OrderRequestModel.EthAddress
 - uid: StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.ExpirationTimestamp
   name: ExpirationTimestamp
   href: sdk/client/StarkEx.Client.SDK.Models.Spot.TransactionModels.OrderRequestModel.html#StarkEx_Client_SDK_Models_Spot_TransactionModels_OrderRequestModel_ExpirationTimestamp
