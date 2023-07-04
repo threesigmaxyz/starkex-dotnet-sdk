@@ -5924,12 +5924,12 @@ references:
   commentId: T:StarkEx.Crypto.SDK.Encoding.AssetEncoder
   fullName: StarkEx.Crypto.SDK.Encoding.AssetEncoder
   nameWithType: AssetEncoder
-- uid: StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger)
-  name: GetAssetId(AssetType, String, String, String, BigInteger)
-  href: sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html#StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_
-  commentId: M:StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger)
-  fullName: StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType, System.String, System.String, System.String, BigInteger)
-  nameWithType: AssetEncoder.GetAssetId(AssetType, String, String, String, BigInteger)
+- uid: StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger,System.Boolean)
+  name: GetAssetId(AssetType, String, String, String, BigInteger, Boolean)
+  href: sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html#StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_System_Boolean_
+  commentId: M:StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger,System.Boolean)
+  fullName: StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType, System.String, System.String, System.String, BigInteger, System.Boolean)
+  nameWithType: AssetEncoder.GetAssetId(AssetType, String, String, String, BigInteger, Boolean)
 - uid: StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId*
   name: GetAssetId
   href: sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html#StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_
@@ -5999,6 +5999,12 @@ references:
   commentId: F:StarkEx.Crypto.SDK.Enums.AssetType.Eth
   fullName: StarkEx.Crypto.SDK.Enums.AssetType.Eth
   nameWithType: AssetType.Eth
+- uid: StarkEx.Crypto.SDK.Enums.AssetType.MintableErc1155
+  name: MintableErc1155
+  href: sdk/crypto/StarkEx.Crypto.SDK.Enums.AssetType.html#StarkEx_Crypto_SDK_Enums_AssetType_MintableErc1155
+  commentId: F:StarkEx.Crypto.SDK.Enums.AssetType.MintableErc1155
+  fullName: StarkEx.Crypto.SDK.Enums.AssetType.MintableErc1155
+  nameWithType: AssetType.MintableErc1155
 - uid: StarkEx.Crypto.SDK.Enums.AssetType.MintableErc20
   name: MintableErc20
   href: sdk/crypto/StarkEx.Crypto.SDK.Enums.AssetType.html#StarkEx_Crypto_SDK_Enums_AssetType_MintableErc20

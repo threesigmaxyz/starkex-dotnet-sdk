@@ -89,19 +89,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType%2CSystem.String%2CSystem.String%2CSystem.String%2CBigInteger)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_System_Boolean_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType%2CSystem.String%2CSystem.String%2CSystem.String%2CBigInteger%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L36">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L41">View Source</a>
   </span>
   <a id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId*"></a>
-  <h4 id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger)">GetAssetId(AssetType, String, String, String, BigInteger)</h4>
+  <h4 id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetId_StarkEx_Crypto_SDK_Enums_AssetType_System_String_System_String_System_String_BigInteger_System_Boolean_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetId(StarkEx.Crypto.SDK.Enums.AssetType,System.String,System.String,System.String,BigInteger,System.Boolean)">GetAssetId(AssetType, String, String, String, BigInteger, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets the asset ID for the specified asset type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetAssetId(AssetType assetType, string mintingBlob = null, string address = null, string tokenId = null, BigInteger quantum = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetAssetId(AssetType assetType, string mintingBlob = null, string address = null, string tokenId = null, BigInteger quantum = null, bool isMintingTransaction = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,6 +147,15 @@ only for ERC-721 and ERC-1155 assets.</p>
 only for ETH and ERC-20 assets.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isMintingTransaction</span></td>
+        <td><p>A boolean value indicating whether the asset ID is being generated
+for a minting transaction. This parameter should be specified only for assets that are mintable, specifically
+<a class="xref" href="StarkEx.Crypto.SDK.Enums.AssetType.html#StarkEx_Crypto_SDK_Enums_AssetType_MintableErc721">MintableErc721</a>, <a class="xref" href="StarkEx.Crypto.SDK.Enums.AssetType.html#StarkEx_Crypto_SDK_Enums_AssetType_MintableErc20">MintableErc20</a>, and
+<a class="xref" href="StarkEx.Crypto.SDK.Enums.AssetType.html#StarkEx_Crypto_SDK_Enums_AssetType_MintableErc1155">MintableErc1155</a>.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -170,7 +179,7 @@ only for ETH and ERC-20 assets.</p>
     <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetInfo_StarkEx_Crypto_SDK_Enums_AssetType_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetInfo(StarkEx.Crypto.SDK.Enums.AssetType%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L88">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L95">View Source</a>
   </span>
   <a id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetInfo_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetInfo*"></a>
   <h4 id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetInfo_StarkEx_Crypto_SDK_Enums_AssetType_System_String_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetInfo(StarkEx.Crypto.SDK.Enums.AssetType,System.String)">GetAssetInfo(AssetType, String)</h4>
@@ -227,7 +236,7 @@ be specified only for ERC-20, ERC-721, and ERC-1155 assets.</p>
     <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/new/main/apiSpec/new?filename=StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetType_StarkEx_Crypto_SDK_Enums_AssetType_BigInteger_System_String_.md&amp;value=---%0Auid%3A%20StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetType(StarkEx.Crypto.SDK.Enums.AssetType%2CBigInteger%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L65">View Source</a>
+    <a href="https://github.com/threesigmaxyz/starkex-dotnet-sdk/blob/main/src/StarkEx.Crypto.SDK/Encoding/AssetEncoder.cs/#L72">View Source</a>
   </span>
   <a id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetType_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetType*"></a>
   <h4 id="StarkEx_Crypto_SDK_Encoding_AssetEncoder_GetAssetType_StarkEx_Crypto_SDK_Enums_AssetType_BigInteger_System_String_" data-uid="StarkEx.Crypto.SDK.Encoding.AssetEncoder.GetAssetType(StarkEx.Crypto.SDK.Enums.AssetType,BigInteger,System.String)">GetAssetType(AssetType, BigInteger, String)</h4>

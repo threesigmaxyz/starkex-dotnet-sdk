@@ -1557,7 +1557,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Encoding.AssetEncoder.html",
-          "hash": "z/nTGH4/I8NyFyKTse+hpg=="
+          "hash": "PdsqxnQY8530dmD8aOaZ/A=="
         }
       },
       "is_incremental": false,
@@ -1581,7 +1581,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/crypto/StarkEx.Crypto.SDK.Enums.AssetType.html",
-          "hash": "5/iUUFpvJOgQCwwCQiSt+g=="
+          "hash": "OEzznDDM9VWR3ET9zEMiDA=="
         }
       },
       "is_incremental": false,
