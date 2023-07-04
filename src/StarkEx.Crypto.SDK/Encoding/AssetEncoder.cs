@@ -14,8 +14,9 @@ public static class AssetEncoder
     private const string Erc20Selector = "0xf47261b0";
     private const string Erc721Selector = "0x02571792";
     private const string Erc1155Selector = "0x3348691d";
-    private const string MintableErc721Selector = "0xb8b86672";
     private const string MintableErc20Selector = "0x68646e2d";
+    private const string MintableErc721Selector = "0xb8b86672";
+    private const string MintableErc1155Selector = "0xbae32628";
     private static readonly BigInteger BitMask = new("03FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 16);
     private static readonly BigInteger MintableAndBitMask = new("0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 16);
     private static readonly BigInteger MintableOrBitMask = new("400000000000000000000000000000000000000000000000000000000000000", 16);
@@ -32,13 +33,18 @@ public static class AssetEncoder
     /// only for ERC-721 and ERC-1155 assets.</param>
     /// <param name="quantum">The quantum value for the asset. This parameter should be specified
     /// only for ETH and ERC-20 assets.</param>
+    /// <param name="isMintingTransaction">A boolean value indicating whether the asset ID is being generated
+    /// for a minting transaction. This parameter should be specified only for assets that are mintable, specifically
+    /// <see cref="AssetType.MintableErc721"/>, <see cref="AssetType.MintableErc20"/>, and
+    /// <see cref="AssetType.MintableErc1155"/>.</param>
     /// <returns>The asset ID for the specified asset type.</returns>
     public static string GetAssetId(
         AssetType assetType,
         string mintingBlob = null,
         string address = null,
         string tokenId = null,
-        BigInteger quantum = null)
+        BigInteger quantum = null,
+        bool isMintingTransaction = false)
     {
         quantum ??= BigInteger.One;
 
@@ -48,8 +54,9 @@ public static class AssetEncoder
             AssetType.Erc20 => GetErc20AssetId(quantum, address),
             AssetType.Erc721 => GetErc721AssetId(tokenId, address),
             AssetType.Erc1155 => GetErc1155AssetId(tokenId, address),
-            AssetType.MintableErc721 => GetMintableErc721AssetId(mintingBlob, address),
-            AssetType.MintableErc20 => GetMintableErc20AssetId(mintingBlob, address, quantum),
+            AssetType.MintableErc721 => GetMintableErc721AssetId(mintingBlob, address, isMintingTransaction),
+            AssetType.MintableErc20 => GetMintableErc20AssetId(mintingBlob, address, quantum, isMintingTransaction),
+            AssetType.MintableErc1155 => GetMintableErc1155AssetId(mintingBlob, address, isMintingTransaction),
             _ => throw new ArgumentOutOfRangeException(nameof(assetType), assetType, "Asset type isn't valid"),
         };
     }
@@ -93,8 +100,9 @@ public static class AssetEncoder
             AssetType.Erc20 => GetErcAssetInfo(Erc20Selector, address),
             AssetType.Erc721 => GetErcAssetInfo(Erc721Selector, address),
             AssetType.Erc1155 => GetErcAssetInfo(Erc1155Selector, address),
-            AssetType.MintableErc721 => GetErcAssetInfo(MintableErc721Selector, address),
             AssetType.MintableErc20 => GetErcAssetInfo(MintableErc20Selector, address),
+            AssetType.MintableErc721 => GetErcAssetInfo(MintableErc721Selector, address),
+            AssetType.MintableErc1155 => GetErcAssetInfo(MintableErc1155Selector, address),
             _ => throw new ArgumentOutOfRangeException(nameof(assetType), assetType, "AssetType isn't valid"),
         };
     }
@@ -161,7 +169,7 @@ public static class AssetEncoder
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
     }
 
-    private static string GetMintableErc721AssetId(string mintingBlob, string address)
+    private static string GetMintableErc721AssetId(string mintingBlob, string address, bool isMintingTransaction)
     {
         Guards.NotNullOrEmptyOrWhitespace(address);
         Guards.NotNullOrEmptyOrWhitespace(mintingBlob);
@@ -179,10 +187,26 @@ public static class AssetEncoder
             .And(MintableAndBitMask)
             .Or(MintableOrBitMask);
 
+        if (isMintingTransaction)
+        {
+            keccackHashAsBigInteger = keccackHashAsBigInteger
+                .ClearBit(240)
+                .ClearBit(241)
+                .ClearBit(242)
+                .ClearBit(243)
+                .ClearBit(244)
+                .ClearBit(245)
+                .ClearBit(246)
+                .ClearBit(247)
+                .ClearBit(248)
+                .ClearBit(249)
+                .SetBit(250);
+        }
+
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
     }
 
-    private static string GetMintableErc20AssetId(string mintingBlob, string address, BigInteger quantum)
+    private static string GetMintableErc20AssetId(string mintingBlob, string address, BigInteger quantum, bool isMintingTransaction)
     {
         Guards.NotNull(quantum);
         Guards.NotNullOrEmptyOrWhitespace(address);
@@ -201,6 +225,59 @@ public static class AssetEncoder
         keccackHashAsBigInteger = keccackHashAsBigInteger
             .And(MintableAndBitMask)
             .Or(MintableOrBitMask);
+
+        if (isMintingTransaction)
+        {
+            keccackHashAsBigInteger = keccackHashAsBigInteger
+                .ClearBit(240)
+                .ClearBit(241)
+                .ClearBit(242)
+                .ClearBit(243)
+                .ClearBit(244)
+                .ClearBit(245)
+                .ClearBit(246)
+                .ClearBit(247)
+                .SetBit(248)
+                .SetBit(249)
+                .SetBit(250);
+        }
+
+        return $"0x{keccackHashAsBigInteger.ToString(16)}";
+    }
+
+    private static string GetMintableErc1155AssetId(string mintingBlob, string address, bool isMintingTransaction)
+    {
+        Guards.NotNullOrEmptyOrWhitespace(address);
+        Guards.NotNullOrEmptyOrWhitespace(mintingBlob);
+        Guards.NotInvalidHex(address, nameof(address));
+
+        var assetType = GetAssetType(AssetType.MintableErc1155, BigInteger.One, address);
+        var blobHash = Sha3Keccack.Current.CalculateHashFromHex(mintingBlob);
+        var assetId = new BigInteger(Encoding.ASCII.GetBytes("MINTABLE:"));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(assetType.RemoveHexPrefix(), 16));
+        assetId = assetId.ShiftLeft(256).Add(new BigInteger(blobHash.RemoveHexPrefix(), 16));
+
+        var keccackHash = Sha3Keccack.Current.CalculateHashFromHex(assetId.ToString(16));
+        var keccackHashAsBigInteger = new BigInteger(keccackHash.RemoveHexPrefix(), 16);
+        keccackHashAsBigInteger = keccackHashAsBigInteger
+            .And(MintableAndBitMask)
+            .Or(MintableOrBitMask);
+
+        if (isMintingTransaction)
+        {
+            keccackHashAsBigInteger = keccackHashAsBigInteger
+                .ClearBit(240)
+                .ClearBit(241)
+                .ClearBit(242)
+                .ClearBit(243)
+                .ClearBit(244)
+                .ClearBit(245)
+                .ClearBit(246)
+                .ClearBit(247)
+                .ClearBit(248)
+                .SetBit(249)
+                .SetBit(250);
+        }
 
         return $"0x{keccackHashAsBigInteger.ToString(16)}";
     }

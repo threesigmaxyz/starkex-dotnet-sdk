@@ -34,4 +34,9 @@ public enum AssetType
     /// Mintable ERC-721 token.
     /// </summary>
     MintableErc721,
+
+    /// <summary>
+    /// Mintable ERC-1155 token.
+    /// </summary>
+    MintableErc1155,
 }
