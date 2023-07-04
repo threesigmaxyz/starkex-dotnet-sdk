@@ -1,5 +1,5 @@
 ﻿{
-    "code": "SCHEMA_VALIDATION_ERROR",
+    "code": "StarkErrorCode.SCHEMA_VALIDATION_ERROR",
     "message": "Schema validation failed",
     "problems": {
         "tx": {
